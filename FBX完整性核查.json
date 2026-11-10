@@ -1,0 +1,4190 @@
+{
+  "scope": "Exact basename coverage plus independently enumerated current-player node uses. A string reference is not an execution proof; a static use is not a live gameplay hit.",
+  "source_directory": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包",
+  "graph": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_archive\\verified_configs\\000024d5_hun_animsys_player.manimsysbin",
+  "graph_sha256": "c65555f56507417bf85933076051a2614ecbd0747c68e32521f29f052425c3d7",
+  "toc_source": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_web\\sdf_toc_west37_decompressed.bin",
+  "counts": {
+    "source_fbx_total": 4371,
+    "animation_directory_fbx": 4367,
+    "zero_length_fbx": 0,
+    "player_graph_anim_resources": 4453,
+    "graph_resources_with_same_name_fbx": 4323,
+    "graph_resources_without_same_name_fbx": 130,
+    "missing_fbx_but_raw_present": 130,
+    "missing_fbx_and_raw_absent": 0,
+    "game_main_toc_anim_resource_total": 21912,
+    "resource_strings_in_player_graph": 4453,
+    "resources_with_animdata_and_node_uses": 4409,
+    "string_or_animset_only_resources": 44,
+    "source_fbx_with_node_uses": 4282,
+    "source_fbx_without_node_uses": 85,
+    "missing_same_name_fbx_with_node_uses": 127,
+    "missing_same_name_fbx_without_node_uses": 3
+  },
+  "missing_fbx_resources": [
+    {
+      "resource": "hunter/baked/snowdrop/animation/emote_rps_idle_new.anim",
+      "name": "emote_rps_idle_new",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/emote_rps_idle_new.anim",
+        "hash": 639190437,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7520,
+            "compressed_size": 6611,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6800974,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              6611
+            ],
+            "signature": 1645331124
+          }
+        ],
+        "metadata_start": 33128790,
+        "end": 33128810
+      },
+      "animationNodeUsageCount": 19,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/emote_rps_paper.anim",
+      "name": "emote_rps_paper",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/emote_rps_paper.anim",
+        "hash": 639190436,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 17695,
+            "compressed_size": 16519,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6807585,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              16519
+            ],
+            "signature": 2381764504
+          }
+        ],
+        "metadata_start": 33128821,
+        "end": 33128841
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/emote_rps_rock.anim",
+      "name": "emote_rps_rock",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/emote_rps_rock.anim",
+        "hash": 639188901,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 17676,
+            "compressed_size": 16635,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6824104,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              16635
+            ],
+            "signature": 3230099558
+          }
+        ],
+        "metadata_start": 33128856,
+        "end": 33128876
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/emote_rps_scissor.anim",
+      "name": "emote_rps_scissor",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/emote_rps_scissor.anim",
+        "hash": 639190435,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 17927,
+            "compressed_size": 16742,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6840739,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              16742
+            ],
+            "signature": 1316263656
+          }
+        ],
+        "metadata_start": 33128889,
+        "end": 33128909
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_chest_impact_back.anim",
+      "name": "mounted_weapon_chest_impact_back",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_chest_impact_back.anim",
+        "hash": 639190380,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10705,
+            "compressed_size": 9615,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6876148,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              9615
+            ],
+            "signature": 3255671986
+          }
+        ],
+        "metadata_start": 33139076,
+        "end": 33139096
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_chest_impact_front.anim",
+      "name": "mounted_weapon_chest_impact_front",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_chest_impact_front.anim",
+        "hash": 639188912,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8977,
+            "compressed_size": 7934,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6885763,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              7934
+            ],
+            "signature": 2017802040
+          }
+        ],
+        "metadata_start": 33139107,
+        "end": 33139127
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_chest_impact_left.anim",
+      "name": "mounted_weapon_chest_impact_left",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_chest_impact_left.anim",
+        "hash": 639190379,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 9725,
+            "compressed_size": 8770,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6893697,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              8770
+            ],
+            "signature": 20948562
+          }
+        ],
+        "metadata_start": 33139142,
+        "end": 33139162
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_chest_impact_right.anim",
+      "name": "mounted_weapon_chest_impact_right",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_chest_impact_right.anim",
+        "hash": 639189177,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 9345,
+            "compressed_size": 8307,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6902467,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              8307
+            ],
+            "signature": 1656311921
+          }
+        ],
+        "metadata_start": 33139173,
+        "end": 33139193
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_head_impact_back.anim",
+      "name": "mounted_weapon_head_impact_back",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_head_impact_back.anim",
+        "hash": 639190379,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8722,
+            "compressed_size": 7615,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6910774,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              7615
+            ],
+            "signature": 3186544402
+          }
+        ],
+        "metadata_start": 33139231,
+        "end": 33139251
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_head_impact_front.anim",
+      "name": "mounted_weapon_head_impact_front",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_head_impact_front.anim",
+        "hash": 639190376,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8311,
+            "compressed_size": 7179,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6918389,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              7179
+            ],
+            "signature": 2520070235
+          }
+        ],
+        "metadata_start": 33139262,
+        "end": 33139282
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_head_impact_left.anim",
+      "name": "mounted_weapon_head_impact_left",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_head_impact_left.anim",
+        "hash": 639190376,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8021,
+            "compressed_size": 6917,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6925568,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              6917
+            ],
+            "signature": 2402136150
+          }
+        ],
+        "metadata_start": 33139297,
+        "end": 33139317
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_head_impact_right.anim",
+      "name": "mounted_weapon_head_impact_right",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_head_impact_right.anim",
+        "hash": 639188912,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8546,
+            "compressed_size": 7521,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6932485,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              7521
+            ],
+            "signature": 1254398529
+          }
+        ],
+        "metadata_start": 33139328,
+        "end": 33139348
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_leg_impact_left.anim",
+      "name": "mounted_weapon_leg_impact_left",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_leg_impact_left.anim",
+        "hash": 639190376,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 9890,
+            "compressed_size": 8852,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6940006,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              8852
+            ],
+            "signature": 529368698
+          }
+        ],
+        "metadata_start": 33139375,
+        "end": 33139395
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/mounted_weapon_leg_impact_right.anim",
+      "name": "mounted_weapon_leg_impact_right",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/mounted_weapon_leg_impact_right.anim",
+        "hash": 639190376,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 9553,
+            "compressed_size": 8515,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6948858,
+            "index": 180,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0180.sdfdata",
+            "pages": [
+              8515
+            ],
+            "signature": 3141313612
+          }
+        ],
+        "metadata_start": 33139406,
+        "end": 33139426
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_end_m_st_com_howl_effect_in_ua_v01.anim",
+      "name": "n_end_m_st_com_howl_effect_in_ua_v01",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_end_m_st_com_howl_effect_in_ua_v01.anim",
+        "hash": 854027486,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6826,
+            "compressed_size": 5975,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1257931,
+            "index": 105,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0105.sdfdata",
+            "pages": [
+              5975
+            ],
+            "signature": 1142430860
+          }
+        ],
+        "metadata_start": 33302991,
+        "end": 33303011
+      },
+      "animationNodeUsageCount": 9,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_end_m_st_com_howl_effect_loop_ua_v01.anim",
+      "name": "n_end_m_st_com_howl_effect_loop_ua_v01",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_end_m_st_com_howl_effect_loop_ua_v01.anim",
+        "hash": 854027486,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 20254,
+            "compressed_size": 19324,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1999159,
+            "index": 105,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0105.sdfdata",
+            "pages": [
+              19324
+            ],
+            "signature": 3700120252
+          }
+        ],
+        "metadata_start": 33303033,
+        "end": 33303053
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_end_m_st_com_howl_effect_out_ua_v01.anim",
+      "name": "n_end_m_st_com_howl_effect_out_ua_v01",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_end_m_st_com_howl_effect_out_ua_v01.anim",
+        "hash": 854027487,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 15593,
+            "compressed_size": 14536,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1270783,
+            "index": 105,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0105.sdfdata",
+            "pages": [
+              14536
+            ],
+            "signature": 1769762149
+          }
+        ],
+        "metadata_start": 33303069,
+        "end": 33303089
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_end_m_st_com_standturn_h-45_ar_v01.anim",
+      "name": "n_end_m_st_com_standturn_h-45_ar_v01",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_end_m_st_com_standturn_h-45_ar_v01.anim",
+        "hash": 639185188,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7747,
+            "compressed_size": 6711,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 9470434,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              6711
+            ],
+            "signature": 2923340112
+          }
+        ],
+        "metadata_start": 33312269,
+        "end": 33312289
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_end_m_st_com_standturn_h45_ar_v01.anim",
+      "name": "n_end_m_st_com_standturn_h45_ar_v01",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_end_m_st_com_standturn_h45_ar_v01.anim",
+        "hash": 639185186,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7693,
+            "compressed_size": 6690,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 9495721,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              6690
+            ],
+            "signature": 694961291
+          }
+        ],
+        "metadata_start": 33312835,
+        "end": 33312855
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_f_ven_trader5_boopublic_notice_breaker_v01.anim",
+      "name": "n_f_ven_trader5_boopublic_notice_breaker_v01",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_f_ven_trader5_boopublic_notice_breaker_v01.anim",
+        "hash": 639180325,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 21949,
+            "compressed_size": 20147,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 11881333,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              20147
+            ],
+            "signature": 2160900496
+          }
+        ],
+        "metadata_start": 33327772,
+        "end": 33327792
+      },
+      "animationNodeUsageCount": 0,
+      "hasCommonAnimData": false
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_chest_b_ar_v02.anim",
+      "name": "n_gen_m_st_com_death_chest_b_ar_v02",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_chest_b_ar_v02.anim",
+        "hash": 639185029,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10388,
+            "compressed_size": 8690,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 17783949,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              8690
+            ],
+            "signature": 894170897
+          }
+        ],
+        "metadata_start": 33372797,
+        "end": 33372818
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_chest_b_ar_v03.anim",
+      "name": "n_gen_m_st_com_death_chest_b_ar_v03",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_chest_b_ar_v03.anim",
+        "hash": 639185029,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10902,
+            "compressed_size": 8934,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 17792639,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              8934
+            ],
+            "signature": 3687068877
+          }
+        ],
+        "metadata_start": 33372830,
+        "end": 33372851
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_head_f_ar_v01.anim",
+      "name": "n_gen_m_st_com_death_head_f_ar_v01",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_head_f_ar_v01.anim",
+        "hash": 639185012,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8763,
+            "compressed_size": 7808,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 18153270,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              7808
+            ],
+            "signature": 1145546956
+          }
+        ],
+        "metadata_start": 33375075,
+        "end": 33375096
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_head_f_ar_v02.anim",
+      "name": "n_gen_m_st_com_death_head_f_ar_v02",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_head_f_ar_v02.anim",
+        "hash": 639184720,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8555,
+            "compressed_size": 7604,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 18161078,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              7604
+            ],
+            "signature": 1290938878
+          }
+        ],
+        "metadata_start": 33375108,
+        "end": 33375129
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_head_fb_ar_v01.anim",
+      "name": "n_gen_m_st_com_death_head_fb_ar_v01",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_head_fb_ar_v01.anim",
+        "hash": 639189185,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 17879,
+            "compressed_size": 16954,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 18201293,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              16954
+            ],
+            "signature": 2727929230
+          }
+        ],
+        "metadata_start": 33375312,
+        "end": 33375333
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_head_fb_ar_v02.anim",
+      "name": "n_gen_m_st_com_death_head_fb_ar_v02",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/n_gen_m_st_com_death_head_fb_ar_v02.anim",
+        "hash": 639188899,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8630,
+            "compressed_size": 7726,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 18218247,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              7726
+            ],
+            "signature": 3203463195
+          }
+        ],
+        "metadata_start": 33375369,
+        "end": 33375390
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dance_tom_intro.anim",
+      "name": "p_dance_tom_intro",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dance_tom_intro.anim",
+        "hash": 639190343,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7789,
+            "compressed_size": 6881,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2860414,
+            "index": 75,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0075.sdfdata",
+            "pages": [
+              6881
+            ],
+            "signature": 1443985768
+          }
+        ],
+        "metadata_start": 33661787,
+        "end": 33661807
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dance_tom_intro_f.anim",
+      "name": "p_dance_tom_intro_f",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dance_tom_intro_f.anim",
+        "hash": 631201671,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 9062,
+            "compressed_size": 7944,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2867295,
+            "index": 75,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0075.sdfdata",
+            "pages": [
+              7944
+            ],
+            "signature": 2511102550
+          }
+        ],
+        "metadata_start": 33661815,
+        "end": 33661835
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dance_tom_loop.anim",
+      "name": "p_dance_tom_loop",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dance_tom_loop.anim",
+        "hash": 639190341,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 40434,
+            "compressed_size": 38768,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1039431,
+            "index": 63,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0063.sdfdata",
+            "pages": [
+              38768
+            ],
+            "signature": 468339650
+          }
+        ],
+        "metadata_start": 33661851,
+        "end": 33661871
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dance_tom_loop_f.anim",
+      "name": "p_dance_tom_loop_f",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dance_tom_loop_f.anim",
+        "hash": 633536188,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 64913,
+            "compressed_size": 51391,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2875239,
+            "index": 75,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0075.sdfdata",
+            "pages": [
+              51391
+            ],
+            "signature": 592678311
+          }
+        ],
+        "metadata_start": 33661879,
+        "end": 33661899
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_hcl_disable_skill_ar_i.anim",
+      "name": "p_dflt_m_hcl_disable_skill_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_hcl_disable_skill_ar_i.anim",
+        "hash": 639190340,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13099,
+            "compressed_size": 10977,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6956650,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10977
+            ],
+            "signature": 2663036505
+          }
+        ],
+        "metadata_start": 33661956,
+        "end": 33661976
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_hcr_deploy_drone_ar_i.anim",
+      "name": "p_dflt_m_hcr_deploy_drone_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_hcr_deploy_drone_ar_i.anim",
+        "hash": 639190335,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7778,
+            "compressed_size": 6647,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6967627,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6647
+            ],
+            "signature": 96022793
+          }
+        ],
+        "metadata_start": 33662013,
+        "end": 33662033
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_hcr_disable_skill_ar_i.anim",
+      "name": "p_dflt_m_hcr_disable_skill_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_hcr_disable_skill_ar_i.anim",
+        "hash": 639190334,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 12417,
+            "compressed_size": 10822,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6974274,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10822
+            ],
+            "signature": 3141013717
+          }
+        ],
+        "metadata_start": 33662056,
+        "end": 33662076
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_hcr_quickdeploy_skm_ar_ic.anim",
+      "name": "p_dflt_m_hcr_quickdeploy_skm_ar_ic",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_hcr_quickdeploy_skm_ar_ic.anim",
+        "hash": 639184876,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 15190,
+            "compressed_size": 13747,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6985096,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              13747
+            ],
+            "signature": 3720067478
+          }
+        ],
+        "metadata_start": 33662109,
+        "end": 33662129
+      },
+      "animationNodeUsageCount": 11,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_lcl_disable_skill_ar_i.anim",
+      "name": "p_dflt_m_lcl_disable_skill_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_lcl_disable_skill_ar_i.anim",
+        "hash": 639190329,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 12954,
+            "compressed_size": 11220,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 6999877,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              11220
+            ],
+            "signature": 2240422549
+          }
+        ],
+        "metadata_start": 33662192,
+        "end": 33662212
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_lcr_deploy_drone_ar_i.anim",
+      "name": "p_dflt_m_lcr_deploy_drone_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_lcr_deploy_drone_ar_i.anim",
+        "hash": 639188925,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7631,
+            "compressed_size": 6481,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7011097,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6481
+            ],
+            "signature": 3359572220
+          }
+        ],
+        "metadata_start": 33662249,
+        "end": 33662269
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_lcr_disable_skill_ar_i.anim",
+      "name": "p_dflt_m_lcr_disable_skill_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_lcr_disable_skill_ar_i.anim",
+        "hash": 639188926,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 12733,
+            "compressed_size": 11039,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7017578,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              11039
+            ],
+            "signature": 942664042
+          }
+        ],
+        "metadata_start": 33662292,
+        "end": 33662312
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_lcr_quickdeploy_skm_ar_ic.anim",
+      "name": "p_dflt_m_lcr_quickdeploy_skm_ar_ic",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_lcr_quickdeploy_skm_ar_ic.anim",
+        "hash": 639184875,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 14702,
+            "compressed_size": 13215,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7028617,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              13215
+            ],
+            "signature": 4147318478
+          }
+        ],
+        "metadata_start": 33662345,
+        "end": 33662365
+      },
+      "animationNodeUsageCount": 11,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_deploy_drone_ar_i.anim",
+      "name": "p_dflt_m_st_deploy_drone_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_deploy_drone_ar_i.anim",
+        "hash": 639190318,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7673,
+            "compressed_size": 6511,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7042866,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6511
+            ],
+            "signature": 666616796
+          }
+        ],
+        "metadata_start": 33662454,
+        "end": 33662474
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_deploy_drone_ar_o.anim",
+      "name": "p_dflt_m_st_deploy_drone_ar_o",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_deploy_drone_ar_o.anim",
+        "hash": 639190315,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 9363,
+            "compressed_size": 7727,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7049377,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7727
+            ],
+            "signature": 11061456
+          }
+        ],
+        "metadata_start": 33662481,
+        "end": 33662501
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_deploy_drone_pi_o.anim",
+      "name": "p_dflt_m_st_deploy_drone_pi_o",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_deploy_drone_pi_o.anim",
+        "hash": 639190315,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 12198,
+            "compressed_size": 10991,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7057104,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10991
+            ],
+            "signature": 980984723
+          }
+        ],
+        "metadata_start": 33662511,
+        "end": 33662531
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_disable_skill_ar_i.anim",
+      "name": "p_dflt_m_st_disable_skill_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_disable_skill_ar_i.anim",
+        "hash": 639190314,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 12628,
+            "compressed_size": 11057,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7068095,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              11057
+            ],
+            "signature": 3268778194
+          }
+        ],
+        "metadata_start": 33662560,
+        "end": 33662580
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_disable_skill_ar_o.anim",
+      "name": "p_dflt_m_st_disable_skill_ar_o",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_disable_skill_ar_o.anim",
+        "hash": 639190310,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 12464,
+            "compressed_size": 10912,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7079152,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10912
+            ],
+            "signature": 1432882297
+          }
+        ],
+        "metadata_start": 33662587,
+        "end": 33662607
+      },
+      "animationNodeUsageCount": 9,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_emote_champion_pi_testing.anim",
+      "name": "p_dflt_m_st_emote_champion_pi_testing",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_emote_champion_pi_testing.anim",
+        "hash": 656259612,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 17943,
+            "compressed_size": 16398,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 375316,
+            "index": 81,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0081.sdfdata",
+            "pages": [
+              16398
+            ],
+            "signature": 3188345960
+          }
+        ],
+        "metadata_start": 33662649,
+        "end": 33662669
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_emote_salute_ar_o_testing.anim",
+      "name": "p_dflt_m_st_emote_salute_ar_o_testing",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_emote_salute_ar_o_testing.anim",
+        "hash": 654017987,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 27606,
+            "compressed_size": 26320,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2926630,
+            "index": 75,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0075.sdfdata",
+            "pages": [
+              26320
+            ],
+            "signature": 1087575718
+          }
+        ],
+        "metadata_start": 33662699,
+        "end": 33662719
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_emote_yawn_o.anim",
+      "name": "p_dflt_m_st_emote_yawn_o",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_emote_yawn_o.anim",
+        "hash": 656266913,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 28302,
+            "compressed_size": 26274,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 391714,
+            "index": 81,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0081.sdfdata",
+            "pages": [
+              26274
+            ],
+            "signature": 1241525424
+          }
+        ],
+        "metadata_start": 33662731,
+        "end": 33662751
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_falling_damage_to_st_idle_pi.anim",
+      "name": "p_dflt_m_st_falling_damage_to_st_idle_pi",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_falling_damage_to_st_idle_pi.anim",
+        "hash": 639188928,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13350,
+            "compressed_size": 12240,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7090064,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              12240
+            ],
+            "signature": 3842912219
+          }
+        ],
+        "metadata_start": 33662791,
+        "end": 33662811
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_falling_high_to_st_idle_roll_pi_o.anim",
+      "name": "p_dflt_m_st_falling_high_to_st_idle_roll_pi_o",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_falling_high_to_st_idle_roll_pi_o.anim",
+        "hash": 639188929,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13273,
+            "compressed_size": 12206,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1078199,
+            "index": 63,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0063.sdfdata",
+            "pages": [
+              12206
+            ],
+            "signature": 1595215099
+          }
+        ],
+        "metadata_start": 33662842,
+        "end": 33662862
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v-45_pi_i.anim",
+      "name": "p_dflt_m_st_idle_h-90_to_h+90_v-45_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v-45_pi_i.anim",
+        "hash": 639190300,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 3261,
+            "compressed_size": 2948,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7102304,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              2948
+            ],
+            "signature": 3686548340
+          }
+        ],
+        "metadata_start": 33663942,
+        "end": 33663962
+      },
+      "animationNodeUsageCount": 26,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v-90_pi_i.anim",
+      "name": "p_dflt_m_st_idle_h-90_to_h+90_v-90_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v-90_pi_i.anim",
+        "hash": 639190300,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 3246,
+            "compressed_size": 2880,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7105252,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              2880
+            ],
+            "signature": 3710003230
+          }
+        ],
+        "metadata_start": 33663975,
+        "end": 33663995
+      },
+      "animationNodeUsageCount": 26,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v0_pi_i.anim",
+      "name": "p_dflt_m_st_idle_h-90_to_h+90_v0_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v0_pi_i.anim",
+        "hash": 639190299,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 3234,
+            "compressed_size": 2870,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7108132,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              2870
+            ],
+            "signature": 4226945539
+          }
+        ],
+        "metadata_start": 33664012,
+        "end": 33664032
+      },
+      "animationNodeUsageCount": 61,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v45_pi_i.anim",
+      "name": "p_dflt_m_st_idle_h-90_to_h+90_v45_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v45_pi_i.anim",
+        "hash": 639190299,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 3308,
+            "compressed_size": 2995,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7111002,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              2995
+            ],
+            "signature": 2491848752
+          }
+        ],
+        "metadata_start": 33664050,
+        "end": 33664070
+      },
+      "animationNodeUsageCount": 26,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v90_pi_i.anim",
+      "name": "p_dflt_m_st_idle_h-90_to_h+90_v90_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_idle_h-90_to_h+90_v90_pi_i.anim",
+        "hash": 639190296,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 3250,
+            "compressed_size": 2938,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7113997,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              2938
+            ],
+            "signature": 2621881509
+          }
+        ],
+        "metadata_start": 33664083,
+        "end": 33664103
+      },
+      "animationNodeUsageCount": 26,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_quickdeploy_sbl_ar_ic_fast.anim",
+      "name": "p_dflt_m_st_quickdeploy_sbl_ar_ic_fast",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_quickdeploy_sbl_ar_ic_fast.anim",
+        "hash": 640971504,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11430,
+            "compressed_size": 9917,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2952950,
+            "index": 75,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0075.sdfdata",
+            "pages": [
+              9917
+            ],
+            "signature": 311891763
+          }
+        ],
+        "metadata_start": 33664526,
+        "end": 33664546
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_quickdeploy_sbl_ar_ic_fast_down.anim",
+      "name": "p_dflt_m_st_quickdeploy_sbl_ar_ic_fast_down",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_quickdeploy_sbl_ar_ic_fast_down.anim",
+        "hash": 640971505,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11261,
+            "compressed_size": 9760,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2962867,
+            "index": 75,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0075.sdfdata",
+            "pages": [
+              9760
+            ],
+            "signature": 1438521120
+          }
+        ],
+        "metadata_start": 33664563,
+        "end": 33664583
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_quickdeploy_sbl_ar_ic_fast_up.anim",
+      "name": "p_dflt_m_st_quickdeploy_sbl_ar_ic_fast_up",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_quickdeploy_sbl_ar_ic_fast_up.anim",
+        "hash": 640971504,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11336,
+            "compressed_size": 9694,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2972627,
+            "index": 75,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0075.sdfdata",
+            "pages": [
+              9694
+            ],
+            "signature": 430763345
+          }
+        ],
+        "metadata_start": 33664591,
+        "end": 33664611
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_dflt_m_st_quickdeploy_skm_ar_ic.anim",
+      "name": "p_dflt_m_st_quickdeploy_skm_ar_ic",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_dflt_m_st_quickdeploy_skm_ar_ic.anim",
+        "hash": 639184875,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 15562,
+            "compressed_size": 14147,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7116935,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              14147
+            ],
+            "signature": 3933210652
+          }
+        ],
+        "metadata_start": 33664631,
+        "end": 33664651
+      },
+      "animationNodeUsageCount": 11,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcl_empstart_ar_i.anim",
+      "name": "p_hun_m_hcl_empstart_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcl_empstart_ar_i.anim",
+        "hash": 639190267,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6890,
+            "compressed_size": 5698,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7132115,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5698
+            ],
+            "signature": 1679995568
+          }
+        ],
+        "metadata_start": 33665767,
+        "end": 33665787
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcl_empstart_pi_i.anim",
+      "name": "p_hun_m_hcl_empstart_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcl_empstart_pi_i.anim",
+        "hash": 639190264,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6968,
+            "compressed_size": 5600,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7137813,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5600
+            ],
+            "signature": 417581912
+          }
+        ],
+        "metadata_start": 33665797,
+        "end": 33665817
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcl_empstop_ar_i.anim",
+      "name": "p_hun_m_hcl_empstop_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcl_empstop_ar_i.anim",
+        "hash": 639190263,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7533,
+            "compressed_size": 6291,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7143413,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6291
+            ],
+            "signature": 3513251177
+          }
+        ],
+        "metadata_start": 33665836,
+        "end": 33665856
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcl_empstop_pi_i.anim",
+      "name": "p_hun_m_hcl_empstop_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcl_empstop_pi_i.anim",
+        "hash": 639190263,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7773,
+            "compressed_size": 6550,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7149704,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6550
+            ],
+            "signature": 590392207
+          }
+        ],
+        "metadata_start": 33665866,
+        "end": 33665886
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcl_pulse_ar_i.anim",
+      "name": "p_hun_m_hcl_pulse_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcl_pulse_ar_i.anim",
+        "hash": 639190263,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8878,
+            "compressed_size": 7563,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7156254,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7563
+            ],
+            "signature": 2604448810
+          }
+        ],
+        "metadata_start": 33665908,
+        "end": 33665928
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcl_pulse_pi_i.anim",
+      "name": "p_hun_m_hcl_pulse_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcl_pulse_pi_i.anim",
+        "hash": 639190263,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 9018,
+            "compressed_size": 7118,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7163817,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7118
+            ],
+            "signature": 207233581
+          }
+        ],
+        "metadata_start": 33665938,
+        "end": 33665958
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcr_empstart_ar_i.anim",
+      "name": "p_hun_m_hcr_empstart_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcr_empstart_ar_i.anim",
+        "hash": 639189205,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6877,
+            "compressed_size": 5697,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7170935,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5697
+            ],
+            "signature": 2621232863
+          }
+        ],
+        "metadata_start": 33665997,
+        "end": 33666017
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcr_empstart_pi_i.anim",
+      "name": "p_hun_m_hcr_empstart_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcr_empstart_pi_i.anim",
+        "hash": 639190262,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6922,
+            "compressed_size": 5689,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7176632,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5689
+            ],
+            "signature": 2519185981
+          }
+        ],
+        "metadata_start": 33666027,
+        "end": 33666047
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcr_empstop_ar_i.anim",
+      "name": "p_hun_m_hcr_empstop_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcr_empstop_ar_i.anim",
+        "hash": 639190260,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7375,
+            "compressed_size": 6113,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7182321,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6113
+            ],
+            "signature": 159890940
+          }
+        ],
+        "metadata_start": 33666066,
+        "end": 33666086
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcr_empstop_pi_i.anim",
+      "name": "p_hun_m_hcr_empstop_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcr_empstop_pi_i.anim",
+        "hash": 639190259,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7499,
+            "compressed_size": 6267,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7188434,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6267
+            ],
+            "signature": 80460800
+          }
+        ],
+        "metadata_start": 33666096,
+        "end": 33666116
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcr_pulse_ar_i.anim",
+      "name": "p_hun_m_hcr_pulse_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcr_pulse_ar_i.anim",
+        "hash": 639190259,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8738,
+            "compressed_size": 7013,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7194701,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7013
+            ],
+            "signature": 1501487802
+          }
+        ],
+        "metadata_start": 33666138,
+        "end": 33666158
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_hcr_pulse_pi_i.anim",
+      "name": "p_hun_m_hcr_pulse_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_hcr_pulse_pi_i.anim",
+        "hash": 639189175,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8680,
+            "compressed_size": 7213,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7201714,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7213
+            ],
+            "signature": 2882380786
+          }
+        ],
+        "metadata_start": 33666168,
+        "end": 33666188
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcl_empstart_ar_i.anim",
+      "name": "p_hun_m_lcl_empstart_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcl_empstart_ar_i.anim",
+        "hash": 639188940,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6877,
+            "compressed_size": 5664,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7208927,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5664
+            ],
+            "signature": 1939780648
+          }
+        ],
+        "metadata_start": 33666235,
+        "end": 33666255
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcl_empstart_pi_i.anim",
+      "name": "p_hun_m_lcl_empstart_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcl_empstart_pi_i.anim",
+        "hash": 639190258,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6939,
+            "compressed_size": 5784,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7214591,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5784
+            ],
+            "signature": 2891669832
+          }
+        ],
+        "metadata_start": 33666265,
+        "end": 33666285
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcl_empstop_ar_i.anim",
+      "name": "p_hun_m_lcl_empstop_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcl_empstop_ar_i.anim",
+        "hash": 639190258,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7473,
+            "compressed_size": 6253,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7220375,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6253
+            ],
+            "signature": 1373590962
+          }
+        ],
+        "metadata_start": 33666304,
+        "end": 33666324
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcl_empstop_pi_i.anim",
+      "name": "p_hun_m_lcl_empstop_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcl_empstop_pi_i.anim",
+        "hash": 639190257,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7617,
+            "compressed_size": 6502,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7226628,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6502
+            ],
+            "signature": 963594174
+          }
+        ],
+        "metadata_start": 33666334,
+        "end": 33666354
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcl_pulse_ar_i.anim",
+      "name": "p_hun_m_lcl_pulse_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcl_pulse_ar_i.anim",
+        "hash": 639190257,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8669,
+            "compressed_size": 7230,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7233130,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7230
+            ],
+            "signature": 4062591667
+          }
+        ],
+        "metadata_start": 33666376,
+        "end": 33666396
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcl_pulse_pi_i.anim",
+      "name": "p_hun_m_lcl_pulse_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcl_pulse_pi_i.anim",
+        "hash": 639190257,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8716,
+            "compressed_size": 7235,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7240360,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7235
+            ],
+            "signature": 2618741705
+          }
+        ],
+        "metadata_start": 33666406,
+        "end": 33666426
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcr_empstart_ar_i.anim",
+      "name": "p_hun_m_lcr_empstart_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcr_empstart_ar_i.anim",
+        "hash": 639190255,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6714,
+            "compressed_size": 5562,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7247595,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5562
+            ],
+            "signature": 2654931322
+          }
+        ],
+        "metadata_start": 33666465,
+        "end": 33666485
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcr_empstart_pi_i.anim",
+      "name": "p_hun_m_lcr_empstart_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcr_empstart_pi_i.anim",
+        "hash": 639189205,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6867,
+            "compressed_size": 5622,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7253157,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5622
+            ],
+            "signature": 3816808087
+          }
+        ],
+        "metadata_start": 33666495,
+        "end": 33666515
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcr_empstop_ar_i.anim",
+      "name": "p_hun_m_lcr_empstop_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcr_empstop_ar_i.anim",
+        "hash": 639190254,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7361,
+            "compressed_size": 6218,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7258779,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6218
+            ],
+            "signature": 102029173
+          }
+        ],
+        "metadata_start": 33666534,
+        "end": 33666554
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcr_empstop_pi_i.anim",
+      "name": "p_hun_m_lcr_empstop_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcr_empstop_pi_i.anim",
+        "hash": 639190254,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7244,
+            "compressed_size": 6159,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7264997,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6159
+            ],
+            "signature": 3022286547
+          }
+        ],
+        "metadata_start": 33666564,
+        "end": 33666584
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcr_pulse_ar_i.anim",
+      "name": "p_hun_m_lcr_pulse_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcr_pulse_ar_i.anim",
+        "hash": 639190254,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8471,
+            "compressed_size": 7137,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7271156,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7137
+            ],
+            "signature": 2260394112
+          }
+        ],
+        "metadata_start": 33666606,
+        "end": 33666626
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_lcr_pulse_pi_i.anim",
+      "name": "p_hun_m_lcr_pulse_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_lcr_pulse_pi_i.anim",
+        "hash": 639190254,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8634,
+            "compressed_size": 7126,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7278293,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7126
+            ],
+            "signature": 1700420797
+          }
+        ],
+        "metadata_start": 33666636,
+        "end": 33666656
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_empstart_ar_i.anim",
+      "name": "p_hun_m_st_empstart_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_empstart_ar_i.anim",
+        "hash": 639190253,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6961,
+            "compressed_size": 5769,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7285419,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5769
+            ],
+            "signature": 3350898203
+          }
+        ],
+        "metadata_start": 33666702,
+        "end": 33666722
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_empstart_ar_left_i.anim",
+      "name": "p_hun_m_st_empstart_ar_left_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_empstart_ar_left_i.anim",
+        "hash": 639190253,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6902,
+            "compressed_size": 5687,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7291188,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5687
+            ],
+            "signature": 521031055
+          }
+        ],
+        "metadata_start": 33666734,
+        "end": 33666754
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_empstart_pi_i.anim",
+      "name": "p_hun_m_st_empstart_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_empstart_pi_i.anim",
+        "hash": 639190253,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7031,
+            "compressed_size": 5826,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7296875,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5826
+            ],
+            "signature": 801989960
+          }
+        ],
+        "metadata_start": 33666770,
+        "end": 33666790
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_empstart_pi_left_i.anim",
+      "name": "p_hun_m_st_empstart_pi_left_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_empstart_pi_left_i.anim",
+        "hash": 639190249,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 6939,
+            "compressed_size": 5716,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7302701,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              5716
+            ],
+            "signature": 3757143015
+          }
+        ],
+        "metadata_start": 33666802,
+        "end": 33666822
+      },
+      "animationNodeUsageCount": 6,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_empstop_ar_i.anim",
+      "name": "p_hun_m_st_empstop_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_empstop_ar_i.anim",
+        "hash": 639188942,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7792,
+            "compressed_size": 6509,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7308417,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6509
+            ],
+            "signature": 2427903615
+          }
+        ],
+        "metadata_start": 33666847,
+        "end": 33666867
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_empstop_ar_left_i.anim",
+      "name": "p_hun_m_st_empstop_ar_left_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_empstop_ar_left_i.anim",
+        "hash": 639188943,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7598,
+            "compressed_size": 6192,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7314926,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6192
+            ],
+            "signature": 1236622830
+          }
+        ],
+        "metadata_start": 33666879,
+        "end": 33666899
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_empstop_pi_i.anim",
+      "name": "p_hun_m_st_empstop_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_empstop_pi_i.anim",
+        "hash": 639190249,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7783,
+            "compressed_size": 6550,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7321118,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6550
+            ],
+            "signature": 3848299268
+          }
+        ],
+        "metadata_start": 33666915,
+        "end": 33666935
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_empstop_pi_left_i.anim",
+      "name": "p_hun_m_st_empstop_pi_left_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_empstop_pi_left_i.anim",
+        "hash": 639188943,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7821,
+            "compressed_size": 6608,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7327668,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6608
+            ],
+            "signature": 1216077256
+          }
+        ],
+        "metadata_start": 33666947,
+        "end": 33666967
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_pulse_ar_i.anim",
+      "name": "p_hun_m_st_pulse_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_pulse_ar_i.anim",
+        "hash": 639190248,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8838,
+            "compressed_size": 7505,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7334276,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7505
+            ],
+            "signature": 320816251
+          }
+        ],
+        "metadata_start": 33666995,
+        "end": 33667015
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_pulse_ar_left_i.anim",
+      "name": "p_hun_m_st_pulse_ar_left_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_pulse_ar_left_i.anim",
+        "hash": 639190247,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8424,
+            "compressed_size": 7177,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7341781,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7177
+            ],
+            "signature": 4119451023
+          }
+        ],
+        "metadata_start": 33667027,
+        "end": 33667047
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_pulse_pi_i.anim",
+      "name": "p_hun_m_st_pulse_pi_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_pulse_pi_i.anim",
+        "hash": 639190245,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8888,
+            "compressed_size": 7350,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7348958,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7350
+            ],
+            "signature": 3720206287
+          }
+        ],
+        "metadata_start": 33667063,
+        "end": 33667083
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_hun_m_st_pulse_pi_left_i.anim",
+      "name": "p_hun_m_st_pulse_pi_left_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_hun_m_st_pulse_pi_left_i.anim",
+        "hash": 639188943,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8906,
+            "compressed_size": 7543,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7356308,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7543
+            ],
+            "signature": 1377192852
+          }
+        ],
+        "metadata_start": 33667095,
+        "end": 33667115
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_hccr_skill_smartcover_deploy_ar_i.anim",
+      "name": "p_m_hccr_skill_smartcover_deploy_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_hccr_skill_smartcover_deploy_ar_i.anim",
+        "hash": 806507219,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 14003,
+            "compressed_size": 12256,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1728806,
+            "index": 82,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0082.sdfdata",
+            "pages": [
+              12256
+            ],
+            "signature": 1213496766
+          }
+        ],
+        "metadata_start": 33667174,
+        "end": 33667194
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_hcr_skill_smartcover_deploy_ar_i.anim",
+      "name": "p_m_hcr_skill_smartcover_deploy_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_hcr_skill_smartcover_deploy_ar_i.anim",
+        "hash": 806507219,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 15162,
+            "compressed_size": 13688,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1741062,
+            "index": 82,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0082.sdfdata",
+            "pages": [
+              13688
+            ],
+            "signature": 967511783
+          }
+        ],
+        "metadata_start": 33667231,
+        "end": 33667251
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_lccr_skill_smartcover_deploy_ar_i.anim",
+      "name": "p_m_lccr_skill_smartcover_deploy_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_lccr_skill_smartcover_deploy_ar_i.anim",
+        "hash": 806507218,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13843,
+            "compressed_size": 12100,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1754750,
+            "index": 82,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0082.sdfdata",
+            "pages": [
+              12100
+            ],
+            "signature": 1645212054
+          }
+        ],
+        "metadata_start": 33667297,
+        "end": 33667317
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_lcr_skill_smartcover_deploy_ar_i.anim",
+      "name": "p_m_lcr_skill_smartcover_deploy_ar_i",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_lcr_skill_smartcover_deploy_ar_i.anim",
+        "hash": 806507217,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13106,
+            "compressed_size": 11386,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1766850,
+            "index": 82,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0082.sdfdata",
+            "pages": [
+              11386
+            ],
+            "signature": 1607682731
+          }
+        ],
+        "metadata_start": 33667354,
+        "end": 33667374
+      },
+      "animationNodeUsageCount": 5,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_drop_h60_run_alt.anim",
+      "name": "p_m_shd_drop_h60_run_alt",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_drop_h60_run_alt.anim",
+        "hash": 639189206,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11086,
+            "compressed_size": 9927,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7363851,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              9927
+            ],
+            "signature": 3573695942
+          }
+        ],
+        "metadata_start": 33667417,
+        "end": 33667437
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_drop_h60_walk_slow.anim",
+      "name": "p_m_shd_drop_h60_walk_slow",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_drop_h60_walk_slow.anim",
+        "hash": 639190243,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10892,
+            "compressed_size": 9689,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7373778,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              9689
+            ],
+            "signature": 111353960
+          }
+        ],
+        "metadata_start": 33667452,
+        "end": 33667472
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_lcl_to_vertnav.anim",
+      "name": "p_m_shd_lcl_to_vertnav",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_lcl_to_vertnav.anim",
+        "hash": 639190242,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8819,
+            "compressed_size": 7787,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7383467,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7787
+            ],
+            "signature": 454915641
+          }
+        ],
+        "metadata_start": 33667498,
+        "end": 33667518
+      },
+      "animationNodeUsageCount": 17,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_lcr_to_vertnav.anim",
+      "name": "p_m_shd_lcr_to_vertnav",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_lcr_to_vertnav.anim",
+        "hash": 639190239,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 8838,
+            "compressed_size": 7688,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7391254,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              7688
+            ],
+            "signature": 1395176638
+          }
+        ],
+        "metadata_start": 33667536,
+        "end": 33667556
+      },
+      "animationNodeUsageCount": 13,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h100_close_jog_l_ar.anim",
+      "name": "p_m_shd_plf_desc_h100_close_jog_l_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h100_close_jog_l_ar.anim",
+        "hash": 639188945,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11224,
+            "compressed_size": 10056,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7398942,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10056
+            ],
+            "signature": 875603750
+          }
+        ],
+        "metadata_start": 33667619,
+        "end": 33667639
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h100_close_jog_r_ar.anim",
+      "name": "p_m_shd_plf_desc_h100_close_jog_r_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h100_close_jog_r_ar.anim",
+        "hash": 639190239,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11130,
+            "compressed_size": 10002,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7408998,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10002
+            ],
+            "signature": 4046928838
+          }
+        ],
+        "metadata_start": 33667649,
+        "end": 33667669
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h100_jog_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h100_jog_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h100_jog_b_ar.anim",
+        "hash": 639190238,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13544,
+            "compressed_size": 12299,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7419000,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              12299
+            ],
+            "signature": 233141476
+          }
+        ],
+        "metadata_start": 33667683,
+        "end": 33667703
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h150_close_jog_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h150_close_jog_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h150_close_jog_b_ar.anim",
+        "hash": 639190237,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 12162,
+            "compressed_size": 10912,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7431299,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10912
+            ],
+            "signature": 1901837964
+          }
+        ],
+        "metadata_start": 33667732,
+        "end": 33667752
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h150_close_jog_l_ar.anim",
+      "name": "p_m_shd_plf_desc_h150_close_jog_l_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h150_close_jog_l_ar.anim",
+        "hash": 639190235,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10898,
+            "compressed_size": 9724,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7442211,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              9724
+            ],
+            "signature": 937089924
+          }
+        ],
+        "metadata_start": 33667767,
+        "end": 33667787
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h150_close_jog_r_ar.anim",
+      "name": "p_m_shd_plf_desc_h150_close_jog_r_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h150_close_jog_r_ar.anim",
+        "hash": 639190235,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10724,
+            "compressed_size": 9617,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7451935,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              9617
+            ],
+            "signature": 2821152609
+          }
+        ],
+        "metadata_start": 33667797,
+        "end": 33667817
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h200_close_jog_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_b_ar.anim",
+        "hash": 639190235,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11566,
+            "compressed_size": 10379,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1090405,
+            "index": 63,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0063.sdfdata",
+            "pages": [
+              10379
+            ],
+            "signature": 2254337226
+          }
+        ],
+        "metadata_start": 33667865,
+        "end": 33667885
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_b_ar_alt.anim",
+      "name": "p_m_shd_plf_desc_h200_close_jog_b_ar_alt",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_b_ar_alt.anim",
+        "hash": 639190234,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13512,
+            "compressed_size": 12287,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7461552,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              12287
+            ],
+            "signature": 2750340284
+          }
+        ],
+        "metadata_start": 33667895,
+        "end": 33667915
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_l_ar.anim",
+      "name": "p_m_shd_plf_desc_h200_close_jog_l_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_l_ar.anim",
+        "hash": 639190234,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10882,
+            "compressed_size": 9768,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7473839,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              9768
+            ],
+            "signature": 3575410268
+          }
+        ],
+        "metadata_start": 33667930,
+        "end": 33667950
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_r_ar.anim",
+      "name": "p_m_shd_plf_desc_h200_close_jog_r_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_r_ar.anim",
+        "hash": 639190234,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 15101,
+            "compressed_size": 13884,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7483607,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              13884
+            ],
+            "signature": 3706060206
+          }
+        ],
+        "metadata_start": 33667965,
+        "end": 33667985
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_to_idle_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h200_close_jog_to_idle_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_close_jog_to_idle_b_ar.anim",
+        "hash": 639190233,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11018,
+            "compressed_size": 9850,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7497491,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              9850
+            ],
+            "signature": 739427912
+          }
+        ],
+        "metadata_start": 33668003,
+        "end": 33668023
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_exit_jog_l_ar.anim",
+      "name": "p_m_shd_plf_desc_h200_exit_jog_l_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_exit_jog_l_ar.anim",
+        "hash": 639190228,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7504,
+            "compressed_size": 6435,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7507341,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6435
+            ],
+            "signature": 581071502
+          }
+        ],
+        "metadata_start": 33668048,
+        "end": 33668068
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_exit_jog_r_ar.anim",
+      "name": "p_m_shd_plf_desc_h200_exit_jog_r_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h200_exit_jog_r_ar.anim",
+        "hash": 639190228,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11713,
+            "compressed_size": 10542,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7513776,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10542
+            ],
+            "signature": 2953037500
+          }
+        ],
+        "metadata_start": 33668078,
+        "end": 33668098
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h250_close_jog_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h250_close_jog_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h250_close_jog_b_ar.anim",
+        "hash": 639190228,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13379,
+            "compressed_size": 12264,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1100784,
+            "index": 63,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0063.sdfdata",
+            "pages": [
+              12264
+            ],
+            "signature": 3233107317
+          }
+        ],
+        "metadata_start": 33668132,
+        "end": 33668152
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h250_close_jog_l_ar.anim",
+      "name": "p_m_shd_plf_desc_h250_close_jog_l_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h250_close_jog_l_ar.anim",
+        "hash": 639188947,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10840,
+            "compressed_size": 9625,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7524318,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              9625
+            ],
+            "signature": 3937809086
+          }
+        ],
+        "metadata_start": 33668162,
+        "end": 33668182
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h250_close_jog_r_ar.anim",
+      "name": "p_m_shd_plf_desc_h250_close_jog_r_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h250_close_jog_r_ar.anim",
+        "hash": 639188947,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 14735,
+            "compressed_size": 13578,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7533943,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              13578
+            ],
+            "signature": 710050835
+          }
+        ],
+        "metadata_start": 33668197,
+        "end": 33668217
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h250_close_jog_to_idle_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h250_close_jog_to_idle_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h250_close_jog_to_idle_b_ar.anim",
+        "hash": 639188948,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11587,
+            "compressed_size": 10415,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7547521,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10415
+            ],
+            "signature": 3970950764
+          }
+        ],
+        "metadata_start": 33668235,
+        "end": 33668255
+      },
+      "animationNodeUsageCount": 3,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h300_close_jog_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h300_close_jog_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h300_close_jog_b_ar.anim",
+        "hash": 639190225,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 14492,
+            "compressed_size": 13362,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 1113048,
+            "index": 63,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0063.sdfdata",
+            "pages": [
+              13362
+            ],
+            "signature": 3238539247
+          }
+        ],
+        "metadata_start": 33668301,
+        "end": 33668321
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h300_close_jog_l_ar.anim",
+      "name": "p_m_shd_plf_desc_h300_close_jog_l_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h300_close_jog_l_ar.anim",
+        "hash": 639188948,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11545,
+            "compressed_size": 10462,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7557936,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              10462
+            ],
+            "signature": 530070130
+          }
+        ],
+        "metadata_start": 33668331,
+        "end": 33668351
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h300_close_jog_r_ar.anim",
+      "name": "p_m_shd_plf_desc_h300_close_jog_r_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h300_close_jog_r_ar.anim",
+        "hash": 639190224,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 15399,
+            "compressed_size": 14255,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7568398,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              14255
+            ],
+            "signature": 1811834234
+          }
+        ],
+        "metadata_start": 33668366,
+        "end": 33668386
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h300_close_jog_to_idle_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h300_close_jog_to_idle_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h300_close_jog_to_idle_b_ar.anim",
+        "hash": 639190224,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 13970,
+            "compressed_size": 12892,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7582653,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              12892
+            ],
+            "signature": 1650475301
+          }
+        ],
+        "metadata_start": 33668404,
+        "end": 33668424
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h60_close_jog_b_ar.anim",
+      "name": "p_m_shd_plf_desc_h60_close_jog_b_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h60_close_jog_b_ar.anim",
+        "hash": 639190224,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 7142,
+            "compressed_size": 6120,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7595545,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              6120
+            ],
+            "signature": 987550215
+          }
+        ],
+        "metadata_start": 33668530,
+        "end": 33668550
+      },
+      "animationNodeUsageCount": 4,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h60_close_jog_l_ar.anim",
+      "name": "p_m_shd_plf_desc_h60_close_jog_l_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h60_close_jog_l_ar.anim",
+        "hash": 639190223,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 10060,
+            "compressed_size": 8865,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7601665,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              8865
+            ],
+            "signature": 3023978272
+          }
+        ],
+        "metadata_start": 33668565,
+        "end": 33668585
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h60_close_jog_r_ar.anim",
+      "name": "p_m_shd_plf_desc_h60_close_jog_r_ar",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/p_m_shd_plf_desc_h60_close_jog_r_ar.anim",
+        "hash": 639190223,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 11663,
+            "compressed_size": 9912,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 7610530,
+            "index": 66,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0066.sdfdata",
+            "pages": [
+              9912
+            ],
+            "signature": 3718226822
+          }
+        ],
+        "metadata_start": 33668595,
+        "end": 33668615
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/proto_p_shd_m_pathstand_doorall_kick_pi_o.anim",
+      "name": "proto_p_shd_m_pathstand_doorall_kick_pi_o",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/proto_p_shd_m_pathstand_doorall_kick_pi_o.anim",
+        "hash": 639188920,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 19184,
+            "compressed_size": 18008,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 26094587,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              18008
+            ],
+            "signature": 597906555
+          }
+        ],
+        "metadata_start": 33881196,
+        "end": 33881217
+      },
+      "animationNodeUsageCount": 1,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/skeleton_female_player_hunter.anim",
+      "name": "skeleton_female_player_hunter",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/skeleton_female_player_hunter.anim",
+        "hash": 639184773,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 4714,
+            "compressed_size": 2866,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 26126225,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              2866
+            ],
+            "signature": 963995187
+          }
+        ],
+        "metadata_start": 33897969,
+        "end": 33897990
+      },
+      "animationNodeUsageCount": 0,
+      "hasCommonAnimData": false
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/skeleton_male_player_hunter.anim",
+      "name": "skeleton_male_player_hunter",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/skeleton_male_player_hunter.anim",
+        "hash": 639184774,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 4868,
+            "compressed_size": 3014,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 26132701,
+            "index": 181,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0181.sdfdata",
+            "pages": [
+              3014
+            ],
+            "signature": 1793887901
+          }
+        ],
+        "metadata_start": 33898262,
+        "end": 33898283
+      },
+      "animationNodeUsageCount": 0,
+      "hasCommonAnimData": false
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/w_puppy_ven_notice_std_breaker_v07_petting_puppy_femaleplayer.anim",
+      "name": "w_puppy_ven_notice_std_breaker_v07_petting_puppy_femaleplayer",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/w_puppy_ven_notice_std_breaker_v07_petting_puppy_femaleplayer.anim",
+        "hash": 646482998,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 75880,
+            "compressed_size": 73247,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2184787,
+            "index": 358,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0358.sdfdata",
+            "pages": [
+              63488,
+              9759
+            ],
+            "signature": 1256047327
+          }
+        ],
+        "metadata_start": 33977044,
+        "end": 33977070
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/w_puppy_ven_notice_std_breaker_v07_petting_puppy_maleplayer.anim",
+      "name": "w_puppy_ven_notice_std_breaker_v07_petting_puppy_maleplayer",
+      "same_name_fbx": [],
+      "same_name_fbx_sizes": [],
+      "raw_resource_in_current_main_toc": true,
+      "raw_metadata": {
+        "path": "hunter/baked/snowdrop/animation/w_puppy_ven_notice_std_breaker_v07_petting_puppy_maleplayer.anim",
+        "hash": 646483003,
+        "dds_index": -1,
+        "slices": [
+          {
+            "size": 77208,
+            "compressed_size": 74664,
+            "compressed": true,
+            "encrypted": false,
+            "oodle": true,
+            "offset": 2258034,
+            "index": 358,
+            "file": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\hunter\\sdf\\pc\\data\\sdf-A-0358.sdfdata",
+            "pages": [
+              63578,
+              11086
+            ],
+            "signature": 1819155201
+          }
+        ],
+        "metadata_start": 33977086,
+        "end": 33977112
+      },
+      "animationNodeUsageCount": 2,
+      "hasCommonAnimData": true
+    }
+  ],
+  "ambiguous_fbx_stems": {}
+}

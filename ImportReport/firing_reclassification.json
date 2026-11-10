@@ -1,0 +1,1291 @@
+{
+  "ok": true,
+  "basis": "Rebuilt from source filenames and numeric FBX curve checks; existing HTML/category labels were not used as classification evidence.",
+  "expected": 203,
+  "moved": [
+    {
+      "name": "p_shd_f_hc_flaregun_ar_i",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_hc_flaregun_ar_i",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/FlaregunReview/p_shd_f_hc_flaregun_ar_i",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_f_lc_flaregun_ar_i",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_lc_flaregun_ar_i",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/FlaregunReview/p_shd_f_lc_flaregun_ar_i",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_f_st_bf_h-90_to_h+90_v0_minigun_i",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_bf_h_minus_90_to_h_plus_90_v0_minigun_i",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/BlindFire/Sweeps/p_shd_f_st_bf_h_minus_90_to_h_plus_90_v0_minigun_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_f_st_flaregun_ar_i",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_ar_i",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/FlaregunReview/p_shd_f_st_flaregun_ar_i",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_f_st_flaregun_ar_o",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_ar_o",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/FlaregunReview/p_shd_f_st_flaregun_ar_o",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_f_st_flaregun_pi_o",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_pi_o",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/FlaregunReview/p_shd_f_st_flaregun_pi_o",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_f_st_handpose_cw_minigun_t1_i_v01",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_handpose_cw_minigun_t1_i_v01",
+      "new": "/Game/Division2/Animations/Female/Idle/HandPoses/p_shd_f_st_handpose_cw_minigun_t1_i_v01",
+      "group": "MinigunHandPose"
+    },
+    {
+      "name": "p_shd_f_st_handpose_cw_minigun_t1_o_v01",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_handpose_cw_minigun_t1_o_v01",
+      "new": "/Game/Division2/Animations/Female/Idle/HandPoses/p_shd_f_st_handpose_cw_minigun_t1_o_v01",
+      "group": "MinigunHandPose"
+    },
+    {
+      "name": "p_shd_f_st_handpose_cw_minigun_t1_stagger_v01",
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_handpose_cw_minigun_t1_stagger_v01",
+      "new": "/Game/Division2/Animations/Female/Idle/HandPoses/p_shd_f_st_handpose_cw_minigun_t1_stagger_v01",
+      "group": "MinigunHandPose"
+    },
+    {
+      "name": "p_shd_m_dwn_sfx_shock_minigun_end",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_end",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Shock/p_shd_m_dwn_sfx_shock_minigun_end",
+      "group": "MinigunShockReaction"
+    },
+    {
+      "name": "p_shd_m_dwn_sfx_shock_minigun_loop",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_loop",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Shock/p_shd_m_dwn_sfx_shock_minigun_loop",
+      "group": "MinigunShockReaction"
+    },
+    {
+      "name": "p_shd_m_dwn_sfx_shock_minigun_start",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_start",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Shock/p_shd_m_dwn_sfx_shock_minigun_start",
+      "group": "MinigunShockReaction"
+    },
+    {
+      "name": "p_shd_m_hc_flaregun_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hc_flaregun_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/FlaregunReview/p_shd_m_hc_flaregun_ar_i",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_m_hc_underfire_ar_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hc_underfire_ar_i_v01",
+      "new": "/Game/Division2/Animations/Male/HitReactions/UnderFire/p_shd_m_hc_underfire_ar_i_v01",
+      "group": "UnderFireReaction"
+    },
+    {
+      "name": "p_shd_m_hc_underfire_ar_i_v02",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hc_underfire_ar_i_v02",
+      "new": "/Game/Division2/Animations/Male/HitReactions/UnderFire/p_shd_m_hc_underfire_ar_i_v02",
+      "group": "UnderFireReaction"
+    },
+    {
+      "name": "p_shd_m_hccr_aim_to_blindfire_h0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_aim_to_blindfire_h0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_hccr_aim_to_blindfire_h0_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_hccr_aim_to_blindfire_h90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_aim_to_blindfire_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_hccr_aim_to_blindfire_h90_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_hccr_bf_throw_long_h-90_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hccr_bf_throw_long_h_minus_90_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hccr_bf_throw_long_h_minus_90_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hccr_bf_throw_long_h0_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hccr_bf_throw_long_h0_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hccr_bf_throw_long_h0_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hccr_bf_throw_long_h180_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hccr_bf_throw_long_h180_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hccr_bf_throw_long_h180_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hccr_bf_throw_long_h90_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hccr_bf_throw_long_h90_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hccr_bf_throw_long_h90_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hccr_blindfire_idle_h0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_blindfire_idle_h0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Poses/p_shd_m_hccr_blindfire_idle_h0_ar_i",
+      "group": "BlindFireIdle"
+    },
+    {
+      "name": "p_shd_m_hccr_blindfire_sweep180_h0_v+45_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_blindfire_sweep180_h0_v_plus_45_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_hccr_blindfire_sweep180_h0_v_plus_45_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_hccr_blindfire_sweep180_h0_v+45_sbl",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_blindfire_sweep180_h0_v_plus_45_sbl",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_hccr_blindfire_sweep180_h0_v_plus_45_sbl",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_hccr_blindfire_sweep180_h0_v-45_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_blindfire_sweep180_h0_v_minus_45_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_hccr_blindfire_sweep180_h0_v_minus_45_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_hccr_blindfire_sweep180_h0_v-45_sbl",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_blindfire_sweep180_h0_v_minus_45_sbl",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_hccr_blindfire_sweep180_h0_v_minus_45_sbl",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_hccr_blindfire_sweep180_h0_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_blindfire_sweep180_h0_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_hccr_blindfire_sweep180_h0_v0_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_hccr_blindfire_sweep180_h0_v0_sbl",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_blindfire_sweep180_h0_v0_sbl",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_hccr_blindfire_sweep180_h0_v0_sbl",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_hccr_burst_kickback_h0_sg_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h0_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h0_sg_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_hccr_burst_kickback_h90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h90_ar_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_hccr_burst_kickback_h90_sg_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h90_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h90_sg_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_hccr_idle_to_blindfire_h+90_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_idle_to_blindfire_h_plus_90_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_hccr_idle_to_blindfire_h_plus_90_v0_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_hccr_idle_to_blindfire_h0_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hccr_idle_to_blindfire_h0_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_hccr_idle_to_blindfire_h0_v0_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_hcl_holster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcl_holster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_hcl_holster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_hcl_unholster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcl_unholster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_hcl_unholster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_hcr_bf_throw_long_h-90_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hcr_bf_throw_long_h_minus_90_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hcr_bf_throw_long_h_minus_90_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hcr_bf_throw_long_h00_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hcr_bf_throw_long_h00_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hcr_bf_throw_long_h00_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hcr_bf_throw_long_h180_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hcr_bf_throw_long_h180_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hcr_bf_throw_long_h180_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hcr_bf_throw_long_h90_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hcr_bf_throw_long_h90_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hcr_bf_throw_long_h90_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hcr_bf_throw_short_h00_grn_i",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_hcr_bf_throw_short_h00_grn_i",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_hcr_bf_throw_short_h00_grn_i",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_hcr_blindfire_sweep180_h0_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hcr_blindfire_sweep180_h0_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_hcr_blindfire_sweep180_h0_v0_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_hcr_blindfire_sweep180_h0_v0_sbl",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_hcr_blindfire_sweep180_h0_v0_sbl",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_hcr_blindfire_sweep180_h0_v0_sbl",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_hcr_holster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_holster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_hcr_holster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_hcr_idle_firefly_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_idle_firefly_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Firefly/p_shd_m_hcr_idle_firefly_i",
+      "group": "FireflySkill"
+    },
+    {
+      "name": "p_shd_m_hcr_quickdeploy_firefly_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_quickdeploy_firefly_ar_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Firefly/p_shd_m_hcr_quickdeploy_firefly_ar_i",
+      "group": "FireflySkill"
+    },
+    {
+      "name": "p_shd_m_hcr_sfx_onfire_ar_end_01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_sfx_onfire_ar_end_01",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_hcr_sfx_onfire_ar_end_01",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_hcr_sfx_onfire_ar_loop_01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_sfx_onfire_ar_loop_01",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_hcr_sfx_onfire_ar_loop_01",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_hcr_sfx_onfire_ar_loop_02",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_sfx_onfire_ar_loop_02",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_hcr_sfx_onfire_ar_loop_02",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_hcr_sfx_onfire_ar_loop_03",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_sfx_onfire_ar_loop_03",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_hcr_sfx_onfire_ar_loop_03",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_hcr_sfx_onfire_ar_loop_04",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_sfx_onfire_ar_loop_04",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_hcr_sfx_onfire_ar_loop_04",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_hcr_sfx_onfire_ar_loop_05",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_sfx_onfire_ar_loop_05",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_hcr_sfx_onfire_ar_loop_05",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_hcr_sfx_onfire_ar_loop_06",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_sfx_onfire_ar_loop_06",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_hcr_sfx_onfire_ar_loop_06",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_hcr_sfx_onfire_ar_start",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_sfx_onfire_ar_start",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_hcr_sfx_onfire_ar_start",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_hcr_unholster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hcr_unholster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_hcr_unholster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_lc_flaregun_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lc_flaregun_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/FlaregunReview/p_shd_m_lc_flaregun_ar_i",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_m_lc_underfire_ar_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lc_underfire_ar_i_v01",
+      "new": "/Game/Division2/Animations/Male/HitReactions/UnderFire/p_shd_m_lc_underfire_ar_i_v01",
+      "group": "UnderFireReaction"
+    },
+    {
+      "name": "p_shd_m_lc_underfire_ar_i_v02",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lc_underfire_ar_i_v02",
+      "new": "/Game/Division2/Animations/Male/HitReactions/UnderFire/p_shd_m_lc_underfire_ar_i_v02",
+      "group": "UnderFireReaction"
+    },
+    {
+      "name": "p_shd_m_lccr_bf_throw_h0_grn_i_v01",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_lccr_bf_throw_h0_grn_i_v01",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_lccr_bf_throw_h0_grn_i_v01",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_sweep180_h0_v+45_sbl",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_sweep180_h0_v_plus_45_sbl",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep180_h0_v_plus_45_sbl",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_sweep180_h0_v-45_sbl",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_sweep180_h0_v_minus_45_sbl",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep180_h0_v_minus_45_sbl",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_sweep180_h0_v0_sbl",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_sweep180_h0_v0_sbl",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep180_h0_v0_sbl",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_sweep_v+45_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_sweep_v_plus_45_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep_v_plus_45_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_sweep_v+45_mr_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_sweep_v_plus_45_mr_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep_v_plus_45_mr_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_sweep_v-45_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_sweep_v_minus_45_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep_v_minus_45_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_sweep_v-45_mr_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_sweep_v_minus_45_mr_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep_v_minus_45_mr_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_sweep_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_sweep_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep_v0_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lccr_blindfire_to_lcr_bf_h0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_blindfire_to_lcr_bf_h0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lccr_blindfire_to_lcr_bf_h0_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lccr_burst_kickback_h0_sg_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lccr_burst_kickback_h0_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h0_sg_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_lccr_burst_kickback_h90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lccr_burst_kickback_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h90_ar_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_lccr_burst_kickback_h90_sg_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lccr_burst_kickback_h90_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h90_sg_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_lccr_idle_to_blindfire_h0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_idle_to_blindfire_h0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lccr_idle_to_blindfire_h0_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lccr_idle_to_blindfire_h0_mr_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_idle_to_blindfire_h0_mr_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lccr_idle_to_blindfire_h0_mr_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lccr_idle_to_blindfire_h90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lccr_idle_to_blindfire_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lccr_idle_to_blindfire_h90_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lcl_bf_h90_to_lccr_bf_h90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcl_bf_h90_to_lccr_bf_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lcl_bf_h90_to_lccr_bf_h90_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lcl_bf_h90_to_lcr_aimb_h90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcl_bf_h90_to_lcr_aimb_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lcl_bf_h90_to_lcr_aimb_h90_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lcl_bf_h90_to_lcr_bf_h90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcl_bf_h90_to_lcr_bf_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lcl_bf_h90_to_lcr_bf_h90_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lcl_holster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcl_holster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_lcl_holster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_lcl_unholster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcl_unholster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_lcl_unholster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_lcr_bf_throw_h-90_grn_i_v01",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_lcr_bf_throw_h_minus_90_grn_i_v01",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_lcr_bf_throw_h_minus_90_grn_i_v01",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_lcr_bf_throw_h0_grn_i_v01",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_lcr_bf_throw_h0_grn_i_v01",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_lcr_bf_throw_h0_grn_i_v01",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_lcr_bf_throw_h180_grn_i_v01",
+      "old": "/Game/Division2/Animations/Male/Throw/p_shd_m_lcr_bf_throw_h180_grn_i_v01",
+      "new": "/Game/Division2/Animations/Male/Throw/BlindFire/p_shd_m_lcr_bf_throw_h180_grn_i_v01",
+      "group": "BlindFireThrow"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_sweep180_h0_v0_sbl",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_sweep180_h0_v0_sbl",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lcr_blindfire_sweep180_h0_v0_sbl",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_sweep_v+45_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_sweep_v_plus_45_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lcr_blindfire_sweep_v_plus_45_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_sweep_v+90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_sweep_v_plus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lcr_blindfire_sweep_v_plus_90_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_sweep_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_sweep_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lcr_blindfire_sweep_v0_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_walk_2loop_h+90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_walk_2loop_h_plus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Locomotion/p_shd_m_lcr_blindfire_walk_2loop_h_plus_90_ar_i",
+      "group": "BlindFireLocomotion"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_walk_2loop_h-90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_walk_2loop_h_minus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Locomotion/p_shd_m_lcr_blindfire_walk_2loop_h_minus_90_ar_i",
+      "group": "BlindFireLocomotion"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_walk_2loop_h0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_walk_2loop_h0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Locomotion/p_shd_m_lcr_blindfire_walk_2loop_h0_ar_i",
+      "group": "BlindFireLocomotion"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_walk_full_h+90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_walk_full_h_plus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Locomotion/p_shd_m_lcr_blindfire_walk_full_h_plus_90_ar_i",
+      "group": "BlindFireLocomotion"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_walk_full_h-90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_walk_full_h_minus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Locomotion/p_shd_m_lcr_blindfire_walk_full_h_minus_90_ar_i",
+      "group": "BlindFireLocomotion"
+    },
+    {
+      "name": "p_shd_m_lcr_blindfire_walk_full_h0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_blindfire_walk_full_h0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Locomotion/p_shd_m_lcr_blindfire_walk_full_h0_ar_i",
+      "group": "BlindFireLocomotion"
+    },
+    {
+      "name": "p_shd_m_lcr_burst_kickback_h-90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_burst_kickback_h_minus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h_minus_90_ar_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_lcr_burst_kickback_h-90_sg_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_burst_kickback_h_minus_90_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h_minus_90_sg_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_lcr_burst_kickback_h0_sg_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_burst_kickback_h0_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h0_sg_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_lcr_burst_kickback_h90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_burst_kickback_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h90_ar_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_lcr_burst_kickback_h90_sg_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_burst_kickback_h90_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h90_sg_i",
+      "group": "CoverKickback"
+    },
+    {
+      "name": "p_shd_m_lcr_holster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_holster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_lcr_holster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_lcr_idle_firefly_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_idle_firefly_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Firefly/p_shd_m_lcr_idle_firefly_i",
+      "group": "FireflySkill"
+    },
+    {
+      "name": "p_shd_m_lcr_quickdeploy_firefly_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_quickdeploy_firefly_ar_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Firefly/p_shd_m_lcr_quickdeploy_firefly_ar_i",
+      "group": "FireflySkill"
+    },
+    {
+      "name": "p_shd_m_lcr_sfx_onfire_ar_end_01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_sfx_onfire_ar_end_01",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_lcr_sfx_onfire_ar_end_01",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_lcr_sfx_onfire_ar_loop_01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_sfx_onfire_ar_loop_01",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_lcr_sfx_onfire_ar_loop_01",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_lcr_sfx_onfire_ar_loop_02",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_sfx_onfire_ar_loop_02",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_lcr_sfx_onfire_ar_loop_02",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_lcr_sfx_onfire_ar_loop_03",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_sfx_onfire_ar_loop_03",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_lcr_sfx_onfire_ar_loop_03",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_lcr_sfx_onfire_ar_loop_04",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_sfx_onfire_ar_loop_04",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_lcr_sfx_onfire_ar_loop_04",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_lcr_sfx_onfire_ar_start_01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_sfx_onfire_ar_start_01",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_lcr_sfx_onfire_ar_start_01",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_lcr_to_blindfire_h+90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_to_blindfire_h_plus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lcr_to_blindfire_h_plus_90_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lcr_to_blindfire_h-90_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_to_blindfire_h_minus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lcr_to_blindfire_h_minus_90_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lcr_to_blindfire_h0_ar_i",
+      "old": "/Game/Division2/Animations/Male/CoverBlindFire/p_shd_m_lcr_to_blindfire_h0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Transitions/p_shd_m_lcr_to_blindfire_h0_ar_i",
+      "group": "BlindFireTransition"
+    },
+    {
+      "name": "p_shd_m_lcr_unholster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_lcr_unholster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_lcr_unholster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_mounted_weapon_recoil_halfstrength",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_mounted_weapon_recoil_halfstrength",
+      "new": "/Game/Division2/Animations/Male/Fire/MountedRecoil/p_shd_m_mounted_weapon_recoil_halfstrength",
+      "group": "MountedRecoil"
+    },
+    {
+      "name": "p_shd_m_mounted_weapon_recoil_impact",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_mounted_weapon_recoil_impact",
+      "new": "/Game/Division2/Animations/Male/Fire/MountedRecoil/p_shd_m_mounted_weapon_recoil_impact",
+      "group": "MountedRecoil"
+    },
+    {
+      "name": "p_shd_m_pathstand_doordoublebig_fire_pull_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doordoublebig_fire_pull_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doordoublebig_fire_pull_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_pathstand_doordoublebig_fire_push_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doordoublebig_fire_push_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doordoublebig_fire_push_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_pathstand_doordoubleexterior_fire_push_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doordoubleexterior_fire_push_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doordoubleexterior_fire_push_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_pathstand_doordoubleinterior_fire_pull_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doordoubleinterior_fire_pull_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doordoubleinterior_fire_pull_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_pathstand_doordoubleinterior_fire_push_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doordoubleinterior_fire_push_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doordoubleinterior_fire_push_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_pathstand_doorsingleleft_fire_pull_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doorsingleleft_fire_pull_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doorsingleleft_fire_pull_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_pathstand_doorsingleleft_fire_push_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doorsingleleft_fire_push_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doorsingleleft_fire_push_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_pathstand_doorsingleright_fire_pull_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doorsingleright_fire_pull_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doorsingleright_fire_pull_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_pathstand_doorsingleright_fire_push_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_pathstand_doorsingleright_fire_push_pi_o",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_pathstand_doorsingleright_fire_push_pi_o",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_rpl_frh_detach_emergency_shotoff_u",
+      "old": "/Game/Division2/Animations/Male/RopesAndLadders/p_shd_m_rpl_frh_detach_emergency_shotoff_u",
+      "new": "/Game/Division2/Animations/Male/RopesAndLadders/EmergencyDetach/p_shd_m_rpl_frh_detach_emergency_shotoff_u",
+      "group": "RopeShotOff"
+    },
+    {
+      "name": "p_shd_m_st_aim_burst_kickback_ar_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_burst_kickback_ar_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_kickback_ar_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_aim_burst_kickback_minigun_i_v02",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_burst_kickback_minigun_i_v02",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_kickback_minigun_i_v02",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_aim_burst_missile_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_burst_missile_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_missile_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_aim_burst_v-90_missile_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_burst_v_minus_90_missile_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_v_minus_90_missile_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_aim_burst_v90_missile_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_burst_v90_missile_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_v90_missile_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_aim_firing_ar_i",
+      "old": "/Game/Division2/Animations/Male/Aim/p_shd_m_st_aim_firing_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/StaticPoses/p_shd_m_st_aim_firing_ar_i",
+      "group": "FiringNamed"
+    },
+    {
+      "name": "p_shd_m_st_aim_h-135_to_h+135_v-45_minigun_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v_minus_45_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v_minus_45_minigun_i_v01",
+      "group": "MinigunAim"
+    },
+    {
+      "name": "p_shd_m_st_aim_h-135_to_h+135_v-90_minigun_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v_minus_90_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v_minus_90_minigun_i_v01",
+      "group": "MinigunAim"
+    },
+    {
+      "name": "p_shd_m_st_aim_h-135_to_h+135_v0_minigun_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v0_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v0_minigun_i_v01",
+      "group": "MinigunAim"
+    },
+    {
+      "name": "p_shd_m_st_aim_h-135_to_h+135_v45_minigun_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v45_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v45_minigun_i_v01",
+      "group": "MinigunAim"
+    },
+    {
+      "name": "p_shd_m_st_aim_h-135_to_h+135_v90_minigun_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v90_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aim_h_minus_135_to_h_plus_135_v90_minigun_i_v01",
+      "group": "MinigunAim"
+    },
+    {
+      "name": "p_shd_m_st_aimclose_down_minigun_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aimclose_down_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aimclose_down_minigun_i_v01",
+      "group": "MinigunAim"
+    },
+    {
+      "name": "p_shd_m_st_aimclose_minigun_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aimclose_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aimclose_minigun_i_v01",
+      "group": "MinigunAim"
+    },
+    {
+      "name": "p_shd_m_st_bf_aimclose_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_aimclose_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Poses/p_shd_m_st_bf_aimclose_ar_i",
+      "group": "BlindFireCloseAim"
+    },
+    {
+      "name": "p_shd_m_st_bf_aimclose_pi_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_aimclose_pi_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Poses/p_shd_m_st_bf_aimclose_pi_i",
+      "group": "BlindFireCloseAim"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v-45_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_45_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_45_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v-45_minigun_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_45_minigun_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_45_minigun_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v-45_pi_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_45_pi_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_45_pi_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v-90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_90_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v-90_pi_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_90_pi_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v_minus_90_pi_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v0_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v0_minigun_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v0_minigun_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v0_minigun_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v0_pi_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v0_pi_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v0_pi_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v45_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v45_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v45_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v45_minigun_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v45_minigun_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v45_minigun_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v45_pi_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v45_pi_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v45_pi_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v90_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v90_ar_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_bf_h-90_to_h+90_v90_pi_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v90_pi_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v90_pi_i",
+      "group": "BlindFireDirectionalSweep"
+    },
+    {
+      "name": "p_shd_m_st_burst_300rpm_sg_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_burst_300rpm_sg_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_300rpm_sg_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_burst_600rpm_-v90_ar_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_burst_600rpm__minus_v90_ar_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm__minus_v90_ar_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_burst_600rpm_ar_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_burst_600rpm_ar_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm_ar_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_burst_600rpm_v90_ar_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_burst_600rpm_v90_ar_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm_v90_ar_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_burst_kickback_pi_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_burst_kickback_pi_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_kickback_pi_i_v01",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_burst_unstable_ar_i_v02",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_burst_unstable_ar_i_v02",
+      "new": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_unstable_ar_i_v02",
+      "group": "Burst"
+    },
+    {
+      "name": "p_shd_m_st_flaregun_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_flaregun_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/FlaregunReview/p_shd_m_st_flaregun_ar_i",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_m_st_flaregun_ar_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_flaregun_ar_o",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/FlaregunReview/p_shd_m_st_flaregun_ar_o",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_m_st_flaregun_pi_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_flaregun_pi_o",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/FlaregunReview/p_shd_m_st_flaregun_pi_o",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_m_st_flaregun_shield_o",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_flaregun_shield_o",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/FlaregunReview/p_shd_m_st_flaregun_shield_o",
+      "group": "FlaregunAction"
+    },
+    {
+      "name": "p_shd_m_st_handpose_cw_minigun_t1_bf_run_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_handpose_cw_minigun_t1_bf_run_v01",
+      "new": "/Game/Division2/Animations/Male/Idle/HandPoses/p_shd_m_st_handpose_cw_minigun_t1_bf_run_v01",
+      "group": "BlindFireHandPose"
+    },
+    {
+      "name": "p_shd_m_st_handpose_cw_minigun_t1_cr_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_handpose_cw_minigun_t1_cr_v01",
+      "new": "/Game/Division2/Animations/Male/Idle/HandPoses/p_shd_m_st_handpose_cw_minigun_t1_cr_v01",
+      "group": "MinigunHandPose"
+    },
+    {
+      "name": "p_shd_m_st_handpose_cw_minigun_t1_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_handpose_cw_minigun_t1_i_v01",
+      "new": "/Game/Division2/Animations/Male/Idle/HandPoses/p_shd_m_st_handpose_cw_minigun_t1_i_v01",
+      "group": "MinigunHandPose"
+    },
+    {
+      "name": "p_shd_m_st_handpose_cw_minigun_t1_o_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_handpose_cw_minigun_t1_o_v01",
+      "new": "/Game/Division2/Animations/Male/Idle/HandPoses/p_shd_m_st_handpose_cw_minigun_t1_o_v01",
+      "group": "MinigunHandPose"
+    },
+    {
+      "name": "p_shd_m_st_handpose_cw_minigun_t1_reference_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_handpose_cw_minigun_t1_reference_v01",
+      "new": "/Game/Division2/Animations/Male/Idle/HandPoses/p_shd_m_st_handpose_cw_minigun_t1_reference_v01",
+      "group": "MinigunHandPose"
+    },
+    {
+      "name": "p_shd_m_st_handpose_cw_minigun_t1_run_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_handpose_cw_minigun_t1_run_v01",
+      "new": "/Game/Division2/Animations/Male/Idle/HandPoses/p_shd_m_st_handpose_cw_minigun_t1_run_v01",
+      "group": "MinigunHandPose"
+    },
+    {
+      "name": "p_shd_m_st_idle_holster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_idle_holster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_st_idle_holster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_st_idle_unholster_minigun_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_idle_unholster_minigun_v01",
+      "new": "/Game/Division2/Animations/Male/HolsterAndDraw/Minigun/p_shd_m_st_idle_unholster_minigun_v01",
+      "group": "MinigunHolster"
+    },
+    {
+      "name": "p_shd_m_st_melee_minigun_high_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_melee_minigun_high_i_v01",
+      "new": "/Game/Division2/Animations/Male/Melee/Minigun/p_shd_m_st_melee_minigun_high_i_v01",
+      "group": "MinigunMelee"
+    },
+    {
+      "name": "p_shd_m_st_melee_minigun_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_melee_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Melee/Minigun/p_shd_m_st_melee_minigun_i_v01",
+      "group": "MinigunMelee"
+    },
+    {
+      "name": "p_shd_m_st_melee_minigun_low_i_v01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_melee_minigun_low_i_v01",
+      "new": "/Game/Division2/Animations/Male/Melee/Minigun/p_shd_m_st_melee_minigun_low_i_v01",
+      "group": "MinigunMelee"
+    },
+    {
+      "name": "p_shd_m_st_ooc_door_doublebig_fire_push",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_ooc_door_doublebig_fire_push",
+      "new": "/Game/Division2/Animations/Male/Interactions/Doors/p_shd_m_st_ooc_door_doublebig_fire_push",
+      "group": "DoorInteraction"
+    },
+    {
+      "name": "p_shd_m_st_pickupskill_h-180_minigun_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_pickupskill_h_minus_180_minigun_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Pickup/p_shd_m_st_pickupskill_h_minus_180_minigun_i",
+      "group": "MinigunSkillPickup"
+    },
+    {
+      "name": "p_shd_m_st_pickupskill_h-90_minigun_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_pickupskill_h_minus_90_minigun_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Pickup/p_shd_m_st_pickupskill_h_minus_90_minigun_i",
+      "group": "MinigunSkillPickup"
+    },
+    {
+      "name": "p_shd_m_st_pickupskill_h0_minigun_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_pickupskill_h0_minigun_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Pickup/p_shd_m_st_pickupskill_h0_minigun_i",
+      "group": "MinigunSkillPickup"
+    },
+    {
+      "name": "p_shd_m_st_pickupskill_h180_minigun_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_pickupskill_h180_minigun_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Pickup/p_shd_m_st_pickupskill_h180_minigun_i",
+      "group": "MinigunSkillPickup"
+    },
+    {
+      "name": "p_shd_m_st_pickupskill_h90_minigun_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_pickupskill_h90_minigun_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Pickup/p_shd_m_st_pickupskill_h90_minigun_i",
+      "group": "MinigunSkillPickup"
+    },
+    {
+      "name": "p_shd_m_st_quickdeploy_firefly_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_quickdeploy_firefly_ar_i",
+      "new": "/Game/Division2/Animations/Male/Skills/Firefly/p_shd_m_st_quickdeploy_firefly_ar_i",
+      "group": "FireflySkill"
+    },
+    {
+      "name": "p_shd_m_st_sfx_onfire_ar_end",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_sfx_onfire_ar_end",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_st_sfx_onfire_ar_end",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_st_sfx_onfire_ar_loop_01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_sfx_onfire_ar_loop_01",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_st_sfx_onfire_ar_loop_01",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_st_sfx_onfire_ar_loop_02",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_sfx_onfire_ar_loop_02",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_st_sfx_onfire_ar_loop_02",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_st_sfx_onfire_ar_loop_03",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_sfx_onfire_ar_loop_03",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_st_sfx_onfire_ar_loop_03",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_st_sfx_onfire_ar_loop_04",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_sfx_onfire_ar_loop_04",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_st_sfx_onfire_ar_loop_04",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_st_sfx_onfire_ar_loop_05",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_sfx_onfire_ar_loop_05",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_st_sfx_onfire_ar_loop_05",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_st_sfx_onfire_ar_start_01",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_sfx_onfire_ar_start_01",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Burning/p_shd_m_st_sfx_onfire_ar_start_01",
+      "group": "BurnReaction"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_kickback_sg_i",
+      "old": "/Game/Division2/Animations/Male/Melee/p_shd_m_st_singleshot_kickback_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_kickback_sg_i",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_mr_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_mr_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_mr_i_v02",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_mr_i_v02",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v02",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_mr_i_v03",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_mr_i_v03",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v03",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_pi_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_pi_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_pi_i_v02",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_pi_i_v02",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v02",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_pi_i_v03",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_pi_i_v03",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v03",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_sg_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_sg_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_sg_i_v02",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_sg_i_v02",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v02",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_sg_i_v03",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_sg_i_v03",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v03",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_v-90_mr_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_v_minus_90_mr_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_mr_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_v-90_pi_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_v_minus_90_pi_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_pi_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_v-90_sg_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_v_minus_90_sg_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_sg_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_v90_mr_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_v90_mr_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_mr_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_v90_pi_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_v90_pi_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_pi_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_singleshot_v90_sg_i_v01",
+      "old": "/Game/Division2/Animations/Male/Other/p_shd_m_st_singleshot_v90_sg_i_v01",
+      "new": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_sg_i_v01",
+      "group": "SingleShot"
+    },
+    {
+      "name": "p_shd_m_st_underfire_h-90_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_underfire_h_minus_90_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/HitReactions/UnderFire/p_shd_m_st_underfire_h_minus_90_v0_ar_i",
+      "group": "UnderFireReaction"
+    },
+    {
+      "name": "p_shd_m_st_underfire_h0_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_underfire_h0_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/HitReactions/UnderFire/p_shd_m_st_underfire_h0_v0_ar_i",
+      "group": "UnderFireReaction"
+    },
+    {
+      "name": "p_shd_m_st_underfire_h90_v0_ar_i",
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_underfire_h90_v0_ar_i",
+      "new": "/Game/Division2/Animations/Male/HitReactions/UnderFire/p_shd_m_st_underfire_h90_v0_ar_i",
+      "group": "UnderFireReaction"
+    }
+  ],
+  "errors": [],
+  "refreshed_stale_packages": [
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h90_ar_i",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_mounted_weapon_recoil_impact",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_mounted_weapon_recoil_halfstrength",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aimclose_down_minigun_i_v01",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aimclose_minigun_i_v01",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h90_sg_i",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h0_sg_i",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_end",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_loop",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_start",
+    "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v90_ar_i"
+  ],
+  "reload_result": "(True, Text(\"\"))",
+  "actual_fire_count": 40,
+  "actual_fire_assets": [
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_kickback_ar_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_kickback_minigun_i_v02",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_missile_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_v90_missile_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_v_minus_90_missile_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_300rpm_sg_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm__minus_v90_ar_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm_ar_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm_v90_ar_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_kickback_pi_i_v01",
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_unstable_ar_i_v02",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h0_sg_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h90_ar_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h90_sg_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h0_sg_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h90_ar_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h90_sg_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h0_sg_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h90_ar_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h90_sg_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h_minus_90_ar_i",
+    "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h_minus_90_sg_i",
+    "/Game/Division2/Animations/Male/Fire/MountedRecoil/p_shd_m_mounted_weapon_recoil_halfstrength",
+    "/Game/Division2/Animations/Male/Fire/MountedRecoil/p_shd_m_mounted_weapon_recoil_impact",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_kickback_sg_i",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v02",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v03",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v02",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v03",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v02",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v03",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_mr_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_pi_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_sg_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_mr_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_pi_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_sg_i_v01"
+  ],
+  "final_refresh": "(True, Text(\"\"))",
+  "checked_destinations": 203,
+  "actual_fire_groups": {
+    "CoverKickback": 11,
+    "MountedRecoil": 2,
+    "Burst": 11,
+    "SingleShot": 16
+  }
+}

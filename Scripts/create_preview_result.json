@@ -1,0 +1,19 @@
+{
+  "map": "/Game/Division2/Preview/AnimationPreview",
+  "characters": {
+    "Male": {
+      "mesh": "/Game/Division2/Characters/Male/SK_Male_Walker.SK_Male_Walker",
+      "animation": "/Game/Division2/Animations/Male/Emotes/p_shd_m_dance_80s_loop.p_shd_m_dance_80s_loop",
+      "duration": 8.133333206176758,
+      "actor": "/Game/Division2/Preview/AnimationPreview.AnimationPreview:PersistentLevel.SkeletalMeshActor_0"
+    },
+    "Female": {
+      "mesh": "/Game/Division2/Characters/Female/SK_Female_Walker.SK_Female_Walker",
+      "animation": "/Game/Division2/Animations/Female/Emotes/p_shd_f_dance_80s_loop.p_shd_f_dance_80s_loop",
+      "duration": 8.133333206176758,
+      "actor": "/Game/Division2/Preview/AnimationPreview.AnimationPreview:PersistentLevel.SkeletalMeshActor_1"
+    }
+  },
+  "notes": [],
+  "ok": true
+}

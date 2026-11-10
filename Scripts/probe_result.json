@@ -1,0 +1,31 @@
+{
+  "Male": {
+    "mesh_import": [
+      "/Game/Division2/Characters/Male/SK_Male_Walker.SK_Male_Walker"
+    ],
+    "skeleton": "/Game/Division2/Characters/Male/SK_Male_Walker_Skeleton.SK_Male_Walker_Skeleton",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001D3BAFD85C0) {origin: {x: -3.064029, y: -0.280756, z: 93.410381}, box_extent: {x: 25.159347, y: 49.268881, z: 93.861866}, sphere_radius: 108.951665}>",
+    "animation_import": [
+      "/Game/Division2/Probe/Male/p_shd_m_emote_crybaby.p_shd_m_emote_crybaby"
+    ],
+    "animation": {
+      "path": "/Game/Division2/Probe/Male/p_shd_m_emote_crybaby.p_shd_m_emote_crybaby",
+      "duration": 5.166666507720947
+    }
+  },
+  "Female": {
+    "mesh_import": [
+      "/Game/Division2/Characters/Female/SK_Female_Walker.SK_Female_Walker"
+    ],
+    "skeleton": "/Game/Division2/Characters/Female/SK_Female_Walker_Skeleton.SK_Female_Walker_Skeleton",
+    "bounds": "<Struct 'BoxSphereBounds' (0x000001D3C2690600) {origin: {x: -2.233988, y: -0.720242, z: 93.856558}, box_extent: {x: 25.989491, y: 47.266884, z: 94.308039}, sphere_radius: 108.644457}>",
+    "animation_import": [
+      "/Game/Division2/Probe/Female/p_shd_f_dance_80s_intro.p_shd_f_dance_80s_intro"
+    ],
+    "animation": {
+      "path": "/Game/Division2/Probe/Female/p_shd_f_dance_80s_intro.p_shd_f_dance_80s_intro",
+      "duration": 1.0666667222976685
+    }
+  },
+  "ok": true
+}

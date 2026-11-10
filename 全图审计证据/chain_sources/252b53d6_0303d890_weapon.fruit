@@ -1,0 +1,806 @@
+include "snowdrop/modules/core/audio/audio.fruit"
+include "hunter/game system data/fruit/camera/camera.fruit"
+include "snowdrop/modules/core/physics/collisionmaterials.fruit"
+include "hunter/game system data/fruit/ai/detectionsoundtypes.fruit"
+include "hunter/game system data/fruit/combat/damagetypes.fruit"
+include "hunter/game system data/fruit/currencies/currencydefinition.fruit"
+include "hunter/game system data/fruit/throwableitem/throwableitemconfig.fruit"
+include "hunter/game system data/fruit/weapon/recoil.fruit"
+include "hunter/game system data/fruit/item/itemModTags.fruit"
+include "hunter/game system data/fruit/weapon/projectiles.fruit"
+include "hunter/skillscript/skillscript.fruit"
+
+// Must match enum WeaponGroupTypes in RShared_WeaponData.h
+enum WeaponGroups
+{
+	NotSet
+	Pistol
+	AssaultRifle
+	SubMachinegun
+	LightMachinegun
+	Shotgun
+	SniperRifle	
+	Unarmed
+	FlameThrower
+	RPG
+	Knife
+	Bat
+	ShieldAxe
+	Skill
+	ShieldPistol
+	Throwable
+	MountedWeapon
+	Detonator
+	SignatureWeapon
+	Rifle
+	ShieldSniperRifle
+	DualWield
+}
+
+list WeaponGroupsList
+{
+	WeaponGroups
+}
+
+// Must match enum RShared_WeaponReloadTypes in RShared_WeaponData.h
+enum WeaponReloadTypes
+{
+	Magazine
+	Cycling
+	Belt
+	StripperClip
+	Cylinder
+}
+
+// Must match enum RShared_WeaponEquipmentType in RShared_WeaponData.h
+enum WeaponEquipmentType
+{
+	Main
+	Sidearm
+	Grenade
+	Signature
+	Utility
+}
+
+// Must match enum RShared_WeaponHandlingTypes in RShared_WeaponData.h
+enum WeaponHandlingTypes
+{
+	Normal
+	Heavy
+	Artillery
+}
+
+// Must match enum RClient_WeaponUIDamageType in RClient_WeaponData.h
+enum UIDamageType
+{
+	Normal
+	Sustained
+	Burst
+	Precision
+}
+
+// Must match enum in RShared_WeaponFireModes.h
+enum WeaponFireModes
+{
+	FULL_AUTO
+	BURST
+	SEMI_AUTO
+	SKILL_SCRIPT
+	THROWABLE
+	BINARY
+	CHARGED
+}
+
+// Must match enum in RShared_WeaponFireModes.h
+enum FireEventDeployType
+{
+	Equip
+	QuickDeploy
+	Both
+	InstantDeploy
+}
+
+class EquippableWeaponGroup
+{
+	WeaponGroups myWeaponGroup
+}
+
+// New additions to this list must be added at the bottom
+enum WeaponIdentifiers
+{
+	FNSCAR_L
+	M4
+	POF_P416
+	ACR
+	RPK
+	SA80
+	FNSCHAR_H
+	MosinNagant
+	SRS
+	MP45
+	Px4
+	SW586
+	STG_870
+	DoubleBarrel
+	FlamerWeapon
+	Saiga12
+	AUG_A3P
+	KrissVector
+	Tec_9
+	AK47
+	Fal
+	G36C
+	MDR
+	HK121
+	M240
+	M60E4
+	M1A
+	SVD
+	XS1
+	FNX45
+	M1911
+	M9
+	Rhino4
+	AA12
+	ShotgunM4
+	Model1216
+	SMG821
+	MP5
+	MP7
+	PP19
+	UMP45
+	MosinNagant_T2
+	MosinNagant_T3
+	FNSCHAR_H_T2
+	FNSCHAR_H_T3
+	M1A_T2
+	M1A_T3
+	SRS_T2
+	SRS_T3
+	RPK_T2
+	RPK_T3
+	SA80_T2
+	STG_870_T3
+	Saiga12_T2
+	Saiga12_T3
+	ShotgunM4_T2
+	DB
+	KrissVector_T2
+	KrissVector_T3
+	SMG821_T2
+	M24
+	M24_T2
+	M24_T3
+	G36C_T3
+	FAMAS
+	Thompson
+	Thompson_T2
+	Beretta_93R
+	Grenade
+	SkillLauncher
+	MountedWeapon
+	M4_T2
+	M4_T3
+	Crossbow
+	M32
+	Turret
+	ChemLauncher
+	Pulse
+	SeekerMine
+	Hive
+	Disc
+	cal50
+	Frag
+	Concussion
+	Flashbang
+	Incendiary
+	Glock18
+	DesertEagle
+	F2000
+	AUG
+	TAR21
+	M16A2
+	AKM_E
+	SPAS12
+	SPAS12_E
+	DSR1
+	Winchester
+	P90
+	MPX
+	SIG716
+	SIG716_T2
+	AKM_E02
+	Firefly
+	SPAS12_E2
+	P90_E
+	M240_E
+	AWM_E
+	RPG_NPC
+	MiniGun
+	P320
+	Winchester_E
+	Carbine7
+	KAC_LAMG
+	Kel_Tec_KSG
+	Missile
+	Mk249
+	QHoneyBadger
+	KrissVector_E
+	G28_T1
+	ADM_UIC_AR_15
+	Sig_Flamethrower
+	Skill_Trap
+	Skill_StickyBomb
+	Skill_Decoy
+	CMMG_Banshee
+	P416_Double_E
+	RPG_Player
+	IWI_Negev_T1
+	Steyr_AUG_A3
+	CMMG_Banshee_Exotic
+	IWI_Negev_Exotic_T1
+	CRYE_SIX12_T1
+	CMMG_Resolute_300_T1
+	SIG556_T1
+	Brace_Built_Barrier
+	Magpul_PDR_T1
+	Kriss_KARD
+	CRYE_SIX12_Exotic_T1
+	SRS_Exotic_T1
+	MPX_Exotic_T1
+	TKB408
+	HKGR9
+	SVD_Exotic
+	KAC_LAMG_Exotic
+	Skill_SmartCover
+	Laser
+}
+
+enum WeaponMagazineTypes
+{
+	DefaultMag
+	IncendiaryMag
+	MatchGradeMag
+	ArmorPiercingMag
+	TaserMag
+}
+
+// Must match enum WeaponModifierType in RShared_WeaponModifierDefines.h (exclude Invalid and NumberOf)
+enum WeaponModifierType
+{
+	Magazine   
+	Optic      
+	Muzzle     
+	Underbarrel	
+}
+
+enum MagazineBulletType
+{
+	Default
+	Incendiary
+	Explosive
+	HighVelocity
+	Taser
+}
+
+list WeaponIdentifiersList
+{
+	WeaponIdentifiers
+}
+
+class DamageInfo
+{
+	DamageType myDamageType
+	float myDamageMin
+	float myDamageMax
+	float myDamageVariation
+}
+
+list DamageInfoList
+{
+	DamageInfo
+}
+
+class Projectile
+{
+	file myTracer ""
+	AudioEvent myHitAudioEvent
+	AudioEvent myHitAudioSweetenerEvent
+	AudioEvent myWhizzAudioEvent
+	file myHitEffect ""
+	file myPointCloudHitEffect "rogue/graph objects/effect/echo_bullet_interference_fx.mgraphobject"
+	uid myPointCloudHitAudioEvent 4A75D5CDFDF375F22ECC06A2E677B0BA < bhv=AudioID type=Event > 
+	float myHitEffectSize 0 < min=0 max=1 >
+	bool myHasImpactShockwave false
+}
+
+enum QuickThrowConfigPresetMode
+{
+	Default
+	Cover
+}
+
+class QuickThrowConfigPreset
+{
+	QuickThrowConfigPresetMode myPresetMode Default
+	bool myFixedPitchEnabled false
+	float myFixedPitch 0.0
+	bool myMaxTimeEnabled false
+	float myMaxTime 2.0
+}
+
+list QuickThrowConfigPresetList
+{
+	QuickThrowConfigPreset
+}
+
+class QuickThrowConfig
+{
+	QuickThrowConfigPresetList myPresets
+}
+
+list QuickThrowConfigList < size=1 >
+{
+	QuickThrowConfig
+}
+
+class WindUpConfig
+{
+	float myWindUpTime 0.0
+	float myWindDownTime 0.0
+	bool myShouldActivateWhenAiming false
+}
+
+enum InputWeaponMode
+{
+	Default
+	HoldAndPressVersion1
+}
+
+class InputWeaponConfig
+{
+	InputWeaponMode mySkillInputMode Default
+	bool myEquipAndAimEnabled false
+	bool myForceSkillTriggerIntentionsOnlyEnabled false < tooltip="If true use the skill function to process the trigger intentions instead of the normal weapon version" >
+}
+
+list InputWeaponConfigList < size=1 >
+{
+	InputWeaponConfig
+}
+
+class SkillDeploymentConfig
+{
+	bool myAimDeployNeedsValidAimTarget true
+	bool myQuickDeployAndTurnEnabled false
+	float myQuickDeployAndTurnDrawTime 0.2
+	bool myQuickDeployNeedsValidAimTarget false
+	bool myQuickDeployNeedsAgentInCover false
+}
+
+// This is a shortcut, this must be reimplemented as a talent
+class SkillDecoyConfig
+{
+	bool myPulseOnHit false
+	float myPulseOnHitPlayerTime 5.0
+	float myPulseOnHitNPCTime 5.0
+}
+
+class SkillWeaponConfig
+{
+	SkillDeploymentConfig myDeploymentConfig
+	
+	// This is a shortcut, this must be reimplemented as a talent
+	SkillDecoyConfig myDecoyConfig
+}
+
+list SkillWeaponConfigList < size=1 >
+{
+	SkillWeaponConfig
+}
+
+list FireEventList
+{
+	FireEvent
+}
+
+class WeaponDamage
+{
+	DamageInfoList myDamages
+	
+	float myRangeOptimal 50.0 < tooltip="The weapon does (max damage +- variation) up to this range" >
+	float myRangeLong 75.0 < tooltip="The weapon does (min damage +- variation) above this range" >
+	float myRangeMax 100.0 < tooltip="The weapon does 0 damage above this range" >
+	
+	float mySkillScriptDamage 0.0 < tooltip="The damage that can be applied to weapon associated skillscripts." >
+
+	bool myUsePVPOverrides FALSE < tooltip="If this is true, the PvP values below will be used whenever an agent attacks another with this weapon." >	
+	float myPvPDamageMin 10.0 < tooltip="The minimum damage the weapon will inflict above PvP Long Range whenever an agent attacks another" >
+	float myPvPDamageMax 20.0 < tooltip="The maximum damage the weapon will inflict up to PvP Optimal Range whenever an agent attacks another" >
+	float myPvPRangeOptimal 50.0 < tooltip="The weapon does (pvp max damage +- variation) up to this range whenever an agent attacks another" >
+	float myPvPRangeLong 75.0 < tooltip="The weapon does (pvp min damage +- variation) above this range whenever an agent attacks another" >
+	float myPVPDamageModifier 1.0 < tooltip="Multiplier that modifies how much damage is done when one agent attacks another" >
+	
+	float myCriticalHitChance 0.0 < tooltip="The chance each bullet will cause a critical hit" >
+	float myCriticalHitChanceDistanceMin 0.0 < tooltip="The minimum distance at which a bullet can cause a critical hit" >
+	float myCriticalHitChanceDistanceMax 100.0 < tooltip="The maximum distance at which a bullet can cause a critical hit" >
+	float myCriticalHitDamageModifier 1.0 < tooltip="Multiplier for the damage caused by a critical hit" >
+	
+	float myCoverDamageMin 100.0 < tooltip="The minimum damage the weapon will inflict to covers above Long Range" >
+	float myCoverDamageMax 200.0 < tooltip="The maximum damage the weapon will inflict to covers up to Optimal Range" >
+	float myCoverDamageVariation 15.0 < tooltip="The added random damage (ranges from -Variation to +Variation) the weapon will inflict at any range up to Max Range to covers" >
+	
+	float myDamageMultiplierHead 1.4 < tooltip="Damage multiplier for the Head hitbox area" >
+	float myDamageMultiplierBody 1.0 < tooltip="Damage multiplier for the Body hitbox area" >
+	float myDamageMultiplierArms 1.0 < tooltip="Damage multiplier for the Arms (Left + Right) hitbox area" >
+	float myDamageMultiplierLegs 1.0 < tooltip="Damage multiplier for the Legs (Left + Right) hitbox area" >
+	
+	float myStaggerDamageModifier 1.0 < tooltip="Multiplier that modifies how much stagger is done" >
+}
+
+class FireEventWeaponOverride
+{
+	int myRPM 500 < tooltip="Rounds Fired Per Minute" >
+	int myRPMFluctuationMin 0 < max=0 tooltip="Fluctuating value removed from RPM randomly, has to be negative." >
+	int myRPMFluctuationMax 0 < min=0 tooltip="Fluctuating value added to RPM randomly, has to be positive." >
+
+	bool myUsePVPOverrides FALSE < tooltip="If this is true, the PvP values below will be used whenever an agent attacks another with this weapon." >
+	int myPvPRPM 0 < min=0 tooltip="PvP override for rounds per minute. 0 means use the base RPM." >
+	int myPvPRPMFluctuationMin 0 < max=0 tooltip="PvP override for fluctuating value removed from RPM randomly, has to be negative." >
+	int myPvPRPMFluctuationMax 0 < min=0 tooltip="PvP override for fluctuating value added to RPM randomly, has to be positive." >
+
+	WeaponDamage myDamage
+}
+
+list FireEventWeaponOverrideComponent < size=1 >
+{
+	FireEventWeaponOverride
+}
+
+class FireEvent < abstract=1 >
+{
+	ProjectileData myProjectileData
+	WindUpConfig myWindUpConfig
+	int myBulletsPerRound 1 < tooltip="Number of bullets fired at the same time" >
+	SkillScript* myImpactSkillScript
+	SkillScript* myTrajectorySkillScript
+	SkillScript* myProjectileSkillScript
+	int myLifetimeAfterImpact 0 < min=0 max=5000 tooltip="How long the graph object stays alive after impact in ms. MAX 5000">
+	FireEventDeployType myDeployType Equip < tooltip="Quick deploy allows for this impact script to be quick deployed and used without equipping the weapon first." >
+	ItemModTag myModTag Invalid
+	bool myCausesSparks TRUE < tooltip="If true, the fire event causes sparks in the projectile source." >
+	bool myCausesDetectionHit TRUE < tooltip="The impact of this fire event will cause NPCs to notice the shooter.">
+	AudioBank myLocalPlayerBank
+	AudioBank myLocalPlayerTailsBank
+	InputWeaponConfigList myInputConfig
+	SkillWeaponConfigList mySkillConfig
+	FireEventWeaponOverrideComponent myWeaponOverride
+}
+
+class FullAutoFireEvent : FireEvent
+{
+	string myAnimationLayer "Burst"
+	AudioEvent myStartAudioEvent
+	AudioEvent myEndAudioEvent
+	int myNumPSPRounds 2 < tooltip="Play-Stop-Play value.  If greater than 0, this will cause this number of single shots to be fired before starting the loop." >
+}
+
+class BurstFireEvent : FireEvent
+{
+	string myAnimationLayer "Burst"
+	AudioEvent myStartAudioEvent
+	AudioEvent myEndAudioEvent
+	int myRoundsPerBurst 3 < tooltip="Number of bullets fired during a burst " >
+	int mySequenceBurstsPerMin 60 < tooltip="Number of bursts per minute under sequence control" >
+	int myBurstRPMOverride 0 < tooltip="If set it overrides the default RPM during using that fire mode" >
+}
+
+class SemiAutoFireEvent : FireEvent
+{
+	string myAnimationLayer "Fire"
+	AudioEvent myAudioEvent
+}
+
+class SkillScriptFireEvent : FireEvent
+{
+	ProjectileData myProjectileData < hidden=1 >
+	string myAnimationLayer "Fire"
+	AudioEvent myAudioEvent
+}
+
+class ThrowableFireEvent : FireEvent
+{
+	ThrowableItemType myThrowableItemConfigType None < tooltip="If the weapon is throwable, it'll fetch the throwable item config corresponding to this type. See throwableitemconfig juice." >
+	ProjectileData myProjectileData < hidden=1 >
+	string myAnimationLayer "Throw"
+	AudioEvent myAudioEvent < tooltip="Use this audio event as OnThrow." >
+	AudioEvent myOnBounceAudioEvent
+	AudioEvent myOnLandedAudioEvent
+	bool myCausesSparks FALSE
+	QuickThrowConfigList myQuickThrowConfig
+}
+
+class BinaryFireEvent : FireEvent
+{
+	string myAnimationLayer "Fire"
+	AudioEvent myAudioEvent
+}
+
+class ChargedFireEvent : FireEvent
+{
+	string myAnimationLayer "Fire"
+	AudioEvent myAudioEvent
+	float myMaxDuration 5.0 < tooltip="Time in seconds after which this event will automatically fire." >
+}
+
+class AdditionalAudioEvent
+{
+	AudioEvent myStartAudioEvent
+	AudioEvent myEndAudioEvent
+	AudioBank myNPCAndRemotePlayerBank
+}
+
+list AdditionalAudioEventList
+{
+	AdditionalAudioEvent
+}
+
+class AdditionalAudioEvents
+{	
+	AdditionalAudioEventList myAdditionalSingleAudioEvents
+	AdditionalAudioEventList myAdditionalMultiAudioEvents
+}
+
+class WeaponFeedback
+{
+	Projectile myProjectile
+	
+	AudioEvent myReloadAudioEvent ""
+	AudioEvent myOutOfAmmoClickAudioEvent ""
+	AudioEvent myOutOfAmmoWarningAudioEvent ""
+	int myOutOfAmmoWarningStart 5 < tooltip="When the weapon clip ammo count is less than or equal to this value, the out of ammo click events will trigger each time a shot is fired." >
+	float myWeaponJamFactor 0.0 < min=0.0 max=100.0 tooltip="A value between 0.0 and 100.0 that defines the weapons jam factor." >
+}
+
+class AimAssist
+{
+	float myInnerAttractorBoxWidth 1.1 < tooltip="The unmodified width of the inner, full strength, attractor." >
+	float myInnerAttractorBoxHeight 0.8 < tooltip="The unmodified height of the inner, full strength, attractor." >
+	float myOuterAttractorBoxWidth 1.8 < tooltip="The unmodified width of the outer attractor, at the edge of which the distance fade starts" >
+	float myOuterAttractorBoxHeight 1.5 < tooltip="The unmodified height of the outer attractor, at the edge of which the distance fade starts" >
+	
+	float myTargetAngleVersusDistanceScore 1.5 < tooltip="Modifies how much angle to target is worth versus distance to target when picking aim assist target. Higher value means angle has bigger impact." >
+	
+	float mySnapBoxWidth 1.0 < tooltip="The width of box within which snap is applied" >
+	float mySnapBoxHeight 1.0 < tooltip="The height of box within which snap is applied" >
+	float mySnapOffsetLimit 0.55 < tooltip=" The height of the box within which the pitch is maintained when snapping. The width of this box is mySnapBoxWidth" >
+	
+	float mySnapAttractorStrength 0.03 < tooltip="The strength of snapping" >
+	float myAimAttractorStrength 0.80 < tooltip="The maximum part of the aim input removed by aim assist" >
+	float myMovementAttractorStrength 0.75 < tooltip="How big a part of the angle change to target caused by moving the player character is removed? 1.0 = lock on if not actively aiming and target not moving" >
+	
+	float myAimAttractorAdditionInZoom 0.0 < tooltip="How does the strength of the aim attractor change when zoomed in?" >
+	float myCatchupHelpStrength 0.0 < tooltip="How far towards the center can the inner attractor edge be moved to help correct movements in reaching the target? 1.0 = to the center" >
+	
+	float mySnapDuration 1.0 < tooltip="For how long is snap applied" >
+	string mySnapCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { 0 0, -0.06495 0.000302, -0.689434 0.022612, }, outTangents = { 0.272497 0, 0.584549 0, 0 0, }, properties = { 275, 2323, 1299, }, values = { 0 1, 0.2 1, 1 0, }, }, numKeys = 3, }" < bhv=inputgraph tooltip="Snapping multiplier over time (x=1 is mySnapDuration)">
+	float myKillSnapInputLength 0.95 < tooltip="At what input length is aim snap always immediately canceled" >
+	float mySnapGrippyness 1.0 < tooltip="To what extent is input canceling of small imputs applied at the beginning of the snap (0 = none)" >
+	
+	float myDistance 0.0 < tooltip="At what distance are these settings authorotative (used to blend between settings)" >
+}
+
+class LockAimData
+{
+	float myTrackIdleTargetSpringStrength 400.f
+	float myTrackMovingTargetSpringStrength 700.f
+	float myAimingSpringStrength 250.f
+	float myAimingBaseSpeed 7.0
+	float myMaxTargetRayDistToTestCamDist 0.2f
+	vec2f myLockSnapBox 0.8;0.8
+	vec2f mySnapToTargetBox 2.8;1.8
+	vec3f myCenterOffset 0.0;0.25;0.0
+	string myCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, keys2 = { inTangents = { -0 -0, -0.369897 -0.096132, }, outTangents = { 3.24613 0.014325, 0 0, }, properties = { 275, 1299, }, values = { 0 0, 1 1, }, }, numKeys = 2, }" < bhv=inputgraph >
+}
+
+class CameraData
+{
+	string myAimAssistTimeFadeCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, -0.7 -0.0, }, outTangents = { 0.4 0.0, 0 0, }, properties = { 275, 1299, }, values = { 0 0.0, 1 1, }, }, numKeys = 2, }" < bhv=inputgraph  tooltip="The fade multiplier over time (x=1 is myAimAssistFadeTime)">
+	string myAimAssistDistanceFadeCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, -0.3 -0.0, }, outTangents = { 0.5 0.0, 0 0, }, properties = { 275, 1299, }, values = { 0 0.0, 1 1, }, }, numKeys = 2, }" < bhv=inputgraph  tooltip="The fade multiplier between the outer and inner attractor">
+	string myAimAssistMinMidBlendCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, -0.2 -0.0, }, outTangents = { 0.9 0.0, 0 0, }, properties = { 275, 1299, }, values = { 0 0.0, 1 1, }, }, numKeys = 2, }" < bhv=inputgraph  tooltip="Blend from min(0) to mid (1) settings">
+	string myAimAssistMidMaxBlendCurve "{ defaultLeftSlope = 0, defaultRightSlope = 0, defaultValue = 0, interpolator = 0, isRefinedSampling = true, keys2 = { inTangents = { -0 -0, -0.5 -0.0, }, outTangents = { 0.2 0.00, 0 0, }, properties = { 275, 1299, }, values = { 0 0.0, 1 1, }, }, numKeys = 2, }" < bhv=inputgraph  tooltip="Blend from mid(0) to max (1) settings">
+	float myAimAssistFadeTime 2.0 < tooltip="The time the aim assist lingers after a target dies or disappears" >
+	float myAimAssistCutDistance 1000.0 < tooltip="The distance to target beyond which aim assist is no longer applied" >
+	AimAssist myAimAssistMinValues < tooltip="Aim assist at minimum distance" >
+	AimAssist myAimAssistMidValues < tooltip="Aim assist at middle distance" >
+	AimAssist myAimAssistMaxValues < tooltip="Aim assist at maximumdistance" >
+	LockAimData myLockAimData
+	float myFiringNotAimingCameraSpeedModifier 1.0
+	float myFiringAimingCameraSpeedModifier 1.0
+}
+
+class WeaponSwayData
+{
+	float mySwayMovementSpeed 1.2 < tooltip="Speed of the sway movement in point per second" >
+	float mySwayMinHorizontalMove 0.001 < tooltip="minimum sway horizontal movement from the base aiming point" >
+	float mySwayMaxHorizontalMove 0.004 < tooltip="maximum sway horizontal movement from the base aiming point" >
+	float mySwayMinVerticalMove 0.001 < tooltip="minimum sway vertical movement from the base aiming point" >
+	float mySwayMaxVerticalMove 0.002 < tooltip="maximum sway vertical movement from the base aiming point" >
+	float mySwayResetDuration 0.500 < tooltip="latency time before the sway start in seconds" >
+	float mySwayInCoverModifier 1.0 < tooltip="Special modifier to apply to the weapon sway formulae while the agent is in cover." >
+}
+
+class WeaponScopeData
+{
+	float myScopeAimSpeedModifier 1.0 < tooltip="Speed multiplicator of the movement when player is aiming" >
+	float myScopeAimSwaySpeedModifier 1.0 < tooltip="Speed multiplicator of the sway movement when player is aiming" >
+}
+
+class Weapon < uid=auto >
+{
+	float myDamageMin 10.0 < tooltip="The minimum damage the weapon will inflict above Long Range" >
+	float myDamageMax 20.0 < tooltip="The maximum damage the weapon will inflict up to Optimal Range" >
+	float myDamageVariation 5.0 < tooltip="The added random damage (ranges from -Variation to +Variation) the weapon will inflict at any range up to Max Range" >
+	DamageInfoList myDamages
+	float mySkillScriptDamage 0.0 < tooltip="The damage that can be applied to weapon associated skillscripts." >
+
+	bool myUsePVPOverrides FALSE < tooltip="If this is true, the PvP values below will be used whenever an agent attacks another with this weapon." >
+	float myPvPDamageMin 10.0 < tooltip="The minimum damage the weapon will inflict above PvP Long Range whenever an agent attacks another" >
+	float myPvPDamageMax 20.0 < tooltip="The maximum damage the weapon will inflict up to PvP Optimal Range whenever an agent attacks another" >
+	float myPvPRangeOptimal 50.0 < tooltip="The weapon does (pvp max damage +- variation) up to this range whenever an agent attacks another" >
+	float myPvPRangeLong 75.0 < tooltip="The weapon does (pvp min damage +- variation) above this range whenever an agent attacks another" >
+	int myPvPRPM 0 < min=0 tooltip="PvP override for rounds per minute. 0 means use the base RPM." >
+	int myPvPRPMFluctuationMin 0 < max=0 tooltip="PvP override for fluctuating value removed from RPM randomly, has to be negative." >
+	int myPvPRPMFluctuationMax 0 < min=0 tooltip="PvP override for fluctuating value added to RPM randomly, has to be positive." >
+	int myPvPReloadTimeMS 0 < min=0 tooltip="PvP override for reload time in milliseconds. 0 means use the base reload time." >
+	int myPvPEmptyClipFirstRoundReloadTimeMS -1 < min=-1 tooltip="Unique reload time for first reload cycle after emptying the clip. Using a negative value will make it use the PvE value." >
+
+	int mySuppressionValue 10 < tooltip="The suppression effect of this weapon when shooting at NPCs" >
+	
+	float myCriticalHitChance 0.0 < tooltip="The chance each bullet will cause a critical hit" >
+	float myCriticalHitChanceDistanceMin 0.0 < tooltip="The minimum distance at which a bullet can cause a critical hit" >
+	float myCriticalHitChanceDistanceMax 100.0 < tooltip="The maximum distance at which a bullet can cause a critical hit" >
+	float myCriticalHitDamageModifier 1.0 < tooltip="Multiplier for the damage caused by a critical hit" >
+		
+	float myCoverDamageMin 100.0 < tooltip="The minimum damage the weapon will inflict to covers above Long Range" >
+	float myCoverDamageMax 200.0 < tooltip="The maximum damage the weapon will inflict to covers up to Optimal Range" >
+	float myCoverDamageVariation 15.0 < tooltip="The added random damage (ranges from -Variation to +Variation) the weapon will inflict at any range up to Max Range to covers" >
+	
+	float myPhysicalImpulse 6.0 < tooltip="Physical impulse from bullet on hitobject (kg*m/s)" >
+	
+	float myDamageMultiplierHead 1.4 < tooltip="Damage multiplier for the Head hitbox area" >
+	float myDamageMultiplierBody 1.0 < tooltip="Damage multiplier for the Body hitbox area" >
+	float myDamageMultiplierArms 1.0 < tooltip="Damage multiplier for the Arms (Left + Right) hitbox area" >
+	float myDamageMultiplierLegs 1.0 < tooltip="Damage multiplier for the Legs (Left + Right) hitbox area" >
+
+	float myPiercingMultiplier 0.0 < tooltip="Piercing value, should be used to calculate final defence" >
+	
+	float myRangeOptimal 50.0 < tooltip="The weapon does (max damage +- variation) up to this range" >
+	float myRangeLong 75.0 < tooltip="The weapon does (min damage +- variation) above this range" >
+	float myRangeMax 100.0 < tooltip="The weapon does 0 damage above this range" >
+	
+	int myRPM 500 < tooltip="Rounds Fired Per Minute" >
+	int myRPMFluctuationMin 0 < max=0 tooltip="Fluctuating value removed from RPM randomly, has to be negative." >
+	int myRPMFluctuationMax 0 < min=0 tooltip="Fluctuating value added to RPM randomly, has to be positive." >
+	
+	float myAimDistanceDefault 30.0 < tooltip="The default focus distance while aiming" >
+	float myAimDistanceMax 100.0 < tooltip="Maximum focus distance " >
+	
+	float myShootThroughCornersDistance -1.0 < tooltip="" >
+	bool myShouldShootThroughCornersInCover TRUE < tooltip="" >
+	
+	RecoilProfile* myCameraRecoil 
+	RecoilProfile* myAimDirectionRecoil 
+	
+	WeaponReloadTypes myReloadType Magazine
+	int myRoundsAddedPerReload -1 < tooltip="If left at -1 (default) it will cause the weapon to reload normally (fill the entire clip after reload is complete). If set anything above 0, each reload session will fill the clip by the amount set for the variable" >
+	int myClipSize -1 < tooltip="Clip size of the weapon" >
+	int myReloadTimeMS 800 < tooltip="Reload timer for the weapon" >
+	int myEmptyClipFirstRoundReloadTimeMS -1 < min=-1 tooltip="Unique reload time for first reload cycle after emptying the clip. Using a negative value will disable this option" >
+	int myInitialShellReloadTimeMS -1 < min=-1 tooltip="Reload time for the first shell in a reload cycle. Negative values disables this for the weapon." >
+	int myEndReloadTimeMS -1 < min=-1 tooltip="Reload time for the ending of a reload cycle (last shell in a shotgun needing a pumping motion or so). Negative values disables this for the weapon." >
+	int myAutoReloadDelayMS 0 < min=0 tooltip="Adds a delay between firing the final round in the current clip and beginning the reload sequence" >
+	bool myForcePreventRoundInChamber FALSE < tooltip="If this is set to true, we will prevent a round from being in the chamber on reload (+1 round when reloading not from empty), regardless of the reload type (normally we allow a round in the chamber if the reload type is Magazine)." >
+	bool myHasUnlimitedAmmo false < tooltip="If checked the weapon has unlimited spare ammo" >
+
+	file myGraphObject "" < bhv=asset assettype=object >
+	file myMagazineGraphObject "" < bhv=asset assettype=object >
+	file myInventoryIcon ""
+	file myCrosshairUIGraph "hunter/ui/graphs/crosshair_default.muigraph" < bhv=asset assettype=gui >
+
+	file myDefaultTextureDiffuse ""
+	file myDefaultTextureNormal ""
+	file myDefaultTextureMaterial ""
+
+	FireEventList myFireEvents
+	AdditionalAudioEvents myAdditionalAudio
+	WeaponFeedback myFeedback
+	CameraData myCameraData
+
+	WeaponGroups myWeaponGroup AssaultRifle < tooltip="Specifies the type of weapon group this weapon belongs to." >
+	WeaponGroups myAnimationWeaponGroup NotSet < tooltip="Specifies the type of weapon group animations this weapon will use, NotSet will use the regular WeaponGroup value." >
+	WeaponEquipmentType myWeaponEquipmentType Main < tooltip="Causes the weapon to be equipped as a sidearm/grenade etc. in the inventory/equip screens and in weapon switches. Still uses weapon group for everything else." >
+	WeaponIdentifiers myWeaponIdentifier FNSCAR_L < tooltip="specifies which weaponModel this weapon has." >
+	
+	CurrencyDefinition* myAmmoCurrency < tooltip="The currency to use as ammo." >
+
+	DetectionSoundType* myDetectionSoundType
+	DetectionSoundType* myDetectionImpactSoundType < tooltip="Bullet Impact type will be used if null" >
+	
+	WeaponSwayData myWeaponSwayData
+	
+	WeaponScopeData myWeaponScopeData
+	bool myBoltCharge false < tooltip="Forces the camera out of scoped mode after firing. Meant to be set for bolt action rifles." >
+	
+	WeaponHandlingTypes myHandlingType Normal < tooltip="This type controls locomotion and camera restrictions, as an example, heavy weapon handling removes the ability to take cover or sprint." >
+	
+	float myAimFovChange 0.0 < tooltip="Fov offset to add when player has the weapon shouldered in degrees" >
+	float myAimZoomFovChange -12 < tooltip="Fov offset to add when player use weapon zoom in degrees" >
+	
+	float myThreatPerBullet 100.0 < tooltip="Threat per bullet hitting the detection hitbox" >
+	
+	float myWeaponSwitchSpeedMultiplier 1.0 < tooltip="Multiplier to change the speed of both holster and draw animations" >
+
+	float myStaggerDamageModifier 1.0 < tooltip="Multiplier that modifies how much stagger is done" >
+	float myPVPDamageModifier 1.0 < tooltip="Multiplier that modifies how much damage is done when one agent attacks another" >
+	
+	int myHipFireDrawTransitionDurationMS 200
+	int myAimingDrawTransitionDurationMS 100
+	
+	int mySpreadIncreaseTimeMS 100 < tooltip="This value determines how long a weapon spread should increase after a round has been fired" >
+	int myStartAimSpreadTimeMS 100 < tooltip="This value determines how long a weapon spread should increase after player start aiming" >
+	int myStartAimInCoverSpreadTimeMS 100 < tooltip="This value determines how long a weapon spread should increase after player start aiming from cover" >
+	
+	int myTimeToMinAccuracyMS 500 < tooltip="Blend time it takes to get to Max Spread in milliseconds (Growth while firing)" >
+	int myTimeToMaxAccuracyMS 1000 < tooltip="Blend time it takes to get to Min Spread in milliseconds (Shrink while not firing)" >
+	
+	float mySpreadMin 0.0 < tooltip="Min Spread Angle in Default Third Person Mode" >
+	float mySpreadMax 0.0 < tooltip="Max Spread Angle in Default Third Person Mode" >
+	bool mySpreadIsUniform FALSE < tooltip="If checked uses uniform spread for firing from the hip" >
+	
+	float myCoverSpreadMin 0.0 < tooltip="Min Spread Angle in Default Third Person Mode while in Cover" >
+	float myCoverSpreadMax 0.0 < tooltip="Max Spread Angle in Default Third Person Mode while in Cover" >
+	bool myCoverSpreadIsUniform FALSE < tooltip="If checked uses uniform spread for blind firing from cover" >
+	
+	float myAimSpreadMin 0.0 < tooltip="Min Spread Angle in Aim Mode" >
+	float myAimSpreadMax 0.0 < tooltip="Max Spread Angle in Aim Mode" >
+	bool myAimSpreadIsUniform FALSE < tooltip="If checked uses uniform spread while aiming down the sight (not in cover)" >
+	
+	float myCoverAimSpreadMin 0.0 < tooltip="Min Spread Angle in Aim Mode while in Cover" >
+	float myCoverAimSpreadMax 0.0 < tooltip="Max Spread Angle in Aim Mode while in Cover" >
+	bool myCoverAimSpreadIsUniform FALSE < tooltip="If checked uses uniform spread while aiming down the sight in cover" >
+
+	float mySpreadIncreaseSpeed 0.1 < tooltip="How fast the spread adjusts to a larger spread value" >	
+	float mySpreadReductionSpeed 0.05 < tooltip="How fast the spread adjusts to a lower spread value" >
+	
+	float myMovementModifier 1.5 < tooltip="Spread angle multiplier while moving" >
+	float myMovementModifierSpeedCap 3.0 < tooltip="The fastest player speed that counts into movement spread." >
+	float myMovementSpreadThreshold 0.0 < tooltip="Only speeds above the threshold will count towards spread." >
+	float myMovementSpreadAcceleration 6.0 < tooltip="How quickly movement spread increases." >
+	float myMovementSpreadDeceleration 6.0 < tooltip="How quickly movement spread decreases." >
+
+	float myAimChangeModifier 2.0 < tooltip="Spread angle multiplier while turning" >
+	float myAimChangeSensitivity 1.0 < tooltip="" >
+	int myAimChangeAccuracyRecoveryTimeMS 500 < tooltip="Recovery time to adjust the spread after the turning stopped in milliseconds" >
+
+	float myTotalSpreadCapModifier 1.0  < tooltip="Multiplier for the final spread values cap. IE code chooses the smallest spread value between current spread and spread max * myTotalSpreadCapModifier." >
+	int myAmountOfAccuracyLockedRounds 0 < tooltip="Determines how many rounds you can firing before accuracy spread kicks in." >
+	
+	bool myUseAimChangeSpread false < tooltip="Lowers the spread accuracy when moving the aim." >
+	bool myUseReverseSpread false < tooltip="The projectile spread will shrink instead of expand while firing." >
+
+	float myAimingLengthScale 1.0 < tooltip="Changes the scale length of animations while the players weapon is shouldered, ie: lower value makes animations faster, higher makes them slower." >
+	
+	float myAccuracyUI 0.0 < tooltip="Accuracy of the gun 0-100, UI only for weapon modding screen" >
+	float myStabilityUI 0.0 < tooltip="Stability of the gun 0-100, UI only for weapon modding screen" >
+    
+	UIDamageType myUIDamageType Normal < tooltip="Type of primary damage source to show in UI." >
+	
+	bool myIsDynamicOnBackpack false < tooltip="If this is true, it will be attached to a dynamic slot on the backpack. Only for skills currently" >
+}   
+
+list WeaponList
+{
+	Weapon
+}
+

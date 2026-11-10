@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "reconciled": [
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h90_ar_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h90_ar_i",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h90_ar_i.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_mounted_weapon_recoil_impact",
+      "new": "/Game/Division2/Animations/Male/Fire/MountedRecoil/p_shd_m_mounted_weapon_recoil_impact",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_mounted_weapon_recoil_impact.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_mounted_weapon_recoil_halfstrength",
+      "new": "/Game/Division2/Animations/Male/Fire/MountedRecoil/p_shd_m_mounted_weapon_recoil_halfstrength",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_mounted_weapon_recoil_halfstrength.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aimclose_down_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aimclose_down_minigun_i_v01",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_st_aimclose_down_minigun_i_v01.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_aimclose_minigun_i_v01",
+      "new": "/Game/Division2/Animations/Male/Aim/Minigun/p_shd_m_st_aimclose_minigun_i_v01",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_st_aimclose_minigun_i_v01.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h90_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h90_sg_i",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h90_sg_i.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h0_sg_i",
+      "new": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h0_sg_i",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_hccr_burst_kickback_h0_sg_i.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_end",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Shock/p_shd_m_dwn_sfx_shock_minigun_end",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_end.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_loop",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Shock/p_shd_m_dwn_sfx_shock_minigun_loop",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_loop.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_start",
+      "new": "/Game/Division2/Animations/Male/StatusEffects/Shock/p_shd_m_dwn_sfx_shock_minigun_start",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_dwn_sfx_shock_minigun_start.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v90_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v90_ar_i",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Fire/p_shd_m_st_bf_h_minus_90_to_h_plus_90_v90_ar_i.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_bf_h_minus_90_to_h_plus_90_v0_minigun_i",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/BlindFire/Sweeps/p_shd_f_st_bf_h_minus_90_to_h_plus_90_v0_minigun_i",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Female/Fire/p_shd_f_st_bf_h_minus_90_to_h_plus_90_v0_minigun_i.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_ar_i",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/FlaregunReview/p_shd_f_st_flaregun_ar_i",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_ar_i.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_ar_o",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/FlaregunReview/p_shd_f_st_flaregun_ar_o",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_ar_o.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_pi_o",
+      "new": "/Game/Division2/Animations/Female/FiringSupport/FlaregunReview/p_shd_f_st_flaregun_pi_o",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Female/Fire/p_shd_f_st_flaregun_pi_o.uasset"
+    },
+    {
+      "old": "/Game/Division2/Animations/Male/Aim/p_shd_m_st_aim_firing_ar_i",
+      "new": "/Game/Division2/Animations/Male/FiringSupport/StaticPoses/p_shd_m_st_aim_firing_ar_i",
+      "backup": "C:/Users/yeyuxiang/Documents/Codex/2026-11-09/c-users-yeyuxiang-desktop-2/work/firing_revision/duplicate_backup/Division2/Animations/Male/Aim/p_shd_m_st_aim_firing_ar_i.uasset"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "opened": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm_ar_i_v01.p_shd_m_st_burst_600rpm_ar_i_v01",
+  "recommended": [
+    "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm_ar_i_v01.p_shd_m_st_burst_600rpm_ar_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v01.p_shd_m_st_singleshot_pi_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v01.p_shd_m_st_singleshot_sg_i_v01",
+    "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v01.p_shd_m_st_singleshot_mr_i_v01"
+  ]
+}

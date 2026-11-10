@@ -1,0 +1,24 @@
+# Unreal Engine generated files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# IDE and local user files
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.user
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# Python caches and machine-specific shortcuts
+__pycache__/
+*.py[cod]
+*.lnk
+Thumbs.db
+Desktop.ini

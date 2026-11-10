@@ -1,0 +1,417 @@
+{
+  "input": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\outputs\\玩家动画图完整审计.html",
+  "initial": {
+    "scope": "layers:44",
+    "mode": "aggregate",
+    "total": 221,
+    "visible": 11,
+    "containers": 1399,
+    "zoom": 1,
+    "svgSize": {
+      "width": 812,
+      "height": 488
+    },
+    "groups": [
+      {
+        "id": "source",
+        "members": 19,
+        "internalEdges": 0
+      },
+      {
+        "id": "variables",
+        "members": 112,
+        "internalEdges": 81
+      },
+      {
+        "id": "sampling",
+        "members": 10,
+        "internalEdges": 0
+      },
+      {
+        "id": "selection",
+        "members": 41,
+        "internalEdges": 27
+      },
+      {
+        "id": "blend",
+        "members": 7,
+        "internalEdges": 2
+      },
+      {
+        "id": "additive",
+        "members": 6,
+        "internalEdges": 2
+      },
+      {
+        "id": "subtractive",
+        "members": 1,
+        "internalEdges": 0
+      },
+      {
+        "id": "time",
+        "members": 6,
+        "internalEdges": 0
+      },
+      {
+        "id": "bones",
+        "members": 3,
+        "internalEdges": 0
+      },
+      {
+        "id": "other",
+        "members": 15,
+        "internalEdges": 0
+      },
+      {
+        "id": "result",
+        "members": 1,
+        "internalEdges": 0
+      }
+    ],
+    "actualEdges": 541,
+    "summaryEdges": 541,
+    "crossEdgeCounts": 429,
+    "internalEdges": 112
+  },
+  "groupExpansion": [
+    {
+      "id": "source",
+      "visible": 19,
+      "ids": [
+        1,
+        10,
+        18,
+        19,
+        21,
+        25,
+        30,
+        31,
+        32,
+        49,
+        53,
+        59,
+        82,
+        87,
+        90,
+        97,
+        100,
+        102,
+        181
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "variables",
+      "visible": 112,
+      "ids": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        16,
+        22,
+        23,
+        24,
+        27,
+        28,
+        33,
+        34,
+        37,
+        38,
+        39,
+        40,
+        41,
+        43,
+        51,
+        52,
+        54,
+        56,
+        61,
+        62,
+        63,
+        66,
+        67,
+        69,
+        70,
+        72,
+        75,
+        76,
+        78,
+        84,
+        91,
+        92,
+        93,
+        94,
+        95,
+        108,
+        110,
+        111,
+        114,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        132,
+        133,
+        135,
+        136,
+        137,
+        138,
+        139,
+        142,
+        143,
+        144,
+        147,
+        150,
+        151,
+        153,
+        154,
+        155,
+        158,
+        159,
+        160,
+        161,
+        163,
+        164,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        182,
+        183,
+        184,
+        185,
+        187,
+        188,
+        191,
+        192,
+        193,
+        194,
+        196,
+        197,
+        198,
+        202,
+        218
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "sampling",
+      "visible": 10,
+      "ids": [
+        47,
+        50,
+        60,
+        83,
+        88,
+        98,
+        106,
+        113,
+        157,
+        190
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "selection",
+      "visible": 41,
+      "ids": [
+        15,
+        17,
+        20,
+        26,
+        42,
+        44,
+        45,
+        64,
+        65,
+        71,
+        73,
+        74,
+        77,
+        79,
+        80,
+        86,
+        104,
+        115,
+        128,
+        129,
+        134,
+        140,
+        141,
+        145,
+        146,
+        152,
+        162,
+        165,
+        177,
+        178,
+        179,
+        186,
+        195,
+        199,
+        203,
+        204,
+        208,
+        209,
+        212,
+        213,
+        219
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "blend",
+      "visible": 7,
+      "ids": [
+        29,
+        35,
+        96,
+        101,
+        103,
+        109,
+        112
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "additive",
+      "visible": 6,
+      "ids": [
+        85,
+        99,
+        148,
+        180,
+        200,
+        201
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "subtractive",
+      "visible": 1,
+      "ids": [
+        215
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "time",
+      "visible": 6,
+      "ids": [
+        55,
+        57,
+        68,
+        130,
+        156,
+        189
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "bones",
+      "visible": 3,
+      "ids": [
+        206,
+        210,
+        217
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "other",
+      "visible": 15,
+      "ids": [
+        36,
+        46,
+        48,
+        58,
+        81,
+        89,
+        105,
+        107,
+        131,
+        149,
+        205,
+        207,
+        211,
+        214,
+        216
+      ],
+      "zoom": 1
+    },
+    {
+      "id": "result",
+      "visible": 1,
+      "ids": [
+        220
+      ],
+      "zoom": 1
+    }
+  ],
+  "svgExport": {
+    "bytes": 20892,
+    "containsArrowMarker": true,
+    "darkBackground": true
+  },
+  "allBurst": 221,
+  "mounted": "MountedWeapon\n\n状态 237 · 根执行索引 70\n\n默认按同类节点汇总关系。点击组展开真实 exec 节点；“所有原始节点”保留本容器全部 71 个节点。位置和汇总箭头不表示唯一执行顺序。\n\n当前容器的局部图层组\nBleed_Enter\n\nBleed_Enter · layer 95\n\nBleed_Exit\n\nBleed_Exit · layer 96\n\nBleed_Loop\n\nBleed_Loop · layer 97\n\nBlindDeaf_Enter\n\nBlindDeaf_Enter · layer 110\n\nBlindDeaf_Exit\n\nBlindDeaf_Exit · layer 112\n\nBlindDeaf_Loop\n\nBlindDeaf_Loop · layer 111\n\nBurn_Enter\n\nBurn_Enter · layer 198\n\nBurn_Exit\n\nBurn_Exit · layer 200\n\nBurn_Loop\n\nBurn_Loop · layer 199\n\nBurst\n\nBurst · layer 232\n\nDisorientate_Enter\n\nDisorientate_Enter · layer 105\n\nDisorientate_Exit\n\nDisorientate_Exit · layer 106\n\nDisorientate_Loop\n\nDisorientate_Loop · layer 104\n\nFlinch\n\nFlinch · layer 233\n\nPoison_Enter\n\nPoison_Enter · layer 177\n\nPoison_Exit\n\nPoison_Exit · layer 179\n\nPoison_Loop\n\nPoison_Loop · layer 178\n\nMountedWeaponFiring\n\nMountedWeaponFiring · layer 234\n\n全局根图层组（独立作用域）\n容器原始配置\n{\n  \"name\": \"MountedWeapon\",\n  \"animation\": {\n    \"boneUpdate\": {\n      \"rotate\": [],\n      \"scale\": [],\n      \"translate\": []\n    },\n    \"compAnimData\": {\n      \"$compGraph\": \"same_chunk\"\n    }\n  },\n  \"layerGroups\": {\n    \"Bleed_Enter\": {\n      \"layers\": [\n        95\n      ]\n    },\n    \"Bleed_Exit\": {\n      \"layers\": [\n        96\n      ]\n    },\n    \"Bleed_Loop\": {\n      \"layers\": [\n        97\n      ]\n    },\n    \"BlindDeaf_Enter\": {\n      \"layers\": [\n        110\n      ]\n    },\n    \"BlindDeaf_Exit\": {\n      \"layers\": [\n        112\n      ]\n    },\n    \"BlindDeaf_Loop\": {\n      \"layers\": [\n        111\n      ]\n    },\n    \"Burn_Enter\": {\n      \"layers\": [\n        198\n      ]\n    },\n    \"Burn_Exit\": {\n      \"layers\": [\n        200\n      ]\n    },\n    \"Burn_Loop\": {\n      \"layers\": [\n        199\n      ]\n    },\n    \"Burst\": {\n      \"layers\": [\n        232\n      ]\n    },\n    \"Disorientate_Enter\": {\n      \"layers\": [\n        105\n      ]\n    },\n    \"Disorientate_Exit\": {\n      \"layers\": [\n        106\n      ]\n    },\n    \"Disorientate_Loop\": {\n      \"layers\": [\n        104\n      ]\n    },\n    \"Flinch\": {\n      \"layers\": [\n        233\n      ]\n    },\n    \"Poison_Enter\": {\n      \"layers\": [\n        177\n      ]\n    },\n    \"Poison_Exit\": {\n      \"layers\": [\n        179\n      ]\n    },\n    \"Poison_Loop\": {\n      \"layers\": [\n        178\n      ]\n    },\n    \"MountedWeaponFiring\": {\n      \"layers\": [\n        234\n      ]\n    }\n  },\n  \"blendIn\": 0.30000001192092896,\n  \"blendOut\": 0,\n  \"blendTypeIn\": 1,\n  \"blendTypeOut\": 1,\n  \"forceRagdollActivation\": false,\n  \"instanceCount\": 1,\n  \"isDontBlendLocatorRot\": false,\n  \"isDontBlendLocatorTransl\": false,\n  \"isDontBlendRoot\": false,\n  \"isSynchBlendIn\": true,\n  \"isTriggerEventTillEnd\": false,\n  \"modeSetup\": [\n    [\n      255,\n      15\n    ],\n    [\n      7\n    ],\n    [\n      127\n    ],\n    [\n      15\n    ],\n    [\n      15\n    ],\n    [\n      15\n    ],\n    [\n      7\n    ],\n    [\n      3\n    ]\n  ],\n  \"weaponBoneIndex\": 70,\n  \"weaponHand\": 2,\n  \"weaponHandSwitchCyclePos\": 0.47999998927116394,\n  \"states\": [],\n  \"defaultFromTransition\": 302,\n  \"defaultToTransition\": 0,\n  \"playOnce\": false,\n  \"startFromBegin\": false,\n  \"streamingAnimations\": true,\n  \"transfers\": [],\n  \"transitions\": {\n    \"DetachMountedWeapon\": [\n      {\n        \"targetState\": 236,\n        \"transition\": 303\n      }\n    ],\n    \"DetachMountedWeapon_Down\": [\n      {\n        \"targetState\": 238,\n        \"transition\": 303\n      }\n    ],\n    \"DetachMountedWeapon_Stagger\": [\n      {\n        \"targetState\": 240,\n        \"transition\": 303\n      }\n    ]\n  },\n  \"weaponSwitch\": false\n}",
+  "empty": {
+    "scope": "layers:16",
+    "root": null,
+    "nodes": 0,
+    "focusRootDisabled": true,
+    "text": "无动画求值根；未创建虚假的结果节点。"
+  },
+  "rawPoseFlags": {
+    "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_handpose_cw_minigun_t1_i_v01.anim",
+    "dataIsPose": false,
+    "clipIsPose": true,
+    "text": "Animation_Simple\n\nexec 23serialized 19连接到根\n\np_shd_m_st_handpose_cw_crossbow_t1_i_v01.anim\n\nhunter/baked/snowdrop/animation/p_shd_m_st_handpose_cw_crossbow_t1_i_v01.anim\n\ndata 36 · 顶层 IsPose=false · clip.isPose=true\ndataPoseTime=0 · clip.poseTime=0\n\n条件分支输入叠加基础输入复合第一输入复合第二输入动画输出来源\n\np_shd_m_st_handpose_cw_m32_t1_i_v01.anim\n\nhunter/baked/snowdrop/animation/p_shd_m_st_handpose_cw_m32_t1_i_v01.anim\n\ndata 36 · 顶层 IsPose=false · clip.isPose=true\ndataPoseTime=0 · clip.poseTime=0\n\n条件分支输入叠加基础输入复合第一输入复合第二输入动画输出来源\n\np_shd_m_st_handpose_cw_50cal_t1_i_v01.anim\n\nhunter/baked/snowdrop/animation/p_shd_m_st_handpose_cw_50cal_t1_i_v01.anim\n\ndata 36 · 顶层 IsPose=false · clip.isPose=true\ndataPoseTime=0 · clip.poseTime=0\n\n条件分支输入叠加基础输入复合第一输入复合第二输入动画输出来源\n\np_shd_m_st_handpose_cw_minigun_t1_i_v01.anim\n\nhunter/baked/snowdrop/animation/p_shd_m_st_handpose_cw_minigun_t1_i_v01.anim\n\ndata 36 · 顶层 IsPose=false · clip.isPose=true\ndataPoseTime=0 · clip.poseTime=0\n\n条件分支输入叠加基础输入复合第一输入复合第二输入动画输出来源\n\np_shd_m_st_handpose_cw_missile_t1_i_v01.anim\n\nhunter/baked/snowdrop/animation/p_shd_m_st_handpose_cw_missile_t1_i_v01.anim\n\ndata 36 · 顶层 IsPose=false · clip.isPose=true\ndataPoseTime=0 · clip.poseTime=0\n\n条件分支输入叠加基础输入复合第一输入复合第二输入动画输出来源\n\np_shd_m_st_handpose_cw_flamethrower_t1_i_v01.anim\n\nhunter/baked/snowdrop/animation/p_shd_m_st_handpose_cw_flamethrower_t1_i_v01.anim\n\ndata 36 · 顶层 IsPose=false · clip.isPose=true\ndataPoseTime=0 · clip.poseTime=0\n\n条件分支输入叠加基础输入复合第一输入复合第二输入动画输出来源\n\np_shd_m_st_handpose_rpg_player_i.anim\n\nhunter/baked/snowdrop/animation/p_shd_m_st_handpose_rpg_player_i.anim\n\ndata 36 · 顶层 IsPose=false · clip.isPose=true\ndataPoseTime=0 · clip.poseTime=0\n\n条件分支输入叠加基础输入复合第一输入复合第二输入动画输出来源\n\n实际输入连接\n\nexec 0 → myDistanceMultiplierNodeIdx value\n\n使用该节点\n\nnodes.0 → exec 25\n\n原始配置\n{\n  \"data\": 36,\n  \"isFeature\": false,\n  \"myDistanceMultiplierNodeIdx\": 0,\n  \"myRepeatCount\": 1,\n  \"myRetargetValue\": false\n}"
+  },
+  "stateOverview": {
+    "edges": 3216,
+    "arrows": 3216,
+    "marker": true
+  },
+  "contextOverview": "全局根图层组\n\n独立作用域中的同名组不能合并。例如全局 Burst 与 MountedWeapon 状态的局部 Burst 指向不同层。\n\n状态自己的局部图层组\nMountedWeapon · states:237\n打开该状态\nBleed_Enter\nBleed_Enter · layer 95\n\nBleed_Exit\nBleed_Exit · layer 96\n\nBleed_Loop\nBleed_Loop · layer 97\n\nBlindDeaf_Enter\nBlindDeaf_Enter · layer 110\n\nBlindDeaf_Exit\nBlindDeaf_Exit · layer 112\n\nBlindDeaf_Loop\nBlindDeaf_Loop · layer 111\n\nBurn_Enter\nBurn_Enter · layer 198\n\nBurn_Exit\nBurn_Exit · layer 200\n\nBurn_Loop\nBurn_Loop · layer 199\n\nBurst\nBurst · layer 232\n\nDisorientate_Enter\nDisorientate_Enter · layer 105\n\nDisorientate_Exit\nDisorientate_Exit · layer 106\n\nDisorientate_Loop\nDisorientate_Loop · layer 104\n\nFlinch\nFlinch · layer 233\n\nPoison_Enter\nPoison_Enter · layer 177\n\nPoison_Exit\nPoison_Exit · layer 179\n\nPoison_Loop\nPoison_Loop · layer 178\n\nMountedWeaponFiring\nMountedWeaponFiring · layer 234\n\n全部图层\nMountedWeaponFiring\nlayer 234 · 7 节点",
+  "poseSearch": "p_shd_m_st_aim_firing_ar_i\nhunter/baked/snowdrop/animation/p_shd_m_st_aim_firing_ar_i.anim\n同名 FBX 已有FBX 常量曲线\t叠加附加输入叠加基础输入动画输出来源显式姿势采样声明条件分支输入减法基础输入\n2 个资源使用条目 · 2 个姿势采样条目\n\tReady · states:19\nReady · states:20\n\t/Game/Division2/Animations/Male/FiringSupport/StaticPoses/p_shd_m_st_aim_firing_ar_i\n复制 UE 路径",
+  "findings": 18,
+  "reload": {
+    "scope": "layers:53",
+    "total": 4317,
+    "visible": 13,
+    "zoom": 1,
+    "rawCount": 4317
+  },
+  "mobile": {
+    "documentOverflow": false,
+    "zoom": 0.85,
+    "groups": 10
+  },
+  "errors": []
+}

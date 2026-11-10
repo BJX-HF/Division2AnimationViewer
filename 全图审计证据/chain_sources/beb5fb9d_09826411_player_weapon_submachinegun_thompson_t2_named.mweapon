@@ -1,0 +1,72 @@
+include "hunter/game system data/juice/weapon/weaponincludes.juice"
+include ./player_weapon_submachinegun_thompson_t2.mweapon
+include hunter/skillscript/skillscript_weapon_thompson_impact.mskillscriptjuice
+
+Weapon player_weapon_submachinegun_Thompson_t2_named < uid=346395BC5DD652960003B0D386F33DDD > : player_weapon_submachinegun_Thompson_t2
+{
+	myDamageMin 150.0
+	myDamageMax 180.0
+	myRPM 250
+	myGraphObject "rogue/graph objects/weapon/w_smg_thompson_t2_xmas.mgraphobject"
+	myMagazineGraphObject "rogue/graph objects/weapon/w_smg_thompson_t2_xmas_magazine.mgraphobject"
+	myFireEvents
+	{
+		FullAutoFireEvent FullAutoFireEvent
+		{
+			myProjectileData
+			{
+				myProjectileType BallisticStatic
+				myProjectileGraphObject "hunter/graph objects/prop/w_g_snowball.mgraphobject"
+				myInitialSpeed 30.0
+				myAcceleration -3.0
+				myFriction 0.0
+				myMass 0.2
+				myStartingAngle 2.5
+			}
+			myRPMOverride 250
+			myImpactSkillScript < uid=346395BC5DD65BD2000B4DCB969E16A1 > = skillscript_weapon_thompson_impact 346395BC5DD65BC0000B4CCCC4632FB0
+			myCausesSparks FALSE
+			myLocalPlayerBank
+			{
+				myGuid 4505FC2EB484B67004F297C098A16DB5
+			}
+			myLocalPlayerTailsBank
+			{
+				myGuid 49152B7E916196DD03DFFF48942CAC8E
+			}
+			myAnimationLayer Burst
+			myStartAudioEvent
+			{
+				myGuid 4DEA65F8B54966798CB738D209F9AFBA
+			}
+			myEndAudioEvent
+			{
+				myGuid 48AAFF4D0A11B8BF7A8A30944A22B09E
+			}
+		}
+		SemiAutoFireEvent SemiAutoFireEvent
+		{
+			myProjectileData
+			{
+				myProjectileType BallisticDynamic
+				myProjectileGraphObject "hunter/graph objects/prop/w_g_snowball.mgraphobject"
+			}
+			myCausesSparks FALSE
+			myAudioEvent
+			{
+				myGuid 00000000000000000000000000000000
+			}
+		}
+	}
+	myFeedback
+	{
+		myProjectile
+		{
+			myTracer ""
+		}
+	}
+	myAimSpreadMin 2.0
+	myAimSpreadMax 2.0
+	myAmountOfAccuracyLockedRounds 0
+}
+

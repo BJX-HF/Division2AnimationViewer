@@ -1,0 +1,16 @@
+{
+  "nodes": 40,
+  "edges": 46,
+  "svgNodes": 40,
+  "svgEdges": 46,
+  "weaponRecords": 482,
+  "clipRows": 42,
+  "unknownEdges": 5,
+  "inferredEdges": 1,
+  "verifiedEdges": 40,
+  "thompson": "player_weapon_submachinegun_Thompson_t2_named\nrogue/game system data/juice/weapon/player_weapon_submachinegun_thompson_t2_named.mweapon:5\n\tSubMachinegun\n来源：weapon.fruit_type_default\n\t\n\nFullAutoFireEvent → Burst\n实例显式值 · 行 14\n\nSemiAutoFireEvent → Fire\n类型默认声明 · 行 47\n\n\tplayer_weapon_submachinegun_Thompson_t2_named → player_weapon_submachinegun_Thompson_t2 → player_weapon_submachinegun_thompson → weapon_submachinegun_v1\n每一级事件声明与原文",
+  "kickbacks": 15,
+  "fireKickbacks": 8,
+  "mobileOverflow": false,
+  "errors": []
+}

@@ -1,0 +1,10 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Animation",
+  "Description": "The Division 2 animation library and preview, organized from the source HTML catalog.",
+  "Plugins": [
+    { "Name": "PythonScriptPlugin", "Enabled": true },
+    { "Name": "EditorScriptingUtilities", "Enabled": true }
+  ]
+}

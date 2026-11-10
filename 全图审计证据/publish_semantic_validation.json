@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "animation_lookup_records": 4367,
+  "firing_lookup_records": 203,
+  "confirmed_dynamic_source_records": 40,
+  "flaregun_sequence_records": 11,
+  "kickback_roles": 15,
+  "source_curve_constant": 509,
+  "main_graph_use_unknown": 85,
+  "all_4367_have_graph_display_facets": true,
+  "all_4367_ue_path_pairs_unchanged": true,
+  "all_203_firing_path_pairs_unchanged": true,
+  "scope_context_links_verified": 10141,
+  "historical_json_hashes_unchanged": true,
+  "javascript_syntax_checks": [
+    "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\publish_validation_js\\catalog_1.js",
+    "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\publish_validation_js\\firing_0.js"
+  ],
+  "project_copies": [
+    "E:\\UEproject\\Division2AnimationViewer\\AnimationCatalog.html",
+    "E:\\UEproject\\Division2AnimationViewer\\动画分类查找表.html",
+    "E:\\UEproject\\Division2AnimationViewer\\开火动画重新筛选.html",
+    "E:\\UEproject\\Division2AnimationViewer\\开火动画清单.md",
+    "E:\\UEproject\\Division2AnimationViewer\\全图用途审计说明.md",
+    "E:\\UEproject\\Division2AnimationViewer\\README.md"
+  ],
+  "full_graph_html_present_at_validation": true,
+  "notes": [
+    "Runtime role tags are local observations and can coexist; they do not imply simultaneous playback.",
+    "Real Unreal paths and source assets were not moved or renamed.",
+    "The full graph explorer and its large dependencies are published by the parent task."
+  ]
+}

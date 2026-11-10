@@ -1,0 +1,122 @@
+{
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\configs\\03084db6_weapon.juice": {
+    "relative": "chain_sources/dfea0c1f_03084db6_weapon.juice",
+    "sha256": "dfea0c1f19dc71d26b8624835894097dd47ffcf9a3b39d4f1b3de9a41d7a9305",
+    "bytes": 18696
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\shoot_key_functions.json": {
+    "relative": "chain_sources/b8bf2f25_shoot_key_functions.json",
+    "sha256": "b8bf2f250867e41f7ca82c133beb98c2385857310eb80683a970334a522b87b5",
+    "bytes": 135722
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_input_transition.json": {
+    "relative": "chain_sources/693cea6b_fire_input_transition.json",
+    "sha256": "693cea6b0c671f1d3125cb69bfb0779abcea99a41aac5bea1bbd9db2abbdffe6",
+    "bytes": 9549
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_request_functions.json": {
+    "relative": "chain_sources/1008c240_fire_request_functions.json",
+    "sha256": "1008c2403e2a3729fe27b53ac0ca1452d3a05b0fce8e531b1a299d65bb3c9668",
+    "bytes": 22253
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_end_loop_code.json": {
+    "relative": "chain_sources/728587d4_firing_end_loop_code.json",
+    "sha256": "728587d470f2b64cea50d0e05265b65e89fbd36ac20e19d0dcc122e58512651f",
+    "bytes": 48549
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_dispatch_conditions.json": {
+    "relative": "chain_sources/b63b2826_firing_dispatch_conditions.json",
+    "sha256": "b63b28265a503d7b202bdb476acb0e3d8991c902256c3942bce13d31699ba5ec",
+    "bytes": 228069
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\expanded_chain_functions.json": {
+    "relative": "chain_sources/d693ebef_expanded_chain_functions.json",
+    "sha256": "d693ebef6e93f74b47d4a282422134ce73e0f6a5e86d5df0e190dc99abb68361",
+    "bytes": 152022
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json": {
+    "relative": "chain_sources/9ecb31c7_runtime_proof.json",
+    "sha256": "9ecb31c7a4e1d274b3651cde422cc2d54edd271ca183a5ecd6e917991c6bd6ba",
+    "bytes": 837006
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\selection_and_defaults_functions.json": {
+    "relative": "chain_sources/9bb34ce8_selection_and_defaults_functions.json",
+    "sha256": "9bb34ce8df66997adec551bb770431b3ba28adc285fa12fa88a57d2ac5fac61f",
+    "bytes": 216661
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\event_type_and_action_enum.json": {
+    "relative": "chain_sources/832ef502_event_type_and_action_enum.json",
+    "sha256": "832ef502716dad7ff3fd82cd26b75b3ba225d01ab364962905ab6968335ff002",
+    "bytes": 29371
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_archive\\verified_configs\\0303d890_weapon.fruit": {
+    "relative": "chain_sources/252b53d6_0303d890_weapon.fruit",
+    "sha256": "252b53d628c77ed08acf28cc3b91b6f4d02116ceedddc3f9a3347e2523ddf9c9",
+    "bytes": 32663
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_archive\\verified_configs\\09826411_player_weapon_submachinegun_thompson_t2_named.mweapon": {
+    "relative": "chain_sources/beb5fb9d_09826411_player_weapon_submachinegun_thompson_t2_named.mweapon",
+    "sha256": "beb5fb9d537745012a9c2baaa78548af13687ba5e3ef81c712c0b51978f1ebb3",
+    "bytes": 1895
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\named_layer_scope_code.json": {
+    "relative": "chain_sources/311f2f58_named_layer_scope_code.json",
+    "sha256": "311f2f58166a61c0c522f3b75af3039925e1c34bbb38807d325d49157d4fce2a",
+    "bytes": 70635
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\configs\\0305d18a_cache.juice": {
+    "relative": "chain_sources/86141f55_0305d18a_cache.juice",
+    "sha256": "86141f556a798280d141bd88b007f3eea8075c9b5b9f58b52269ac328c32ba76",
+    "bytes": 333
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json": {
+    "relative": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+    "sha256": "4dac51f653156c59a6d6d57803b603e3cb5664a63fd43eac10d39a667176c488",
+    "bytes": 202928
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\state_layergroup_reader.json": {
+    "relative": "chain_sources/50d88b6f_state_layergroup_reader.json",
+    "sha256": "50d88b6f34ac5133525139e4c1ab4696a07f8fa166841c940605fbfeca9445a6",
+    "bytes": 213286
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\state_base_reader.json": {
+    "relative": "chain_sources/2d679bb3_state_base_reader.json",
+    "sha256": "2d679bb3c01393cd762f59414912f139dee912bda8a6418b795e3daf4c9029ea",
+    "bytes": 28898
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\current_firing_graph.json": {
+    "relative": "chain_sources/8908afb6_current_firing_graph.json",
+    "sha256": "8908afb693d44023b29654b45d634d67cea1b486ba57e8081c4a1d00870f9f90",
+    "bytes": 602996
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\derived_event_stop_code.json": {
+    "relative": "chain_sources/2a47e7b6_derived_event_stop_code.json",
+    "sha256": "2a47e7b6ede52cc145a9326dee28612a47903e84c3c69984cf8960c5b2a64fda",
+    "bytes": 41010
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\chain_0x14350b060.json": {
+    "relative": "chain_sources/fb69151e_chain_0x14350b060.json",
+    "sha256": "fb69151e81fe24e418af3c0c6fc58111c4a9ea77c6fb1f1eab898372de5a4992",
+    "bytes": 8271
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\reload_binding_code.json": {
+    "relative": "chain_sources/413b1765_reload_binding_code.json",
+    "sha256": "413b17659ed068bd932b2d2f7712ac5bc3aee0c1a9fabafdb30cbc94e2d7b891",
+    "bytes": 323759
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\current_firing_controls.json": {
+    "relative": "chain_sources/47b6b1c3_current_firing_controls.json",
+    "sha256": "47b6b1c3c357d26b40b10fe19b4c0b55ede1eddce728c5d95f399ed8fdbbb10a",
+    "bytes": 100630
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\chunks\\layers_0046.json": {
+    "relative": "chain_sources/13fa27a6_layers_0046.json",
+    "sha256": "13fa27a6b0c140dc5de063381770cd7faf67cc9c6d107cd7036d6cb6819dcb25",
+    "bytes": 107660
+  },
+  "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_request_xrefs.json": {
+    "relative": "chain_sources/8a39b52c_fire_request_xrefs.json",
+    "sha256": "8a39b52c03ba2777a517eb89a124083ed4224962cbc147675b8a92c177327d8c",
+    "bytes": 16883
+  }
+}

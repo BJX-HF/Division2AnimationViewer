@@ -1,0 +1,4745 @@
+{
+  "scope": "Installed-build static configuration/code dispatch evidence; no live gameplay recording.",
+  "build": {
+    "steam_buildid": 26413016,
+    "exe_sha256": "cb9a6f87dfcdbf6953240833600b0ffd2fa90401e5c727fc3dd30e3f7650cc35",
+    "player_graph_sha256": "c65555f56507417bf85933076051a2614ecbd0747c68e32521f29f052425c3d7"
+  },
+  "layer_rules": {
+    "FullAutoFireEvent": "Burst",
+    "BurstFireEvent": "Burst",
+    "SemiAutoFireEvent": "Fire",
+    "SkillScriptFireEvent": "Fire",
+    "ThrowableFireEvent": "Throw",
+    "BinaryFireEvent": "Fire",
+    "ChargedFireEvent": "Fire"
+  },
+  "layer_rule_basis": "weapon.fruit declared defaults; explicit instance overrides are separately recorded in weapon_event_layers.json.",
+  "main_layers": {
+    "Burst": 44,
+    "Fire": 45
+  },
+  "mounted_layer": 232,
+  "dynamic_clips": 40,
+  "pose_samples": 2,
+  "all_existing_fbx_and_ue_assets_verified": true,
+  "gender_evidence": {
+    "skeleton_assets": [
+      {
+        "HIKFilename": "hunter/baked/art/animation/HumanIK/skeleton_male_hunter.mhik",
+        "animation": "hunter/baked/snowdrop/animation/skeleton_male_player_hunter.anim",
+        "assetName": "skeleton_male_player_hunter",
+        "charRootScale": 1.0,
+        "facialAssetName": "",
+        "facialFilename": "",
+        "filename": "hunter/baked/snowdrop/animation/skeleton_male_player_hunter.anim",
+        "ragdollFilename": "hunter/baked/art/characters/base_characters/workfiles/ragdoll/skeleton_male_ragdoll.mragdoll",
+        "reflexFilename": ""
+      },
+      {
+        "HIKFilename": "hunter/baked/art/animation/HumanIK/skeleton_female_hunter.mhik",
+        "animation": "hunter/baked/snowdrop/animation/skeleton_female_player_hunter.anim",
+        "assetName": "skeleton_female_player_hunter",
+        "charRootScale": 0.9800000190734863,
+        "facialAssetName": "",
+        "facialFilename": "",
+        "filename": "hunter/baked/snowdrop/animation/skeleton_female_player_hunter.anim",
+        "ragdollFilename": "hunter/baked/art/characters/base_characters/workfiles/ragdoll/skeleton_female_ragdoll.mragdoll",
+        "reflexFilename": ""
+      }
+    ],
+    "groups": [
+      {
+        "index": 0,
+        "name": "Default",
+        "subgroups": [
+          {
+            "index": 0,
+            "name": "Default"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "name": "Gender",
+        "subgroups": [
+          {
+            "index": 0,
+            "name": "Male"
+          },
+          {
+            "index": 1,
+            "name": "Female"
+          }
+        ]
+      }
+    ],
+    "firing_anim_data_groups": "All 42 are Default, rather than Gender/Male/Female."
+  },
+  "clips": [
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_burst_600rpm_v90_ar_i_v01.anim",
+      "name": "p_shd_m_st_burst_600rpm_v90_ar_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_burst_600rpm_v90_ar_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm_v90_ar_i_v01",
+      "duration": 1.0,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2937,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2937,
+          "animation_execution_index": 1,
+          "animation_serialized_id": 1,
+          "path": [
+            {
+              "source": 1,
+              "target": 17,
+              "field": "nodes.0"
+            },
+            {
+              "source": 17,
+              "target": 29,
+              "field": "nodes.2"
+            },
+            {
+              "source": 29,
+              "target": 45,
+              "field": "nodes.0"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        },
+        {
+          "data_id": 2937,
+          "animation_execution_index": 10,
+          "animation_serialized_id": 3,
+          "path": [
+            {
+              "source": 10,
+              "target": 17,
+              "field": "nodes.1"
+            },
+            {
+              "source": 17,
+              "target": 29,
+              "field": "nodes.2"
+            },
+            {
+              "source": 29,
+              "target": 45,
+              "field": "nodes.0"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_burst_600rpm_ar_i_v01.anim",
+      "name": "p_shd_m_st_burst_600rpm_ar_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_burst_600rpm_ar_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm_ar_i_v01",
+      "duration": 1.0,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2938,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2938,
+          "animation_execution_index": 18,
+          "animation_serialized_id": 6,
+          "path": [
+            {
+              "source": 18,
+              "target": 20,
+              "field": "nodes.0"
+            },
+            {
+              "source": 20,
+              "target": 29,
+              "field": "nodes.1"
+            },
+            {
+              "source": 29,
+              "target": 45,
+              "field": "nodes.0"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_burst_300rpm_sg_i_v01.anim",
+      "name": "p_shd_m_st_burst_300rpm_sg_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_burst_300rpm_sg_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_300rpm_sg_i_v01",
+      "duration": 2.0,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2939,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 2.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2939,
+          "animation_execution_index": 19,
+          "animation_serialized_id": 7,
+          "path": [
+            {
+              "source": 19,
+              "target": 20,
+              "field": "nodes.1"
+            },
+            {
+              "source": 20,
+              "target": 29,
+              "field": "nodes.1"
+            },
+            {
+              "source": 29,
+              "target": 45,
+              "field": "nodes.0"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_burst_600rpm_-v90_ar_i_v01.anim",
+      "name": "p_shd_m_st_burst_600rpm_-v90_ar_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_burst_600rpm_-v90_ar_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_600rpm__minus_v90_ar_i_v01",
+      "duration": 1.0,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2940,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2940,
+          "animation_execution_index": 21,
+          "animation_serialized_id": 9,
+          "path": [
+            {
+              "source": 21,
+              "target": 26,
+              "field": "nodes.0"
+            },
+            {
+              "source": 26,
+              "target": 29,
+              "field": "nodes.0"
+            },
+            {
+              "source": 29,
+              "target": 45,
+              "field": "nodes.0"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        },
+        {
+          "data_id": 2940,
+          "animation_execution_index": 25,
+          "animation_serialized_id": 10,
+          "path": [
+            {
+              "source": 25,
+              "target": 26,
+              "field": "nodes.1"
+            },
+            {
+              "source": 26,
+              "target": 29,
+              "field": "nodes.0"
+            },
+            {
+              "source": 29,
+              "target": 45,
+              "field": "nodes.0"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_aim_burst_v90_missile_i_v01.anim",
+      "name": "p_shd_m_st_aim_burst_v90_missile_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_aim_burst_v90_missile_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_v90_missile_i_v01",
+      "duration": 0.20000000298023224,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2941,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.20000000298023224,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2941,
+          "animation_execution_index": 30,
+          "animation_serialized_id": 13,
+          "path": [
+            {
+              "source": 30,
+              "target": 35,
+              "field": "nodes.2"
+            },
+            {
+              "source": 35,
+              "target": 36,
+              "field": "basicNode"
+            },
+            {
+              "source": 36,
+              "target": 45,
+              "field": "nodes.1"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_aim_burst_missile_i_v01.anim",
+      "name": "p_shd_m_st_aim_burst_missile_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_aim_burst_missile_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_missile_i_v01",
+      "duration": 0.20000000298023224,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2942,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.20000000298023224,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2942,
+          "animation_execution_index": 31,
+          "animation_serialized_id": 14,
+          "path": [
+            {
+              "source": 31,
+              "target": 35,
+              "field": "nodes.1"
+            },
+            {
+              "source": 35,
+              "target": 36,
+              "field": "basicNode"
+            },
+            {
+              "source": 36,
+              "target": 45,
+              "field": "nodes.1"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_aim_burst_v-90_missile_i_v01.anim",
+      "name": "p_shd_m_st_aim_burst_v-90_missile_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_aim_burst_v-90_missile_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_v_minus_90_missile_i_v01",
+      "duration": 0.20000000298023224,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2943,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.20000000298023224,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2943,
+          "animation_execution_index": 32,
+          "animation_serialized_id": 15,
+          "path": [
+            {
+              "source": 32,
+              "target": 35,
+              "field": "nodes.0"
+            },
+            {
+              "source": 35,
+              "target": 36,
+              "field": "basicNode"
+            },
+            {
+              "source": 36,
+              "target": 45,
+              "field": "nodes.1"
+            },
+            {
+              "source": 45,
+              "target": 46,
+              "field": "basicNode"
+            },
+            {
+              "source": 46,
+              "target": 47,
+              "field": "basicNode"
+            },
+            {
+              "source": 47,
+              "target": 48,
+              "field": "basicNode"
+            },
+            {
+              "source": 48,
+              "target": 212,
+              "field": "nodes.0"
+            },
+            {
+              "source": 212,
+              "target": 213,
+              "field": "nodes.0"
+            },
+            {
+              "source": 213,
+              "target": 214,
+              "field": "basicNode"
+            },
+            {
+              "source": 214,
+              "target": 215,
+              "field": "secondNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_burst_kickback_pi_i_v01.anim",
+      "name": "p_shd_m_st_burst_kickback_pi_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_burst_kickback_pi_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_kickback_pi_i_v01",
+      "duration": 1.0,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2944,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2944,
+          "animation_execution_index": 49,
+          "animation_serialized_id": 22,
+          "path": [
+            {
+              "source": 49,
+              "target": 50,
+              "field": "basicNode"
+            },
+            {
+              "source": 50,
+              "target": 115,
+              "field": "nodes.0"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_aim_burst_kickback_ar_i_v01.anim",
+      "name": "p_shd_m_st_aim_burst_kickback_ar_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_aim_burst_kickback_ar_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_kickback_ar_i_v01",
+      "duration": 5.0,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2945,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 5.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2945,
+          "animation_execution_index": 53,
+          "animation_serialized_id": 23,
+          "path": [
+            {
+              "source": 53,
+              "target": 88,
+              "field": "basicNode"
+            },
+            {
+              "source": 88,
+              "target": 89,
+              "field": "basicNode"
+            },
+            {
+              "source": 89,
+              "target": 96,
+              "field": "nodes.2"
+            },
+            {
+              "source": 96,
+              "target": 104,
+              "field": "nodes.1"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "basicNode"
+            },
+            {
+              "source": 105,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 115,
+              "field": "nodes.1"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_aim_burst_kickback_minigun_i_v02.anim",
+      "name": "p_shd_m_st_aim_burst_kickback_minigun_i_v02",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_aim_burst_kickback_minigun_i_v02.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_aim_burst_kickback_minigun_i_v02",
+      "duration": 1.0833333730697632,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2946,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0833333730697632,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2946,
+          "animation_execution_index": 59,
+          "animation_serialized_id": 25,
+          "path": [
+            {
+              "source": 59,
+              "target": 65,
+              "field": "nodes.0"
+            },
+            {
+              "source": 65,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 74,
+              "field": "nodes.1"
+            },
+            {
+              "source": 74,
+              "target": 80,
+              "field": "nodes.0"
+            },
+            {
+              "source": 80,
+              "target": 81,
+              "field": "basicNode"
+            },
+            {
+              "source": 81,
+              "target": 104,
+              "field": "nodes.0"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "basicNode"
+            },
+            {
+              "source": 105,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 115,
+              "field": "nodes.1"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lcr_blindfire_sweep_v0_ar_i.anim",
+      "name": "p_shd_m_lcr_blindfire_sweep_v0_ar_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lcr_blindfire_sweep_v0_ar_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lcr_blindfire_sweep_v0_ar_i",
+      "duration": 0.6666666865348816,
+      "candidate_group": "BlindFireDirectionalSweep",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2947,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": true,
+      "pose_time": 0.5,
+      "runtime_duration": 0.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2947,
+          "animation_execution_index": 82,
+          "animation_serialized_id": 31,
+          "path": [
+            {
+              "source": 82,
+              "target": 85,
+              "field": "basicNode"
+            },
+            {
+              "source": 85,
+              "target": 86,
+              "field": "nodes.2"
+            },
+            {
+              "source": 86,
+              "target": 96,
+              "field": "nodes.0"
+            },
+            {
+              "source": 96,
+              "target": 104,
+              "field": "nodes.1"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "basicNode"
+            },
+            {
+              "source": 105,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 115,
+              "field": "nodes.1"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lcr_burst_kickback_h90_ar_i.anim",
+      "name": "p_shd_m_lcr_burst_kickback_h90_ar_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lcr_burst_kickback_h90_ar_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h90_ar_i",
+      "duration": 1.1333333253860474,
+      "candidate_group": "CoverKickback",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2948,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.1333333253860474,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2948,
+          "animation_execution_index": 87,
+          "animation_serialized_id": 34,
+          "path": [
+            {
+              "source": 87,
+              "target": 96,
+              "field": "nodes.1"
+            },
+            {
+              "source": 96,
+              "target": 104,
+              "field": "nodes.1"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "basicNode"
+            },
+            {
+              "source": 105,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 115,
+              "field": "nodes.1"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lcr_burst_kickback_h-90_ar_i.anim",
+      "name": "p_shd_m_lcr_burst_kickback_h-90_ar_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lcr_burst_kickback_h-90_ar_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h_minus_90_ar_i",
+      "duration": 1.1333333253860474,
+      "candidate_group": "CoverKickback",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2949,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.1333333253860474,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2949,
+          "animation_execution_index": 90,
+          "animation_serialized_id": 37,
+          "path": [
+            {
+              "source": 90,
+              "target": 96,
+              "field": "nodes.3"
+            },
+            {
+              "source": 96,
+              "target": 104,
+              "field": "nodes.1"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "basicNode"
+            },
+            {
+              "source": 105,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 115,
+              "field": "nodes.1"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lccr_blindfire_sweep_v0_ar_i.anim",
+      "name": "p_shd_m_lccr_blindfire_sweep_v0_ar_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lccr_blindfire_sweep_v0_ar_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/FiringSupport/BlindFire/Sweeps/p_shd_m_lccr_blindfire_sweep_v0_ar_i",
+      "duration": 0.2666666805744171,
+      "candidate_group": "BlindFireDirectionalSweep",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2950,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": true,
+      "pose_time": 0.5,
+      "runtime_duration": 0.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2950,
+          "animation_execution_index": 97,
+          "animation_serialized_id": 40,
+          "path": [
+            {
+              "source": 97,
+              "target": 99,
+              "field": "basicNode"
+            },
+            {
+              "source": 99,
+              "target": 101,
+              "field": "nodes.0"
+            },
+            {
+              "source": 101,
+              "target": 104,
+              "field": "nodes.2"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "basicNode"
+            },
+            {
+              "source": 105,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 115,
+              "field": "nodes.1"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lccr_burst_kickback_h90_ar_i.anim",
+      "name": "p_shd_m_lccr_burst_kickback_h90_ar_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lccr_burst_kickback_h90_ar_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h90_ar_i",
+      "duration": 1.1333333253860474,
+      "candidate_group": "CoverKickback",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2951,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.1333333253860474,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2951,
+          "animation_execution_index": 100,
+          "animation_serialized_id": 42,
+          "path": [
+            {
+              "source": 100,
+              "target": 101,
+              "field": "nodes.1"
+            },
+            {
+              "source": 101,
+              "target": 104,
+              "field": "nodes.2"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "basicNode"
+            },
+            {
+              "source": 105,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 115,
+              "field": "nodes.1"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_hccr_burst_kickback_h90_ar_i.anim",
+      "name": "p_shd_m_hccr_burst_kickback_h90_ar_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_hccr_burst_kickback_h90_ar_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h90_ar_i",
+      "duration": 1.1333333253860474,
+      "candidate_group": "CoverKickback",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2952,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.1333333253860474,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2952,
+          "animation_execution_index": 102,
+          "animation_serialized_id": 44,
+          "path": [
+            {
+              "source": 102,
+              "target": 103,
+              "field": "nodes.1"
+            },
+            {
+              "source": 103,
+              "target": 104,
+              "field": "nodes.3"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "basicNode"
+            },
+            {
+              "source": 105,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 115,
+              "field": "nodes.1"
+            },
+            {
+              "source": 115,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 131,
+              "field": "basicNode"
+            },
+            {
+              "source": 131,
+              "target": 201,
+              "field": "secondNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_burst_unstable_ar_i_v02.anim",
+      "name": "p_shd_m_st_burst_unstable_ar_i_v02",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_burst_unstable_ar_i_v02.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/Burst/p_shd_m_st_burst_unstable_ar_i_v02",
+      "duration": 1.100000023841858,
+      "candidate_group": "Burst",
+      "layer_id": 44,
+      "layer": "Burst",
+      "layer_group": [
+        "Burst"
+      ],
+      "data_id": 2953,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.100000023841858,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2953,
+          "animation_execution_index": 181,
+          "animation_serialized_id": 67,
+          "path": [
+            {
+              "source": 181,
+              "target": 189,
+              "field": "basicNode"
+            },
+            {
+              "source": 189,
+              "target": 190,
+              "field": "basicNode"
+            },
+            {
+              "source": 190,
+              "target": 200,
+              "field": "secondNode"
+            },
+            {
+              "source": 200,
+              "target": 201,
+              "field": "basicNode"
+            },
+            {
+              "source": 201,
+              "target": 204,
+              "field": "nodes.1"
+            },
+            {
+              "source": 204,
+              "target": 205,
+              "field": "basicNode"
+            },
+            {
+              "source": 205,
+              "target": 208,
+              "field": "nodes.0"
+            },
+            {
+              "source": 208,
+              "target": 209,
+              "field": "nodes.0"
+            },
+            {
+              "source": 209,
+              "target": 215,
+              "field": "basicNode"
+            },
+            {
+              "source": 215,
+              "target": 216,
+              "field": "basicNode"
+            },
+            {
+              "source": 216,
+              "target": 219,
+              "field": "nodes.0"
+            },
+            {
+              "source": 219,
+              "target": 220,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_v90_pi_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_v90_pi_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_v90_pi_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_pi_i_v01",
+      "duration": 0.5,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2954,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.5,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2954,
+          "animation_execution_index": 1,
+          "animation_serialized_id": 1,
+          "path": [
+            {
+              "source": 1,
+              "target": 6,
+              "field": "nodes.0"
+            },
+            {
+              "source": 6,
+              "target": 17,
+              "field": "nodes.2"
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "field": "basicNode"
+            },
+            {
+              "source": 18,
+              "target": 21,
+              "field": "basicNode"
+            },
+            {
+              "source": 21,
+              "target": 22,
+              "field": "basicNode"
+            },
+            {
+              "source": 22,
+              "target": 137,
+              "field": "nodes.0"
+            },
+            {
+              "source": 137,
+              "target": 138,
+              "field": "nodes.0"
+            },
+            {
+              "source": 138,
+              "target": 139,
+              "field": "basicNode"
+            },
+            {
+              "source": 139,
+              "target": 140,
+              "field": "secondNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_v90_mr_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_v90_mr_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_v90_mr_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_mr_i_v01",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2955,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2955,
+          "animation_execution_index": 2,
+          "animation_serialized_id": 2,
+          "path": [
+            {
+              "source": 2,
+              "target": 6,
+              "field": "nodes.1"
+            },
+            {
+              "source": 6,
+              "target": 17,
+              "field": "nodes.2"
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "field": "basicNode"
+            },
+            {
+              "source": 18,
+              "target": 21,
+              "field": "basicNode"
+            },
+            {
+              "source": 21,
+              "target": 22,
+              "field": "basicNode"
+            },
+            {
+              "source": 22,
+              "target": 137,
+              "field": "nodes.0"
+            },
+            {
+              "source": 137,
+              "target": 138,
+              "field": "nodes.0"
+            },
+            {
+              "source": 138,
+              "target": 139,
+              "field": "basicNode"
+            },
+            {
+              "source": 139,
+              "target": 140,
+              "field": "secondNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_v90_sg_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_v90_sg_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_v90_sg_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v90_sg_i_v01",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2956,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2956,
+          "animation_execution_index": 3,
+          "animation_serialized_id": 3,
+          "path": [
+            {
+              "source": 3,
+              "target": 140,
+              "field": "eventCollectionNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_pi_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_pi_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_pi_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v01",
+      "duration": 0.5,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2957,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.5,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2957,
+          "animation_execution_index": 7,
+          "animation_serialized_id": 6,
+          "path": [
+            {
+              "source": 7,
+              "target": 10,
+              "field": "nodes.0"
+            },
+            {
+              "source": 10,
+              "target": 17,
+              "field": "nodes.1"
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "field": "basicNode"
+            },
+            {
+              "source": 18,
+              "target": 21,
+              "field": "basicNode"
+            },
+            {
+              "source": 21,
+              "target": 22,
+              "field": "basicNode"
+            },
+            {
+              "source": 22,
+              "target": 137,
+              "field": "nodes.0"
+            },
+            {
+              "source": 137,
+              "target": 138,
+              "field": "nodes.0"
+            },
+            {
+              "source": 138,
+              "target": 139,
+              "field": "basicNode"
+            },
+            {
+              "source": 139,
+              "target": 140,
+              "field": "secondNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        },
+        {
+          "data_id": 2957,
+          "animation_execution_index": 55,
+          "animation_serialized_id": 21,
+          "path": [
+            {
+              "source": 55,
+              "target": 58,
+              "field": "nodes.0"
+            },
+            {
+              "source": 58,
+              "target": 67,
+              "field": "nodes.0"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_mr_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_mr_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_mr_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v01",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2958,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2958,
+          "animation_execution_index": 8,
+          "animation_serialized_id": 7,
+          "path": [
+            {
+              "source": 8,
+              "target": 10,
+              "field": "nodes.1"
+            },
+            {
+              "source": 10,
+              "target": 17,
+              "field": "nodes.1"
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "field": "basicNode"
+            },
+            {
+              "source": 18,
+              "target": 21,
+              "field": "basicNode"
+            },
+            {
+              "source": 21,
+              "target": 22,
+              "field": "basicNode"
+            },
+            {
+              "source": 22,
+              "target": 137,
+              "field": "nodes.0"
+            },
+            {
+              "source": 137,
+              "target": 138,
+              "field": "nodes.0"
+            },
+            {
+              "source": 138,
+              "target": 139,
+              "field": "basicNode"
+            },
+            {
+              "source": 139,
+              "target": 140,
+              "field": "secondNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        },
+        {
+          "data_id": 2958,
+          "animation_execution_index": 59,
+          "animation_serialized_id": 25,
+          "path": [
+            {
+              "source": 59,
+              "target": 62,
+              "field": "nodes.0"
+            },
+            {
+              "source": 62,
+              "target": 67,
+              "field": "nodes.1"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_sg_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_sg_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_sg_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v01",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2959,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2959,
+          "animation_execution_index": 9,
+          "animation_serialized_id": 8,
+          "path": [
+            {
+              "source": 9,
+              "target": 10,
+              "field": "nodes.4"
+            },
+            {
+              "source": 10,
+              "target": 17,
+              "field": "nodes.1"
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "field": "basicNode"
+            },
+            {
+              "source": 18,
+              "target": 21,
+              "field": "basicNode"
+            },
+            {
+              "source": 21,
+              "target": 22,
+              "field": "basicNode"
+            },
+            {
+              "source": 22,
+              "target": 137,
+              "field": "nodes.0"
+            },
+            {
+              "source": 137,
+              "target": 138,
+              "field": "nodes.0"
+            },
+            {
+              "source": 138,
+              "target": 139,
+              "field": "basicNode"
+            },
+            {
+              "source": 139,
+              "target": 140,
+              "field": "secondNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        },
+        {
+          "data_id": 2959,
+          "animation_execution_index": 63,
+          "animation_serialized_id": 29,
+          "path": [
+            {
+              "source": 63,
+              "target": 66,
+              "field": "nodes.0"
+            },
+            {
+              "source": 66,
+              "target": 67,
+              "field": "nodes.4"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_v-90_pi_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_v-90_pi_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_v-90_pi_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_pi_i_v01",
+      "duration": 0.5,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2960,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.5,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2960,
+          "animation_execution_index": 11,
+          "animation_serialized_id": 10,
+          "path": [
+            {
+              "source": 11,
+              "target": 14,
+              "field": "nodes.0"
+            },
+            {
+              "source": 14,
+              "target": 17,
+              "field": "nodes.0"
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "field": "basicNode"
+            },
+            {
+              "source": 18,
+              "target": 21,
+              "field": "basicNode"
+            },
+            {
+              "source": 21,
+              "target": 22,
+              "field": "basicNode"
+            },
+            {
+              "source": 22,
+              "target": 137,
+              "field": "nodes.0"
+            },
+            {
+              "source": 137,
+              "target": 138,
+              "field": "nodes.0"
+            },
+            {
+              "source": 138,
+              "target": 139,
+              "field": "basicNode"
+            },
+            {
+              "source": 139,
+              "target": 140,
+              "field": "secondNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_v-90_mr_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_v-90_mr_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_v-90_mr_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_mr_i_v01",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2961,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2961,
+          "animation_execution_index": 12,
+          "animation_serialized_id": 11,
+          "path": [
+            {
+              "source": 12,
+              "target": 14,
+              "field": "nodes.1"
+            },
+            {
+              "source": 14,
+              "target": 17,
+              "field": "nodes.0"
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "field": "basicNode"
+            },
+            {
+              "source": 18,
+              "target": 21,
+              "field": "basicNode"
+            },
+            {
+              "source": 21,
+              "target": 22,
+              "field": "basicNode"
+            },
+            {
+              "source": 22,
+              "target": 137,
+              "field": "nodes.0"
+            },
+            {
+              "source": 137,
+              "target": 138,
+              "field": "nodes.0"
+            },
+            {
+              "source": 138,
+              "target": 139,
+              "field": "basicNode"
+            },
+            {
+              "source": 139,
+              "target": 140,
+              "field": "secondNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_v-90_sg_i_v01.anim",
+      "name": "p_shd_m_st_singleshot_v-90_sg_i_v01",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_v-90_sg_i_v01.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_v_minus_90_sg_i_v01",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2962,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2962,
+          "animation_execution_index": 13,
+          "animation_serialized_id": 12,
+          "path": [
+            {
+              "source": 13,
+              "target": 14,
+              "field": "nodes.4"
+            },
+            {
+              "source": 14,
+              "target": 17,
+              "field": "nodes.0"
+            },
+            {
+              "source": 17,
+              "target": 18,
+              "field": "basicNode"
+            },
+            {
+              "source": 18,
+              "target": 21,
+              "field": "basicNode"
+            },
+            {
+              "source": 21,
+              "target": 22,
+              "field": "basicNode"
+            },
+            {
+              "source": 22,
+              "target": 137,
+              "field": "nodes.0"
+            },
+            {
+              "source": 137,
+              "target": 138,
+              "field": "nodes.0"
+            },
+            {
+              "source": 138,
+              "target": 139,
+              "field": "basicNode"
+            },
+            {
+              "source": 139,
+              "target": 140,
+              "field": "secondNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_pi_i_v02.anim",
+      "name": "p_shd_m_st_singleshot_pi_i_v02",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_pi_i_v02.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v02",
+      "duration": 0.5,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2963,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.5,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2963,
+          "animation_execution_index": 56,
+          "animation_serialized_id": 22,
+          "path": [
+            {
+              "source": 56,
+              "target": 67,
+              "field": "nodes.12"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_pi_i_v03.anim",
+      "name": "p_shd_m_st_singleshot_pi_i_v03",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_pi_i_v03.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_pi_i_v03",
+      "duration": 0.5,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2964,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.5,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2964,
+          "animation_execution_index": 57,
+          "animation_serialized_id": 23,
+          "path": [
+            {
+              "source": 57,
+              "target": 58,
+              "field": "nodes.2"
+            },
+            {
+              "source": 58,
+              "target": 67,
+              "field": "nodes.0"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_mr_i_v02.anim",
+      "name": "p_shd_m_st_singleshot_mr_i_v02",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_mr_i_v02.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v02",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2965,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2965,
+          "animation_execution_index": 60,
+          "animation_serialized_id": 26,
+          "path": [
+            {
+              "source": 60,
+              "target": 62,
+              "field": "nodes.1"
+            },
+            {
+              "source": 62,
+              "target": 67,
+              "field": "nodes.1"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_mr_i_v03.anim",
+      "name": "p_shd_m_st_singleshot_mr_i_v03",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_mr_i_v03.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_mr_i_v03",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2966,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2966,
+          "animation_execution_index": 61,
+          "animation_serialized_id": 27,
+          "path": [
+            {
+              "source": 61,
+              "target": 62,
+              "field": "nodes.2"
+            },
+            {
+              "source": 62,
+              "target": 67,
+              "field": "nodes.1"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_sg_i_v02.anim",
+      "name": "p_shd_m_st_singleshot_sg_i_v02",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_sg_i_v02.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v02",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2967,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2967,
+          "animation_execution_index": 64,
+          "animation_serialized_id": 30,
+          "path": [
+            {
+              "source": 64,
+              "target": 66,
+              "field": "nodes.1"
+            },
+            {
+              "source": 66,
+              "target": 67,
+              "field": "nodes.4"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_sg_i_v03.anim",
+      "name": "p_shd_m_st_singleshot_sg_i_v03",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_sg_i_v03.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_sg_i_v03",
+      "duration": 1.0,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2968,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2968,
+          "animation_execution_index": 65,
+          "animation_serialized_id": 31,
+          "path": [
+            {
+              "source": 65,
+              "target": 66,
+              "field": "nodes.2"
+            },
+            {
+              "source": 66,
+              "target": 67,
+              "field": "nodes.4"
+            },
+            {
+              "source": 67,
+              "target": 68,
+              "field": "basicNode"
+            },
+            {
+              "source": 68,
+              "target": 86,
+              "field": "secondNode"
+            },
+            {
+              "source": 86,
+              "target": 129,
+              "field": "basicNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_st_singleshot_kickback_sg_i.anim",
+      "name": "p_shd_m_st_singleshot_kickback_sg_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_st_singleshot_kickback_sg_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/SingleShot/p_shd_m_st_singleshot_kickback_sg_i",
+      "duration": 1.1333333253860474,
+      "candidate_group": "SingleShot",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2969,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.1666666269302368,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2969,
+          "animation_execution_index": 87,
+          "animation_serialized_id": 38,
+          "path": [
+            {
+              "source": 87,
+              "target": 105,
+              "field": "nodes.0"
+            },
+            {
+              "source": 105,
+              "target": 106,
+              "field": "basicNode"
+            },
+            {
+              "source": 106,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 129,
+              "field": "secondNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lcr_burst_kickback_h0_sg_i.anim",
+      "name": "p_shd_m_lcr_burst_kickback_h0_sg_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lcr_burst_kickback_h0_sg_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h0_sg_i",
+      "duration": 1.0,
+      "candidate_group": "CoverKickback",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2970,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2970,
+          "animation_execution_index": 88,
+          "animation_serialized_id": 39,
+          "path": [
+            {
+              "source": 88,
+              "target": 97,
+              "field": "nodes.0"
+            },
+            {
+              "source": 97,
+              "target": 105,
+              "field": "nodes.1"
+            },
+            {
+              "source": 105,
+              "target": 106,
+              "field": "basicNode"
+            },
+            {
+              "source": 106,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 129,
+              "field": "secondNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lcr_burst_kickback_h90_sg_i.anim",
+      "name": "p_shd_m_lcr_burst_kickback_h90_sg_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lcr_burst_kickback_h90_sg_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h90_sg_i",
+      "duration": 1.0,
+      "candidate_group": "CoverKickback",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2971,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2971,
+          "animation_execution_index": 89,
+          "animation_serialized_id": 40,
+          "path": [
+            {
+              "source": 89,
+              "target": 97,
+              "field": "nodes.1"
+            },
+            {
+              "source": 97,
+              "target": 105,
+              "field": "nodes.1"
+            },
+            {
+              "source": 105,
+              "target": 106,
+              "field": "basicNode"
+            },
+            {
+              "source": 106,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 129,
+              "field": "secondNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lcr_burst_kickback_h-90_sg_i.anim",
+      "name": "p_shd_m_lcr_burst_kickback_h-90_sg_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lcr_burst_kickback_h-90_sg_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lcr_burst_kickback_h_minus_90_sg_i",
+      "duration": 1.0,
+      "candidate_group": "CoverKickback",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2972,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2972,
+          "animation_execution_index": 91,
+          "animation_serialized_id": 42,
+          "path": [
+            {
+              "source": 91,
+              "target": 97,
+              "field": "nodes.3"
+            },
+            {
+              "source": 97,
+              "target": 105,
+              "field": "nodes.1"
+            },
+            {
+              "source": 105,
+              "target": 106,
+              "field": "basicNode"
+            },
+            {
+              "source": 106,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 129,
+              "field": "secondNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lccr_burst_kickback_h0_sg_i.anim",
+      "name": "p_shd_m_lccr_burst_kickback_h0_sg_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lccr_burst_kickback_h0_sg_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h0_sg_i",
+      "duration": 1.0,
+      "candidate_group": "CoverKickback",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2973,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2973,
+          "animation_execution_index": 98,
+          "animation_serialized_id": 45,
+          "path": [
+            {
+              "source": 98,
+              "target": 101,
+              "field": "nodes.0"
+            },
+            {
+              "source": 101,
+              "target": 105,
+              "field": "nodes.2"
+            },
+            {
+              "source": 105,
+              "target": 106,
+              "field": "basicNode"
+            },
+            {
+              "source": 106,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 129,
+              "field": "secondNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_lccr_burst_kickback_h90_sg_i.anim",
+      "name": "p_shd_m_lccr_burst_kickback_h90_sg_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_lccr_burst_kickback_h90_sg_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_lccr_burst_kickback_h90_sg_i",
+      "duration": 1.0,
+      "candidate_group": "CoverKickback",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2974,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2974,
+          "animation_execution_index": 99,
+          "animation_serialized_id": 46,
+          "path": [
+            {
+              "source": 99,
+              "target": 101,
+              "field": "nodes.1"
+            },
+            {
+              "source": 101,
+              "target": 105,
+              "field": "nodes.2"
+            },
+            {
+              "source": 105,
+              "target": 106,
+              "field": "basicNode"
+            },
+            {
+              "source": 106,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 129,
+              "field": "secondNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_hccr_burst_kickback_h0_sg_i.anim",
+      "name": "p_shd_m_hccr_burst_kickback_h0_sg_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_hccr_burst_kickback_h0_sg_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h0_sg_i",
+      "duration": 1.0,
+      "candidate_group": "CoverKickback",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2975,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2975,
+          "animation_execution_index": 102,
+          "animation_serialized_id": 49,
+          "path": [
+            {
+              "source": 102,
+              "target": 104,
+              "field": "nodes.0"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "nodes.3"
+            },
+            {
+              "source": 105,
+              "target": 106,
+              "field": "basicNode"
+            },
+            {
+              "source": 106,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 129,
+              "field": "secondNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_hccr_burst_kickback_h90_sg_i.anim",
+      "name": "p_shd_m_hccr_burst_kickback_h90_sg_i",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_hccr_burst_kickback_h90_sg_i.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/CoverKickback/p_shd_m_hccr_burst_kickback_h90_sg_i",
+      "duration": 1.0,
+      "candidate_group": "CoverKickback",
+      "layer_id": 45,
+      "layer": "Fire",
+      "layer_group": [
+        "Fire"
+      ],
+      "data_id": 2976,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 1.0,
+      "paths_to_layer_root": [
+        {
+          "data_id": 2976,
+          "animation_execution_index": 103,
+          "animation_serialized_id": 50,
+          "path": [
+            {
+              "source": 103,
+              "target": 104,
+              "field": "nodes.1"
+            },
+            {
+              "source": 104,
+              "target": 105,
+              "field": "nodes.3"
+            },
+            {
+              "source": 105,
+              "target": 106,
+              "field": "basicNode"
+            },
+            {
+              "source": 106,
+              "target": 112,
+              "field": "nodes.2"
+            },
+            {
+              "source": 112,
+              "target": 113,
+              "field": "basicNode"
+            },
+            {
+              "source": 113,
+              "target": 129,
+              "field": "secondNode"
+            },
+            {
+              "source": 129,
+              "target": 130,
+              "field": "basicNode"
+            },
+            {
+              "source": 130,
+              "target": 133,
+              "field": "nodes.0"
+            },
+            {
+              "source": 133,
+              "target": 134,
+              "field": "nodes.0"
+            },
+            {
+              "source": 134,
+              "target": 140,
+              "field": "basicNode"
+            },
+            {
+              "source": 140,
+              "target": 141,
+              "field": "basicNode"
+            },
+            {
+              "source": 141,
+              "target": 157,
+              "field": "nodes.0"
+            },
+            {
+              "source": 157,
+              "target": 158,
+              "field": "basicNode"
+            },
+            {
+              "source": 158,
+              "target": 162,
+              "field": "basicNode"
+            },
+            {
+              "source": 162,
+              "target": 164,
+              "field": "nodes.2"
+            },
+            {
+              "source": 164,
+              "target": 165,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_mounted_weapon_recoil_impact.anim",
+      "name": "p_shd_m_mounted_weapon_recoil_impact",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_mounted_weapon_recoil_impact.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/MountedRecoil/p_shd_m_mounted_weapon_recoil_impact",
+      "duration": 0.4000000059604645,
+      "candidate_group": "MountedRecoil",
+      "layer_id": 232,
+      "layer": "Burst",
+      "layer_group": [],
+      "data_id": 4791,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 0.4000000059604645,
+      "paths_to_layer_root": [
+        {
+          "data_id": 4791,
+          "animation_execution_index": 1,
+          "animation_serialized_id": 1,
+          "path": [
+            {
+              "source": 1,
+              "target": 2,
+              "field": "basicNode"
+            },
+            {
+              "source": 2,
+              "target": 3,
+              "field": "basicNode"
+            },
+            {
+              "source": 3,
+              "target": 10,
+              "field": "eventCollectionNode"
+            },
+            {
+              "source": 10,
+              "target": 13,
+              "field": "nodes.0"
+            },
+            {
+              "source": 13,
+              "target": 14,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resource": "hunter/baked/snowdrop/animation/p_shd_m_mounted_weapon_recoil_halfstrength.anim",
+      "name": "p_shd_m_mounted_weapon_recoil_halfstrength",
+      "existing_fbx": true,
+      "source_fbx": "C:\\Users\\yeyuxiang\\Desktop\\全境封锁2解包\\animations\\p_shd_m_mounted_weapon_recoil_halfstrength.fbx",
+      "ue_asset": "/Game/Division2/Animations/Male/Fire/MountedRecoil/p_shd_m_mounted_weapon_recoil_halfstrength",
+      "duration": 2.8333332538604736,
+      "candidate_group": "MountedRecoil",
+      "layer_id": 232,
+      "layer": "Burst",
+      "layer_group": [],
+      "data_id": 4792,
+      "runtime_group_index": 0,
+      "runtime_group_name": "Default",
+      "is_pose_sample": false,
+      "pose_time": 0.0,
+      "runtime_duration": 2.8333332538604736,
+      "paths_to_layer_root": [
+        {
+          "data_id": 4792,
+          "animation_execution_index": 11,
+          "animation_serialized_id": 5,
+          "path": [
+            {
+              "source": 11,
+              "target": 12,
+              "field": "basicNode"
+            },
+            {
+              "source": 12,
+              "target": 13,
+              "field": "nodes.1"
+            },
+            {
+              "source": 13,
+              "target": 14,
+              "field": "basicNode"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

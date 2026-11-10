@@ -1,0 +1,1220 @@
+{
+  "conclusion": "AnimationSpeed.animData and AnimationDirection.animData are one-based commonObjects.animDatas IDs, not evalNodesInOrder execution links.",
+  "classes": [
+    {
+      "type": "MAN_AnimEvalNodeAnimationDirection",
+      "nameGetter": "0x1434c7d50",
+      "serializer": "0x1434d0cb0",
+      "serializerSlotAdjacentToNameGetter": true
+    },
+    {
+      "type": "MAN_AnimEvalNodeAnimationSpeed",
+      "nameGetter": "0x1434c7d70",
+      "serializer": "0x1434d0df0",
+      "serializerSlotAdjacentToNameGetter": true
+    }
+  ],
+  "vtableReads": [
+    {
+      "name": "Direction",
+      "nameSlot": "0x145696aa8",
+      "firstVA": "0x145696a80",
+      "entries": [
+        "0x14069c260",
+        "0x14069bac0",
+        "0x1434ca450",
+        "0x1434a0b70",
+        "0x1406cfbe0",
+        "0x1434c7d50",
+        "0x1434d0cb0",
+        "0x143467700",
+        "0x145fb2b78",
+        "0x143458a90",
+        "0x1434a2b80",
+        "0x14352cc30",
+        "0x142a61de8",
+        "0x145fb2bf0",
+        "0x143458880"
+      ]
+    },
+    {
+      "name": "Speed",
+      "nameSlot": "0x145696a38",
+      "firstVA": "0x145696a10",
+      "entries": [
+        "0x14069c260",
+        "0x14069bac0",
+        "0x1434ca470",
+        "0x1434a0cf0",
+        "0x1406cfbe0",
+        "0x1434c7d70",
+        "0x1434d0df0",
+        "0x143467790",
+        "0x145fb2af0",
+        "0x143455cf0",
+        "0x140690120",
+        "0x14069cf90",
+        "0x14069d950",
+        "0x1434f27c0",
+        "0x14069c260"
+      ]
+    }
+  ],
+  "fieldWriters": [
+    {
+      "field": "animData",
+      "target": "0x1456a8e08",
+      "xref": "0x1434d0cca",
+      "function": {
+        "requested_va": "0x1434d0cca",
+        "start": "0x1434d0cb0",
+        "end": "0x1434d0d43",
+        "instructions": [
+          {
+            "va": "0x1434d0cb0",
+            "size": 5,
+            "asm": "mov qword ptr [rsp + 8], rbx",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cb5",
+            "size": 5,
+            "asm": "mov qword ptr [rsp + 0x10], rsi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cba",
+            "size": 1,
+            "asm": "push rdi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cbb",
+            "size": 4,
+            "asm": "sub rsp, 0x50",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cbf",
+            "size": 4,
+            "asm": "mov byte ptr [rdx + 0x10], 1",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cc3",
+            "size": 3,
+            "asm": "mov rsi, rdx",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cc6",
+            "size": 4,
+            "asm": "mov rbx, qword ptr [rcx + 8]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cca",
+            "size": 7,
+            "asm": "lea rdx, [rip + 0x21d8137]",
+            "rip_targets": [
+              "0x1456a8e08"
+            ],
+            "strings": [
+              "animData"
+            ]
+          },
+          {
+            "va": "0x1434d0cd1",
+            "size": 5,
+            "asm": "lea rcx, [rsp + 0x38]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cd6",
+            "size": 5,
+            "asm": "call 0x140153fb0",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cdb",
+            "size": 4,
+            "asm": "mov rcx, qword ptr [rsi + 8]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cdf",
+            "size": 3,
+            "asm": "mov rdx, rbx",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0ce2",
+            "size": 3,
+            "asm": "mov rdi, rax",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0ce5",
+            "size": 4,
+            "asm": "mov rcx, qword ptr [rcx + 0x20]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0ce9",
+            "size": 7,
+            "asm": "add rcx, 0x108",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cf0",
+            "size": 5,
+            "asm": "call 0x1434ed210",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cf5",
+            "size": 2,
+            "asm": "mov edx, eax",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cf7",
+            "size": 5,
+            "asm": "lea rcx, [rsp + 0x20]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0cfc",
+            "size": 5,
+            "asm": "call 0x140153f40",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d01",
+            "size": 5,
+            "asm": "mov edx, 1",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d06",
+            "size": 3,
+            "asm": "mov rcx, rsi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d09",
+            "size": 3,
+            "asm": "mov rbx, rax",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d0c",
+            "size": 5,
+            "asm": "call 0x1401add80",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d11",
+            "size": 3,
+            "asm": "mov r8, rbx",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d14",
+            "size": 3,
+            "asm": "mov rdx, rdi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d17",
+            "size": 3,
+            "asm": "mov rcx, rsi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d1a",
+            "size": 5,
+            "asm": "call 0x1401b1070",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d1f",
+            "size": 5,
+            "asm": "lea rcx, [rsp + 0x20]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d24",
+            "size": 5,
+            "asm": "call 0x1401581d0",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d29",
+            "size": 5,
+            "asm": "lea rcx, [rsp + 0x38]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d2e",
+            "size": 5,
+            "asm": "call 0x1401581d0",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d33",
+            "size": 5,
+            "asm": "mov rbx, qword ptr [rsp + 0x60]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d38",
+            "size": 5,
+            "asm": "mov rsi, qword ptr [rsp + 0x68]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d3d",
+            "size": 4,
+            "asm": "add rsp, 0x50",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d41",
+            "size": 1,
+            "asm": "pop rdi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0d42",
+            "size": 1,
+            "asm": "ret ",
+            "rip_targets": [],
+            "strings": []
+          }
+        ]
+      }
+    },
+    {
+      "field": "animData",
+      "target": "0x1456a8e08",
+      "xref": "0x1434d0e0a",
+      "function": {
+        "requested_va": "0x1434d0e0a",
+        "start": "0x1434d0df0",
+        "end": "0x1434d0e83",
+        "instructions": [
+          {
+            "va": "0x1434d0df0",
+            "size": 5,
+            "asm": "mov qword ptr [rsp + 8], rbx",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0df5",
+            "size": 5,
+            "asm": "mov qword ptr [rsp + 0x10], rsi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0dfa",
+            "size": 1,
+            "asm": "push rdi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0dfb",
+            "size": 4,
+            "asm": "sub rsp, 0x50",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0dff",
+            "size": 4,
+            "asm": "mov byte ptr [rdx + 0x10], 1",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e03",
+            "size": 3,
+            "asm": "mov rsi, rdx",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e06",
+            "size": 4,
+            "asm": "mov rbx, qword ptr [rcx + 8]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e0a",
+            "size": 7,
+            "asm": "lea rdx, [rip + 0x21d7ff7]",
+            "rip_targets": [
+              "0x1456a8e08"
+            ],
+            "strings": [
+              "animData"
+            ]
+          },
+          {
+            "va": "0x1434d0e11",
+            "size": 5,
+            "asm": "lea rcx, [rsp + 0x38]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e16",
+            "size": 5,
+            "asm": "call 0x140153fb0",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e1b",
+            "size": 4,
+            "asm": "mov rcx, qword ptr [rsi + 8]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e1f",
+            "size": 3,
+            "asm": "mov rdx, rbx",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e22",
+            "size": 3,
+            "asm": "mov rdi, rax",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e25",
+            "size": 4,
+            "asm": "mov rcx, qword ptr [rcx + 0x20]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e29",
+            "size": 7,
+            "asm": "add rcx, 0x108",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e30",
+            "size": 5,
+            "asm": "call 0x1434ed210",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e35",
+            "size": 2,
+            "asm": "mov edx, eax",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e37",
+            "size": 5,
+            "asm": "lea rcx, [rsp + 0x20]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e3c",
+            "size": 5,
+            "asm": "call 0x140153f40",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e41",
+            "size": 5,
+            "asm": "mov edx, 1",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e46",
+            "size": 3,
+            "asm": "mov rcx, rsi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e49",
+            "size": 3,
+            "asm": "mov rbx, rax",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e4c",
+            "size": 5,
+            "asm": "call 0x1401add80",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e51",
+            "size": 3,
+            "asm": "mov r8, rbx",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e54",
+            "size": 3,
+            "asm": "mov rdx, rdi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e57",
+            "size": 3,
+            "asm": "mov rcx, rsi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e5a",
+            "size": 5,
+            "asm": "call 0x1401b1070",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e5f",
+            "size": 5,
+            "asm": "lea rcx, [rsp + 0x20]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e64",
+            "size": 5,
+            "asm": "call 0x1401581d0",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e69",
+            "size": 5,
+            "asm": "lea rcx, [rsp + 0x38]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e6e",
+            "size": 5,
+            "asm": "call 0x1401581d0",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e73",
+            "size": 5,
+            "asm": "mov rbx, qword ptr [rsp + 0x60]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e78",
+            "size": 5,
+            "asm": "mov rsi, qword ptr [rsp + 0x68]",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e7d",
+            "size": 4,
+            "asm": "add rsp, 0x50",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e81",
+            "size": 1,
+            "asm": "pop rdi",
+            "rip_targets": [],
+            "strings": []
+          },
+          {
+            "va": "0x1434d0e82",
+            "size": 1,
+            "asm": "ret ",
+            "rip_targets": [],
+            "strings": []
+          }
+        ]
+      }
+    }
+  ],
+  "sameDomainReferenceWriter": {
+    "requested_va": "0x1434d0c10",
+    "start": "0x1434d0c10",
+    "end": "0x1434d0ca7",
+    "instructions": [
+      {
+        "va": "0x1434d0c10",
+        "size": 5,
+        "asm": "mov qword ptr [rsp + 8], rbx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c15",
+        "size": 5,
+        "asm": "mov qword ptr [rsp + 0x10], rsi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c1a",
+        "size": 1,
+        "asm": "push rdi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c1b",
+        "size": 4,
+        "asm": "sub rsp, 0x50",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c1f",
+        "size": 3,
+        "asm": "mov rsi, rdx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c22",
+        "size": 3,
+        "asm": "mov rbx, rcx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c25",
+        "size": 5,
+        "asm": "call 0x1434d02e0",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c2a",
+        "size": 4,
+        "asm": "mov rbx, qword ptr [rbx + 0x10]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c2e",
+        "size": 7,
+        "asm": "lea rdx, [rip + 0x9b257b]",
+        "rip_targets": [
+          "0x143e831b0"
+        ],
+        "strings": [
+          "data"
+        ]
+      },
+      {
+        "va": "0x1434d0c35",
+        "size": 5,
+        "asm": "lea rcx, [rsp + 0x38]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c3a",
+        "size": 5,
+        "asm": "call 0x140153fb0",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c3f",
+        "size": 4,
+        "asm": "mov rcx, qword ptr [rsi + 8]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c43",
+        "size": 3,
+        "asm": "mov rdx, rbx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c46",
+        "size": 3,
+        "asm": "mov rdi, rax",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c49",
+        "size": 4,
+        "asm": "mov rcx, qword ptr [rcx + 0x20]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c4d",
+        "size": 7,
+        "asm": "add rcx, 0x108",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c54",
+        "size": 5,
+        "asm": "call 0x1434ed210",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c59",
+        "size": 2,
+        "asm": "mov edx, eax",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c5b",
+        "size": 5,
+        "asm": "lea rcx, [rsp + 0x20]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c60",
+        "size": 5,
+        "asm": "call 0x140153f40",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c65",
+        "size": 5,
+        "asm": "mov edx, 1",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c6a",
+        "size": 3,
+        "asm": "mov rcx, rsi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c6d",
+        "size": 3,
+        "asm": "mov rbx, rax",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c70",
+        "size": 5,
+        "asm": "call 0x1401add80",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c75",
+        "size": 3,
+        "asm": "mov r8, rbx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c78",
+        "size": 3,
+        "asm": "mov rdx, rdi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c7b",
+        "size": 3,
+        "asm": "mov rcx, rsi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c7e",
+        "size": 5,
+        "asm": "call 0x1401b1070",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c83",
+        "size": 5,
+        "asm": "lea rcx, [rsp + 0x20]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c88",
+        "size": 5,
+        "asm": "call 0x1401581d0",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c8d",
+        "size": 5,
+        "asm": "lea rcx, [rsp + 0x38]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c92",
+        "size": 5,
+        "asm": "call 0x1401581d0",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c97",
+        "size": 5,
+        "asm": "mov rbx, qword ptr [rsp + 0x60]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0c9c",
+        "size": 5,
+        "asm": "mov rsi, qword ptr [rsp + 0x68]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0ca1",
+        "size": 4,
+        "asm": "add rsp, 0x50",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0ca5",
+        "size": 1,
+        "asm": "pop rdi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434d0ca6",
+        "size": 1,
+        "asm": "ret ",
+        "rip_targets": [],
+        "strings": []
+      }
+    ]
+  },
+  "mapOrInsertHelper": {
+    "requested_va": "0x1434ed210",
+    "start": "0x1434ed210",
+    "end": "0x1434ed2a1",
+    "instructions": [
+      {
+        "va": "0x1434ed210",
+        "size": 5,
+        "asm": "mov qword ptr [rsp + 0x10], rdx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed215",
+        "size": 1,
+        "asm": "push rbx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed216",
+        "size": 1,
+        "asm": "push rdi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed217",
+        "size": 4,
+        "asm": "sub rsp, 0x28",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed21b",
+        "size": 3,
+        "asm": "mov rdi, rdx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed21e",
+        "size": 3,
+        "asm": "mov rbx, rcx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed221",
+        "size": 3,
+        "asm": "test rdx, rdx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed224",
+        "size": 2,
+        "asm": "jne 0x1434ed22f",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed226",
+        "size": 2,
+        "asm": "xor eax, eax",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed228",
+        "size": 4,
+        "asm": "add rsp, 0x28",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed22c",
+        "size": 1,
+        "asm": "pop rdi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed22d",
+        "size": 1,
+        "asm": "pop rbx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed22e",
+        "size": 1,
+        "asm": "ret ",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed22f",
+        "size": 4,
+        "asm": "mov r9d, dword ptr [rcx + 8]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed233",
+        "size": 3,
+        "asm": "test r9d, r9d",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed236",
+        "size": 2,
+        "asm": "je 0x1434ed297",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed238",
+        "size": 4,
+        "asm": "mov r8d, dword ptr [rbx + 0xc]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed23c",
+        "size": 2,
+        "asm": "xor edx, edx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed23e",
+        "size": 3,
+        "asm": "mov r10, qword ptr [rbx]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed241",
+        "size": 10,
+        "asm": "movabs rax, 0x9e3779b97f4a7c19",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed24b",
+        "size": 3,
+        "asm": "mov rcx, rdi",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed24e",
+        "size": 3,
+        "asm": "mov r11d, r8d",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed251",
+        "size": 4,
+        "asm": "imul rcx, rax",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed255",
+        "size": 4,
+        "asm": "shl r11, 4",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed259",
+        "size": 3,
+        "asm": "mov rax, rcx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed25c",
+        "size": 3,
+        "asm": "add r11, r10",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed25f",
+        "size": 4,
+        "asm": "shr rax, 0x20",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed263",
+        "size": 2,
+        "asm": "xor eax, ecx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed265",
+        "size": 8,
+        "asm": "lea ecx, [r8*2 - 1]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed26d",
+        "size": 2,
+        "asm": "div ecx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed26f",
+        "size": 4,
+        "asm": "lea rax, [r8 + r8*4]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed273",
+        "size": 2,
+        "asm": "mov ecx, edx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed275",
+        "size": 3,
+        "asm": "add rcx, rax",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed278",
+        "size": 4,
+        "asm": "mov edx, dword ptr [r10 + rcx*4]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed27c",
+        "size": 3,
+        "asm": "cmp edx, r9d",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed27f",
+        "size": 2,
+        "asm": "jae 0x1434ed297",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed281",
+        "size": 2,
+        "asm": "mov eax, edx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed283",
+        "size": 3,
+        "asm": "add rax, rax",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed286",
+        "size": 2,
+        "asm": "mov ecx, edx",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed288",
+        "size": 4,
+        "asm": "cmp rdi, qword ptr [r10 + rax*8]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed28c",
+        "size": 2,
+        "asm": "je 0x1434ed2f6",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed28e",
+        "size": 4,
+        "asm": "mov edx, dword ptr [r11 + rcx*4]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed292",
+        "size": 3,
+        "asm": "cmp edx, r9d",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed295",
+        "size": 2,
+        "asm": "jb 0x1434ed281",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed297",
+        "size": 3,
+        "asm": "mov edx, dword ptr [rbx + 0x18]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed29a",
+        "size": 4,
+        "asm": "mov r9d, dword ptr [rbx + 0x1c]",
+        "rip_targets": [],
+        "strings": []
+      },
+      {
+        "va": "0x1434ed29e",
+        "size": 3,
+        "asm": "mov r8d, r9d",
+        "rip_targets": [],
+        "strings": []
+      }
+    ]
+  },
+  "evidence": [
+    "Both accessor serializers serialize the field literal animData from object+8 through context[+8]->[+0x20]+0x108, calling helper 0x1434ed210.",
+    "The established Animation.state.data writer uses the same context+0x108 map and helper. Helper returns existing/stored animation-data ID or appends array entry and returns index+1; zero represents no object.",
+    "The two vtables place the exact type-name getter adjacent to their corresponding serializer pointer, establishing class-to-writer identity."
+  ],
+  "scaleByValue": {
+    "status": "kept_unresolved_in_export",
+    "occurrences": 6,
+    "observedValue": -1,
+    "serializer": "0x1434d5db0",
+    "fieldOffset": 50,
+    "note": "node is serialized from unsigned 16-bit object+0x32; valueNode is signed 16-bit object+0x30. Clone resets +0x32 separately; no active dependency is asserted."
+  }
+}

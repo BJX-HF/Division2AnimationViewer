@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "total": 4367,
+  "processed": 4367,
+  "succeeded": 4367,
+  "failed": 0,
+  "source_fbx_imported": 4371,
+  "validation": "validation.json"
+}

@@ -1,0 +1,21 @@
+{
+  "scanned": 4367,
+  "elapsed_seconds": 27.35999999998603,
+  "signatures": [
+    {
+      "rig": "Male",
+      "bone_count": 212,
+      "hash": "7ac0043f9c48c6163e4f139fd13d83cb4032d645b0811d29d494b6f32e93e897",
+      "animation_stack_count": 1,
+      "count": 3970
+    },
+    {
+      "rig": "Female",
+      "bone_count": 207,
+      "hash": "a88617dd30a965aaa8d3855b50883aff4f94fe3c45ef701c6c9ed63d2bc124a0",
+      "animation_stack_count": 1,
+      "count": 397
+    }
+  ],
+  "problems": []
+}

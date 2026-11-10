@@ -1,0 +1,126 @@
+{
+  "ok": true,
+  "expected_source_fbx": 4371,
+  "expected_library_animations": 4367,
+  "checked": 4367,
+  "errors": [],
+  "preview_sources": [
+    {
+      "source": "C:/Users/yeyuxiang/Desktop/全境封锁2解包/preview/male_walker_head_walk.fbx",
+      "mesh": "/Game/Division2/Preview/SourceExamples/FullCharacter/male_walker_head_walk.male_walker_head_walk",
+      "animations": [
+        "/Game/Division2/Preview/SourceExamples/FullCharacter/male_walker_head_walk_Anim.male_walker_head_walk_Anim"
+      ]
+    },
+    {
+      "source": "C:/Users/yeyuxiang/Desktop/全境封锁2解包/preview/male_walker_walk.fbx",
+      "mesh": "/Game/Division2/Preview/SourceExamples/BodyOnly/male_walker_walk.male_walker_walk",
+      "animations": [
+        "/Game/Division2/Preview/SourceExamples/BodyOnly/male_walker_walk_Anim.male_walker_walk_Anim"
+      ]
+    }
+  ],
+  "gender_counts": {
+    "通用": 143,
+    "女": 397,
+    "男": 3827
+  },
+  "category_counts": {
+    "翻越攀爬": 130,
+    "表情": 237,
+    "场景交互": 88,
+    "待机": 703,
+    "信号枪待确认": 11,
+    "移动": 397,
+    "盲射辅助": 57,
+    "投掷": 134,
+    "技能": 74,
+    "界面转向": 58,
+    "掩体进出": 89,
+    "倒地与救援": 116,
+    "绳索与梯子": 162,
+    "瞄准": 214,
+    "坠落": 28,
+    "状态异常": 97,
+    "近战": 47,
+    "受击": 59,
+    "叛变切换": 6,
+    "开火": 40,
+    "张望": 10,
+    "拔枪收枪": 123,
+    "换弹": 1343,
+    "修甲": 12,
+    "固定武器": 13,
+    "其他": 114,
+    "射击姿势": 1,
+    "装备": 4
+  },
+  "maximum_duration_error_seconds": 0.03333327174151446,
+  "source_constant_pose_count": 509,
+  "preview_map": {
+    "map": "/Game/Division2/Preview/AnimationPreview",
+    "characters": {
+      "Male": {
+        "mesh": "/Game/Division2/Characters/Male/SK_Male_Walker.SK_Male_Walker",
+        "animation": "/Game/Division2/Animations/Male/Emotes/p_shd_m_dance_80s_loop.p_shd_m_dance_80s_loop",
+        "duration": 8.133333206176758,
+        "actor": "/Game/Division2/Preview/AnimationPreview.AnimationPreview:PersistentLevel.SkeletalMeshActor_0"
+      },
+      "Female": {
+        "mesh": "/Game/Division2/Characters/Female/SK_Female_Walker.SK_Female_Walker",
+        "animation": "/Game/Division2/Animations/Female/Emotes/p_shd_f_dance_80s_loop.p_shd_f_dance_80s_loop",
+        "duration": 8.133333206176758,
+        "actor": "/Game/Division2/Preview/AnimationPreview.AnimationPreview:PersistentLevel.SkeletalMeshActor_1"
+      }
+    },
+    "notes": [],
+    "ok": true
+  },
+  "asset_type_counts": {
+    "World": 1,
+    "Material": 44,
+    "Skeleton": 4,
+    "SkeletalMesh": 4,
+    "AnimSequence": 4369
+  },
+  "source_fbx_imported": 4371,
+  "firing_reclassification": {
+    "basis": "Rebuilt from source filenames and numeric FBX curve checks; existing HTML/category labels were not used as classification evidence.",
+    "inspected_names": 4367,
+    "reclassified_assets": 203,
+    "confirmed_dynamic_count": 40,
+    "confirmed_groups": {
+      "CoverKickback": 11,
+      "MountedRecoil": 2,
+      "Burst": 11,
+      "SingleShot": 16
+    },
+    "all_groups": {
+      "FlaregunAction": 11,
+      "BlindFireDirectionalSweep": 34,
+      "MinigunHandPose": 8,
+      "MinigunShockReaction": 3,
+      "UnderFireReaction": 7,
+      "BlindFireTransition": 14,
+      "BlindFireThrow": 13,
+      "BlindFireIdle": 1,
+      "CoverKickback": 11,
+      "MinigunHolster": 10,
+      "FireflySkill": 5,
+      "BurnReaction": 21,
+      "BlindFireLocomotion": 6,
+      "MountedRecoil": 2,
+      "DoorInteraction": 10,
+      "RopeShotOff": 1,
+      "Burst": 11,
+      "FiringNamed": 1,
+      "MinigunAim": 7,
+      "BlindFireCloseAim": 2,
+      "BlindFireHandPose": 1,
+      "MinigunMelee": 3,
+      "MinigunSkillPickup": 5,
+      "SingleShot": 16
+    },
+    "static_false_positive": "p_shd_m_st_aim_firing_ar_i"
+  }
+}

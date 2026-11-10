@@ -1,0 +1,881 @@
+include "hunter/game system data/juice/input/inputactions.juice"
+include "hunter/game system data/fruit/input/gameinput.fruit"
+
+TriggerGameAction "[Weapon] Aim"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalInputAction "Left Trigger L2 Hold Down"
+				{
+					myInputActionType HoldDown
+					myInputAction = LEFT_TRIGGER_L2
+				}
+				ConditionalInputAction "KB Hold"
+				{
+					myInputActionType HoldDown
+					myInputAction = KB_AIM
+				}
+			}
+		}
+		ConditionalGameActionState "Aim Not Toggled"
+		{
+			myNegate TRUE
+			myGameActionState IsAimToggled
+		}
+		ConditionalGameActionState "Not Rolling"
+		{
+			myNegate TRUE
+			myGameActionState Rolling
+		}
+		ConditionalGameAction "Not In Social Mode"
+		{
+			myNegate TRUE
+			myGameAction ToggleSocialMode
+		}
+		ConditionalGameActionState "Aiming Is Allowed"
+		{
+			myGameActionState AimingIsAllowed
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+		ConditionalGameActionState "Not Downed"
+		{
+			myNegate TRUE
+			myGameActionState IsDowned
+		}
+		ConditionalGameActionState "Not in Safe Zone"
+		{
+			myNegate TRUE
+			myGameActionState IsInSafeZone
+		}
+		ConditionalGameActionState "Not Falling"
+		{
+			myNegate TRUE
+			myGameActionState IsFalling
+		}
+		ConditionalGameActionState "Not Landing"
+		{
+			myNegate TRUE
+			myGameActionState IsLanding
+		}
+		ConditionalGameActionState "Not Staggered (Heavy)"
+		{
+			myNegate TRUE
+			myGameActionState IsKnockedDown
+		}
+		ConditionalActionGroup "Not Interacting Or Using Mounted Weapon"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalGameActionState "Not Interacting"
+				{
+					myNegate TRUE
+					myGameActionState Interacting
+				}
+				ConditionalGameActionState "Using Mounted Weapon"
+				{
+					myGameActionState ControllingObject
+				}
+			}
+		}
+		ConditionalGameAction "Not Equip Grenade"
+		{
+			myNegate TRUE
+			myRequireNewInput TRUE
+			myGameAction EquipGrenade
+		}
+		ConditionalGameAction "Not Equip Skill LB"
+		{
+			myNegate TRUE
+			myRequireNewInput TRUE
+			myGameAction EquipSkillLB
+		}
+		ConditionalGameAction "Not Equip Skill RB"
+		{
+			myNegate TRUE
+			myRequireNewInput TRUE
+			myGameAction EquipSkillRB
+		}
+	}
+	myGameAction Aim
+}
+
+TriggerGameAction "[Weapon] Aim Toggle Gamepad"
+{
+	myConditionalInputActions
+	{
+		ConditionalInputAction "GP Toggle"
+		{
+			myInputActionType Pressed
+			myToggle TRUE
+			myClearToggle TRUE
+			myInputAction = LEFT_TRIGGER_L2
+		}
+		ConditionalInputAction "Not KB Pressed"
+		{
+			myInputActionType Pressed
+			myNegate TRUE
+			myInputAction = KB_AIM
+		}
+		ConditionalGameAction "Not Aim Toggle KP"
+		{
+			myNegate TRUE
+			myWasActive TRUE
+			myGameAction AimToggleKB
+		}
+		ConditionalGameActionState Toggled
+		{
+			myGameActionState IsAimToggled
+		}
+		ConditionalGameActionState "Not Rolling"
+		{
+			myNegate TRUE
+			myGameActionState Rolling
+		}
+		ConditionalGameAction "Not In Social Mode"
+		{
+			myNegate TRUE
+			myGameAction ToggleSocialMode
+		}
+		ConditionalGameActionState "Aiming Is Allowed"
+		{
+			myGameActionState AimingIsAllowed
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+		ConditionalGameActionState "Not Downed"
+		{
+			myNegate TRUE
+			myGameActionState IsDowned
+		}
+		ConditionalGameActionState "Not In Vertical Navigation"
+		{
+			myNegate TRUE
+			myGameActionState UsingNavigation
+		}
+		ConditionalGameActionState "Not in Safe Zone"
+		{
+			myNegate TRUE
+			myGameActionState IsInSafeZone
+		}
+		ConditionalGameActionState "Not Falling"
+		{
+			myNegate TRUE
+			myGameActionState IsFalling
+		}
+		ConditionalGameActionState "Not Landing"
+		{
+			myNegate TRUE
+			myGameActionState IsLanding
+		}
+		ConditionalGameActionState Alive
+		{
+			myGameActionState IsAlive
+		}
+		ConditionalGameAction "Not Equipping Skill LB"
+		{
+			myNegate TRUE
+			myRequireNewInput FALSE
+			myGameAction EquipSkillLB
+		}
+		ConditionalGameAction "Not Equipping Skill RB"
+		{
+			myNegate TRUE
+			myRequireNewInput FALSE
+			myGameAction EquipSkillRB
+		}
+		ConditionalGameAction "Not Equipping Grenade"
+		{
+			myNegate TRUE
+			myRequireNewInput FALSE
+			myGameAction EquipGrenade
+		}
+	}
+	myGameAction AimToggleGP
+}
+
+TriggerGameAction "[Weapon] Aim Toggle KB"
+{
+	myConditionalInputActions
+	{
+		ConditionalInputAction "KB Toggle"
+		{
+			myInputActionType Pressed
+			myToggle TRUE
+			myClearToggle TRUE
+			myInputAction = KB_AIM
+		}
+		ConditionalInputAction "Not GP Aim Pressed"
+		{
+			myInputActionType Pressed
+			myNegate TRUE
+			myInputAction = LEFT_TRIGGER_L2
+		}
+		ConditionalGameAction "Not Aim Toggle GP"
+		{
+			myNegate TRUE
+			myWasActive TRUE
+			myGameAction AimToggleGP
+		}
+		ConditionalGameActionState Toggled
+		{
+			myGameActionState IsAimToggled
+		}
+		ConditionalGameActionState "Not Rolling"
+		{
+			myNegate TRUE
+			myGameActionState Rolling
+		}
+		ConditionalGameAction "Not In Social Mode"
+		{
+			myNegate TRUE
+			myGameAction ToggleSocialMode
+		}
+		ConditionalGameActionState "Aiming Is Allowed"
+		{
+			myGameActionState AimingIsAllowed
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+		ConditionalGameActionState "Not Downed"
+		{
+			myNegate TRUE
+			myGameActionState IsDowned
+		}
+		ConditionalGameActionState "Not In Vertical Navigation"
+		{
+			myNegate TRUE
+			myGameActionState UsingNavigation
+		}
+		ConditionalGameActionState "Not in Safe Zone"
+		{
+			myNegate TRUE
+			myGameActionState IsInSafeZone
+		}
+		ConditionalGameActionState "Not Falling"
+		{
+			myNegate TRUE
+			myGameActionState IsFalling
+		}
+		ConditionalGameActionState "Not Landing"
+		{
+			myNegate TRUE
+			myGameActionState IsLanding
+		}
+		ConditionalGameActionState Alive
+		{
+			myGameActionState IsAlive
+		}
+		ConditionalGameAction "Not Equipping Skill LB"
+		{
+			myNegate TRUE
+			myRequireNewInput FALSE
+			myGameAction EquipSkillLB
+		}
+		ConditionalGameAction "Not Equipping Skill RB"
+		{
+			myNegate TRUE
+			myRequireNewInput FALSE
+			myGameAction EquipSkillRB
+		}
+		ConditionalGameAction "Not Equipping Grenade"
+		{
+			myNegate TRUE
+			myRequireNewInput FALSE
+			myGameAction EquipGrenade
+		}
+	}
+	myGameAction AimToggleKB
+}
+
+TriggerGameAction "Aim Toggle"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalGameAction "Aim Toggle KB"
+				{
+					myGameAction AimToggleKB
+				}
+				ConditionalGameAction "Aim Toggle GP"
+				{
+					myGameAction AimToggleGP
+				}
+			}
+		}
+	}
+	myGameAction Aim
+}
+
+TriggerGameAction "[Weapon] Toggle Scope"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalInputAction "Button Pressed"
+				{
+					myInputActionType Pressed
+					myInputAction = RIGHT_STICK_BUTTON
+				}
+				ConditionalInputAction "KB Button Pressed"
+				{
+					myInputActionType Pressed
+					myInputAction = KB_ZOOM
+				}
+			}
+		}
+	}
+	myGameAction ToggleScope
+}
+
+TriggerGameAction "[Weapon] ReloadOnRelease"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalInputAction "X Pressed"
+				{
+					myInputActionType ReleaseBeforeTime
+					myTimer 300
+					myInputAction = X_SQUARE
+				}
+				ConditionalInputAction "KB Pressed"
+				{
+					myInputActionType ReleaseBeforeTime
+					myTimer 300
+					myInputAction = KB_RELOAD
+				}
+			}
+		}
+		ConditionalGameAction "Not In Social Mode"
+		{
+			myNegate TRUE
+			myGameAction ToggleSocialMode
+		}
+		ConditionalGameActionState "Not Rolling"
+		{
+			myNegate TRUE
+			myGameActionState Rolling
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+		ConditionalGameActionState "Not Downed"
+		{
+			myNegate TRUE
+			myGameActionState IsDowned
+		}
+		ConditionalGameActionState "Not Interacting"
+		{
+			myNegate TRUE
+			myGameActionState Interacting
+		}
+		ConditionalGameActionState "Not In Safe Zone"
+		{
+			myNegate TRUE
+			myGameActionState IsInSafeZone
+		}
+		ConditionalGameActionState "Not Falling"
+		{
+			myNegate TRUE
+			myGameActionState IsFalling
+		}
+		ConditionalGameActionState "Not Landing"
+		{
+			myNegate TRUE
+			myGameActionState IsLanding
+		}
+		ConditionalGameActionState "Is using gamepad"
+		{
+			myGameActionState IsUsingGamepad
+		}
+	}
+	myGameAction Reload
+}
+
+TriggerGameAction "[Weapon] ReloadOnPress"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalInputAction "X Square"
+				{
+					myInputActionType Pressed
+					myTimer 0
+					myInputAction = X_SQUARE
+				}
+				ConditionalInputAction "KB Pressed"
+				{
+					myInputActionType Pressed
+					myTimer 0
+					myInputAction = KB_RELOAD
+				}
+			}
+		}
+		ConditionalGameAction "Not In Social Mode"
+		{
+			myNegate TRUE
+			myGameAction ToggleSocialMode
+		}
+		ConditionalGameActionState "Not Rolling"
+		{
+			myNegate TRUE
+			myGameActionState Rolling
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+		ConditionalGameActionState "Not Downed"
+		{
+			myNegate TRUE
+			myGameActionState IsDowned
+		}
+		ConditionalGameAction "Not in interact"
+		{
+			myNegate TRUE
+			myGameAction Interact
+		}
+		ConditionalActionGroup "Check for interaction available if using gamepad"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalActionGroup "Check for interaction available if using gamepad"
+				{
+					myConditionalInputActions
+					{
+						ConditionalGameActionState "Not Can Interact"
+						{
+							myNegate TRUE
+							myGameActionState CanInteractExcludingNavAndDisabled
+						}
+						ConditionalGameActionState "Not Can Start Extraction"
+						{
+							myNegate TRUE
+							myGameActionState CanStartExtraction
+						}
+						ConditionalGameActionState "Not Can Interact With Extraction Rope"
+						{
+							myNegate TRUE
+							myGameActionState CanInteractWithExtractionRope
+						}
+						ConditionalGameActionState "Not Can Loot"
+						{
+							myNegate TRUE
+							myGameActionState CanLoot
+						}
+					}
+				}
+				ConditionalGameActionState "Is using gamepad"
+				{
+					myNegate TRUE
+					myGameActionState IsUsingGamepad
+				}
+			}
+		}
+		ConditionalGameActionState "Not In Safe Zone"
+		{
+			myNegate TRUE
+			myGameActionState IsInSafeZone
+		}
+		ConditionalGameActionState "Not Falling"
+		{
+			myNegate TRUE
+			myGameActionState IsFalling
+		}
+		ConditionalGameActionState "Not Landing"
+		{
+			myNegate TRUE
+			myGameActionState IsLanding
+		}
+	}
+	myGameAction Reload
+}
+
+TriggerGameAction "[Weapon] Shoot"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalInputAction "Right Trigger Hold Down"
+				{
+					myInputActionType Analog
+					myInputAction = RIGHT_TRIGGER_R2
+				}
+				ConditionalInputAction "Mouse Trigger Pressed"
+				{
+					myInputActionType HoldDown
+					myInputAction = KB_SHOOT
+				}
+			}
+		}
+		ConditionalGameActionState "Not Rolling"
+		{
+			myNegate TRUE
+			myGameActionState Rolling
+		}
+		ConditionalActionGroup "Not Interacting Or Using Mounted Weapon"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalGameActionState "Not Interacting"
+				{
+					myNegate TRUE
+					myGameActionState Interacting
+				}
+				ConditionalGameActionState "Using Mounted Weapon"
+				{
+					myGameActionState ControllingObject
+				}
+			}
+		}
+		ConditionalGameActionState "Not Sliding"
+		{
+			myNegate TRUE
+			myGameActionState Sliding
+		}
+		ConditionalGameAction "Not In Social Mode"
+		{
+			myNegate TRUE
+			myGameAction ToggleSocialMode
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+		ConditionalGameActionState "Not Downed"
+		{
+			myNegate TRUE
+			myGameActionState IsDowned
+		}
+		ConditionalGameActionState "Firing Is Allowed"
+		{
+			myGameActionState FiringIsAllowed
+		}
+		ConditionalGameActionState "Not in Safe Zone"
+		{
+			myNegate TRUE
+			myGameActionState IsInSafeZone
+		}
+		ConditionalGameActionState "Not Melee Pushing"
+		{
+			myNegate TRUE
+			myGameActionState IsInMeleePush
+		}
+		ConditionalGameActionState "Not Falling"
+		{
+			myNegate TRUE
+			myGameActionState IsFalling
+		}
+		ConditionalGameActionState "Not Landing"
+		{
+			myNegate TRUE
+			myGameActionState IsLanding
+		}
+		ConditionalGameActionState "Wait for Release"
+		{
+			myNegate TRUE
+			myGameActionState IsWaitingForShootRelease
+		}
+		ConditionalGameActionState "Not Staggering (Heavy)"
+		{
+			myNegate TRUE
+			myGameActionState IsKnockedDown
+		}
+	}
+	myGameAction Shoot
+}
+
+TriggerGameAction "[Weapon] Target Snap Right Aim"
+{
+	myConditionalInputActions
+	{
+		ConditionalInputAction "Right Stick Pressed"
+		{
+			myInputActionType Pressed
+			myInputAction = RIGHT_STICK_BUTTON
+		}
+		ConditionalGameActionState "In Aim"
+		{
+			myGameActionState Aiming
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+	}
+	myGameAction TargetSnapRight
+}
+
+TriggerGameAction "[Weapon] Target Snap Right"
+{
+	myConditionalInputActions
+	{
+		ConditionalInputAction "Right Stick Pressed"
+		{
+			myInputActionType Pressed
+			myInputAction = RIGHT_STICK_BUTTON
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+	}
+	myGameAction TargetSnapRight
+}
+
+TriggerGameAction "[Weapon] Target Snap Left Aim"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalInputAction "Left Stick Pressed"
+				{
+					myInputActionType Pressed
+					myInputAction = LEFT_STICK_BUTTON
+				}
+				ConditionalInputAction "KB Pressed"
+				{
+					myInputActionType Pressed
+					myInputAction = KB_SPRINT
+				}
+			}
+		}
+		ConditionalGameActionState "In Aim"
+		{
+			myGameActionState Aiming
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+	}
+	myGameAction TargetSnapLeft
+}
+
+TriggerGameAction "[Weapon] Target Snap Left"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalInputAction "Left Stick Pressed"
+				{
+					myInputActionType Pressed
+					myInputAction = LEFT_STICK_BUTTON
+				}
+				ConditionalInputAction "KB Pressed"
+				{
+					myInputActionType Pressed
+					myInputAction = KB_SPRINT
+				}
+			}
+		}
+		ConditionalGameActionState "Not Bleeding Out"
+		{
+			myNegate TRUE
+			myGameActionState IsBleedingOut
+		}
+	}
+	myGameAction TargetSnapLeft
+}
+
+TriggerGameAction "[Weapon] Shoulder Switch"
+{
+	myConditionalInputActions
+	{
+		ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalInputAction "Left Stick Pressed"
+				{
+					myInputActionType Pressed
+					myInputAction = LEFT_STICK_BUTTON
+				}
+				ConditionalInputAction "KB Pressed"
+				{
+					myInputActionType Pressed
+					myInputAction = KB_SPRINT
+				}
+			}
+		}
+		ConditionalGameActionState Aiming
+		{
+			myGameActionState Aiming
+		}
+		ConditionalGameActionState "Shoulder Switch Not Prevented"
+		{
+			myNegate TRUE
+			myGameActionState IsShoulderSwitchPrevented
+		}
+		ConditionalGameActionState "Not Using Mounted Wepaon"
+		{
+			myNegate TRUE
+			myGameActionState ControllingObject
+		}
+	}
+	myGameAction SwitchShoulder
+}
+
+TriggerGameAction "[Weapon] Melee Push"
+{
+	myConditionalInputActions
+	{
+	ConditionalActionGroup "Input Actions"
+		{
+			myOperator Or
+			myConditionalInputActions
+			{
+				ConditionalActionGroup Default
+				{
+					myOperator And
+					myConditionalInputActions
+					{
+						ConditionalActionGroup "Input Actions"
+						{
+							myOperator Or
+							myConditionalInputActions
+							{
+								ConditionalInputAction "Right Stick Pressed"
+								{
+									myInputActionType Pressed
+									myInputAction = RIGHT_STICK_BUTTON
+								}
+								ConditionalInputAction "KB Pressed"
+								{
+									myInputActionType Pressed
+									myInputAction = KB_ZOOM
+								}
+							}
+						}
+						ConditionalGameActionState CanLoot
+						{
+							myNegate TRUE
+							myGameActionState CanLoot
+						}
+					}
+				}
+				ConditionalActionGroup NearbyLoot
+				{
+					myOperator And
+					myConditionalInputActions
+					{
+						ConditionalActionGroup "Input Actions"
+						{
+							myOperator Or
+							myConditionalInputActions
+							{
+								ConditionalInputAction "Right Stick Release"
+								{
+									myInputActionType ReleaseBeforeTime
+									myTimer 300
+									myInputAction = RIGHT_STICK_BUTTON
+								}
+								ConditionalInputAction "KB Tab Released"
+								{
+									myInputActionType ReleaseBeforeTime
+									myTimer 300
+									myInputAction = KB_ZOOM
+								}
+							}
+						}
+						ConditionalGameActionState CanLoot
+						{
+							myGameActionState CanLoot
+						}
+					}
+				}
+			}
+		}
+		ConditionalGameActionState "Not Aiming"
+		{
+			myNegate TRUE
+			myGameActionState Aiming
+		}
+		ConditionalGameActionState "Not Staggered"
+		{
+			myNegate TRUE
+			myGameActionState IsStaggered
+		}
+		ConditionalGameActionState "Not in Safe Zone"
+		{
+			myNegate TRUE
+			myGameActionState IsInSafeZone
+		}
+		ConditionalGameActionState "Not in HUB"
+		{
+			myNegate TRUE
+			myGameActionState IsInHUB
+		}
+		ConditionalGameActionState "Melee Push Not prevented"
+		{
+			myNegate TRUE
+			myGameActionState IsMeleePushPrevented
+		}
+		ConditionalGameActionState "Not In Weapon Switch"
+		{
+			myNegate TRUE
+			myGameActionState IsInWeaponSwitch
+		}
+		ConditionalGameActionState "Not In Throwable Skill Mode"
+		{
+			myNegate TRUE
+			myGameActionState IsInThrowableSkillModeAny
+		}
+	}
+	myGameAction MeleePush
+}
+

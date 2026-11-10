@@ -1,0 +1,1199 @@
+{
+  "schemaVersion": 1,
+  "title": "当前安装版本：开火输入、FireEvent生命周期、动画层激活调用链",
+  "build": {
+    "steamBuild": "26413016",
+    "executable": "E:\\SteamLibrary\\steamapps\\common\\Tom Clancy's The Division 2\\TheDivision2.exe",
+    "executableSha256": "cb9a6f87dfcdbf6953240833600b0ffd2fa90401e5c727fc3dd30e3f7650cc35",
+    "graphSha256": "c65555f56507417bf85933076051a2614ecbd0747c68e32521f29f052425c3d7",
+    "graphSchema": 27
+  },
+  "method": "Local extracted configurations and read-only installed executable disassembly. No game execution, injection, asset export, or UE modification.",
+  "gradeDefinitions": {
+    "A": "代码指令/布局直接证明的局部调用或数据流；不代表运行时命中已录制。",
+    "B": "当前配置或图中直接声明/引用；不自动证明外部触发已闭合。",
+    "C": "有局部代码支持的推论，仍缺少连接或调度证明。",
+    "U": "未证边；保留可见，绘图应使用虚线。"
+  },
+  "graphSchema": {
+    "node": "{id,label,kind}",
+    "edge": "{id,source,target,label,grade,evidence:[{file,line,va?,jsonPointer?,note?}],condition?,limitation?}"
+  },
+  "indexing": {
+    "configRecordId": "one-based; arrayIndex=recordId-1",
+    "executionNodeIndex": "zero-based index into evalNodesInOrder; resolve serialized ID before serializedNodes access",
+    "stateTransfersPair": "[transitionId,transferId], NOT [targetStateId,transferId]; exact reader proof in state_transfer_pair_domain_proof.json",
+    "virtualOffsets": "byte offsets in exact vtable, not ordinal indices"
+  },
+  "nodes": [
+    {
+      "id": "physical_input",
+      "label": "R2 / KB_SHOOT",
+      "kind": "input"
+    },
+    {
+      "id": "shoot_action",
+      "label": "Shoot game action",
+      "kind": "input"
+    },
+    {
+      "id": "weapon_request",
+      "label": "Weapon input virtual +0x48",
+      "kind": "runtime"
+    },
+    {
+      "id": "request_flag",
+      "label": "weapon+0x3af4 request state",
+      "kind": "runtime"
+    },
+    {
+      "id": "start_gate",
+      "label": "0x14133ee20 start gate",
+      "kind": "runtime"
+    },
+    {
+      "id": "active_index",
+      "label": "weapon+0x3b8c active event index",
+      "kind": "runtime"
+    },
+    {
+      "id": "index_init",
+      "label": "Saved index lookup / absent -> 0",
+      "kind": "runtime"
+    },
+    {
+      "id": "index_select",
+      "label": "Validated index or mode-based selection",
+      "kind": "runtime"
+    },
+    {
+      "id": "fire_events",
+      "label": "weapon config +0x160 / count +0x168",
+      "kind": "config"
+    },
+    {
+      "id": "event_start",
+      "label": "Selected FireEvent virtual +0x18",
+      "kind": "runtime"
+    },
+    {
+      "id": "firing_byte",
+      "label": "weapon+0x3b88 firing flag",
+      "kind": "runtime"
+    },
+    {
+      "id": "fullauto",
+      "label": "FullAutoFireEvent start",
+      "kind": "runtime"
+    },
+    {
+      "id": "burst_event",
+      "label": "BurstFireEvent start",
+      "kind": "runtime"
+    },
+    {
+      "id": "semiauto",
+      "label": "SemiAutoFireEvent start",
+      "kind": "runtime"
+    },
+    {
+      "id": "schema_defaults",
+      "label": "weapon.fruit defaults: Burst / Burst / Fire",
+      "kind": "config"
+    },
+    {
+      "id": "property_resolver",
+      "label": "Variant member / inherited data resolver",
+      "kind": "runtime"
+    },
+    {
+      "id": "configured_layer",
+      "label": "Parsed myAnimationLayer member",
+      "kind": "runtime"
+    },
+    {
+      "id": "named_activation",
+      "label": "Configured named-layer activation",
+      "kind": "runtime"
+    },
+    {
+      "id": "scope_lookup",
+      "label": "Current state scopes, then global layer groups",
+      "kind": "runtime"
+    },
+    {
+      "id": "player_graph",
+      "label": "hun_animsys_player.manimsysbin",
+      "kind": "config"
+    },
+    {
+      "id": "player_binding",
+      "label": "AnimationLogicList f1 player graph",
+      "kind": "config"
+    },
+    {
+      "id": "root_burst",
+      "label": "Global Burst -> layer 44",
+      "kind": "graph"
+    },
+    {
+      "id": "root_fire",
+      "label": "Global Fire -> layer 45",
+      "kind": "graph"
+    },
+    {
+      "id": "shot_resources",
+      "label": "Current Fire/Burst resource dependencies",
+      "kind": "graph"
+    },
+    {
+      "id": "mounted_state",
+      "label": "MountedWeapon state 237",
+      "kind": "graph"
+    },
+    {
+      "id": "mounted_burst",
+      "label": "State Burst -> layer 232",
+      "kind": "graph"
+    },
+    {
+      "id": "mounted_firing",
+      "label": "State MountedWeaponFiring -> layer 234",
+      "kind": "graph"
+    },
+    {
+      "id": "mounted_request",
+      "label": "External MountedWeaponFiring request",
+      "kind": "unknown"
+    },
+    {
+      "id": "stop_gate",
+      "label": "0x14133ef30 complementary stop gate",
+      "kind": "runtime"
+    },
+    {
+      "id": "event_stop",
+      "label": "Selected event stop virtual +0x28",
+      "kind": "runtime"
+    },
+    {
+      "id": "named_stop",
+      "label": "FullAuto/Burst named-layer termination",
+      "kind": "runtime"
+    },
+    {
+      "id": "layer_remove",
+      "label": "Mark blend-out or remove matching active layer",
+      "kind": "runtime"
+    },
+    {
+      "id": "firing_cache",
+      "label": "IsFiring cache ID4f8 / value4fc",
+      "kind": "runtime"
+    },
+    {
+      "id": "typed_writer",
+      "label": "Typed cache writer -> animation instance",
+      "kind": "runtime"
+    },
+    {
+      "id": "reload_cache",
+      "label": "IsReloading cache ID528 / value52c",
+      "kind": "runtime"
+    },
+    {
+      "id": "ready",
+      "label": "Ready state group and posture/aim modes",
+      "kind": "graph"
+    },
+    {
+      "id": "hipfire",
+      "label": "Hipfire / NoAim interpretation",
+      "kind": "graph"
+    },
+    {
+      "id": "flare",
+      "label": "FlareGun layer 46",
+      "kind": "graph"
+    },
+    {
+      "id": "flare_events",
+      "label": "FireFlareGun .45 / FlareGunEnd .89",
+      "kind": "graph"
+    },
+    {
+      "id": "flare_projectile",
+      "label": "Projectile callback consuming flare event",
+      "kind": "unknown"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "source": "physical_input",
+      "target": "shoot_action",
+      "label": "Input config emits Shoot after conditions",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/dfea0c1f_03084db6_weapon.juice",
+          "line": 530,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\configs\\03084db6_weapon.juice"
+        },
+        {
+          "file": "chain_sources/dfea0c1f_03084db6_weapon.juice",
+          "line": 542,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\configs\\03084db6_weapon.juice"
+        },
+        {
+          "file": "chain_sources/dfea0c1f_03084db6_weapon.juice",
+          "line": 547,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\configs\\03084db6_weapon.juice"
+        },
+        {
+          "file": "chain_sources/dfea0c1f_03084db6_weapon.juice",
+          "line": 627,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\configs\\03084db6_weapon.juice"
+        }
+      ],
+      "condition": "R2 Analog OR KB_SHOOT HoldDown; NotRolling; NotInteracting OR ControllingObject; NotSliding; NotSocialMode; NotBleedingOut; NotDowned; FiringIsAllowed; NotSafeZone; NotMeleePush; NotFalling; NotLanding; NotWaitingForShootRelease; NotKnockedDown"
+    },
+    {
+      "id": "e02",
+      "source": "shoot_action",
+      "target": "weapon_request",
+      "label": "Shoot action dispatch to weapon virtual+0x48",
+      "grade": "U",
+      "evidence": [
+        {
+          "file": "chain_sources/b8bf2f25_shoot_key_functions.json",
+          "line": 1717,
+          "va": "0x141ad63d0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\shoot_key_functions.json"
+        },
+        {
+          "file": "chain_sources/693cea6b_fire_input_transition.json",
+          "line": 2,
+          "va": "0x141ad62e0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_input_transition.json"
+        }
+      ],
+      "limitation": "Shoot atom references and weapon virtual slot are independently identified, but their connecting dispatch was not established. Direct-call search covers .text only; indirect calls and other executable sections remain."
+    },
+    {
+      "id": "e03",
+      "source": "weapon_request",
+      "target": "request_flag",
+      "label": "Virtual+0x48 invokes request setter",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/693cea6b_fire_input_transition.json",
+          "line": 2,
+          "va": "0x141ad62e0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_input_transition.json"
+        },
+        {
+          "file": "chain_sources/693cea6b_fire_input_transition.json",
+          "line": 344,
+          "va": "0x1413302a0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_input_transition.json"
+        }
+      ]
+    },
+    {
+      "id": "e04",
+      "source": "request_flag",
+      "target": "start_gate",
+      "label": "Request contributes to active firing lifecycle",
+      "grade": "C",
+      "evidence": [
+        {
+          "file": "chain_sources/1008c240_fire_request_functions.json",
+          "line": 177,
+          "va": "0x14133ee20",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_request_functions.json"
+        },
+        {
+          "file": "chain_sources/728587d4_firing_end_loop_code.json",
+          "line": 310,
+          "va": "0x14133ef30",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_end_loop_code.json"
+        }
+      ],
+      "limitation": "Setter and stop-side request-flag test are proven. The scheduling caller that invokes start_gate after a new input request is not fully joined."
+    },
+    {
+      "id": "e05",
+      "source": "start_gate",
+      "target": "event_start",
+      "label": "Start gate calls weapon virtual+0x198 -> start helper",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/b63b2826_firing_dispatch_conditions.json",
+          "line": 457,
+          "va": "0x14133ef19",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_dispatch_conditions.json"
+        },
+        {
+          "file": "chain_sources/d693ebef_expanded_chain_functions.json",
+          "line": 2735,
+          "va": "0x141a66770",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\expanded_chain_functions.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 20281,
+          "va": "0x1412fd960",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ],
+      "condition": "weapon+3b08 != 0; helper 1412da3c0 true; weapon+3af0 < 1; helper 1413891d0 true; no wrapper OR active event vfunc+38 permits; helper 1412ded20 true; timer helper true; currentTick-3a88 > 3bc8",
+      "limitation": "Unknown helper and raw field meanings are not guessed. The request-to-scheduler edge remains separate."
+    },
+    {
+      "id": "e06",
+      "source": "index_init",
+      "target": "active_index",
+      "label": "Persisted mapping lookup selects saved index, absent returns 0",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9bb34ce8_selection_and_defaults_functions.json",
+          "line": 795,
+          "va": "0x1411dd9e0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\selection_and_defaults_functions.json"
+        },
+        {
+          "file": "chain_sources/d693ebef_expanded_chain_functions.json",
+          "line": 280,
+          "va": "0x1412fbd9c",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\expanded_chain_functions.json"
+        }
+      ]
+    },
+    {
+      "id": "e07",
+      "source": "index_select",
+      "target": "active_index",
+      "label": "Validated index setter / matching event-mode scan",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9bb34ce8_selection_and_defaults_functions.json",
+          "line": 534,
+          "va": "0x14132a8cc",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\selection_and_defaults_functions.json"
+        },
+        {
+          "file": "chain_sources/d693ebef_expanded_chain_functions.json",
+          "line": 1750,
+          "va": "0x14132b9fe",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\expanded_chain_functions.json"
+        },
+        {
+          "file": "chain_sources/832ef502_event_type_and_action_enum.json",
+          "line": 415,
+          "va": "0x14128878d",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\event_type_and_action_enum.json"
+        }
+      ],
+      "limitation": "Mode is event+0xb4: FullAuto=0, Burst=1, SemiAuto=2 via constructor arguments. Index setter does not itself prove old wrapper termination on every mode change."
+    },
+    {
+      "id": "e08",
+      "source": "active_index",
+      "target": "event_start",
+      "label": "Select event config+160[index], then virtual+18",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 20281,
+          "va": "0x1412fd960",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 21863,
+          "va": "0x1412fdcfd",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e09",
+      "source": "fire_events",
+      "target": "event_start",
+      "label": "Event factory / derived vtable identity",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 8587,
+          "va": "0x1422dc7c0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 8696,
+          "va": "0x141b1c160",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 8805,
+          "va": "0x1428d8980",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "source": "event_start",
+      "target": "firing_byte",
+      "label": "Set weapon+3b88=1",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 20369,
+          "va": "0x1412fd97d",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e11",
+      "source": "event_start",
+      "target": "fullauto",
+      "label": "Selected derived virtual+18 implementation",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 30093,
+          "va": "0x14246eea0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e12",
+      "source": "event_start",
+      "target": "burst_event",
+      "label": "Selected derived virtual+18 implementation",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 30596,
+          "va": "0x141c58a80",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e13",
+      "source": "event_start",
+      "target": "semiauto",
+      "label": "Selected derived virtual+18 implementation",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 31106,
+          "va": "0x1429aba20",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e14",
+      "source": "schema_defaults",
+      "target": "property_resolver",
+      "label": "Materialize omitted Fruit defaults in loaded weapon data",
+      "grade": "U",
+      "evidence": [
+        {
+          "file": "chain_sources/252b53d6_0303d890_weapon.fruit",
+          "line": 482,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_archive\\verified_configs\\0303d890_weapon.fruit"
+        },
+        {
+          "file": "chain_sources/252b53d6_0303d890_weapon.fruit",
+          "line": 500,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_archive\\verified_configs\\0303d890_weapon.fruit"
+        },
+        {
+          "file": "chain_sources/d693ebef_expanded_chain_functions.json",
+          "line": 3412,
+          "va": "0x1402489a0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\expanded_chain_functions.json"
+        }
+      ],
+      "limitation": "Schema declaration is certain. Derived constructors start empty, and resolver has a parent-like fallback for an unset explicitness bit. The schema-default construction/materialization path is not fully established, so omitted fields are not treated as proven Burst/Fire runtime values."
+    },
+    {
+      "id": "e15",
+      "source": "property_resolver",
+      "target": "configured_layer",
+      "label": "String reader -> derived config member",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 31616,
+          "va": "0x14240a300",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 32072,
+          "va": "0x141bf81c0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 32426,
+          "va": "0x14296cb80",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ],
+      "limitation": "This proves parsing the resolved value; it does not close the preceding omitted-default edge."
+    },
+    {
+      "id": "e16",
+      "source": "fire_events",
+      "target": "configured_layer",
+      "label": "Explicit Thompson named FullAuto myAnimationLayer=Burst",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/beb5fb9d_09826411_player_weapon_submachinegun_thompson_t2_named.mweapon",
+          "line": 14,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_archive\\verified_configs\\09826411_player_weapon_submachinegun_thompson_t2_named.mweapon"
+        },
+        {
+          "file": "chain_sources/beb5fb9d_09826411_player_weapon_submachinegun_thompson_t2_named.mweapon",
+          "line": 37,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_archive\\verified_configs\\09826411_player_weapon_submachinegun_thompson_t2_named.mweapon"
+        }
+      ],
+      "limitation": "A strict explicit-config example only, not proof that all weapons or omitted fields resolve identically."
+    },
+    {
+      "id": "e17",
+      "source": "fullauto",
+      "target": "named_activation",
+      "label": "Owner entity animation component +220 and configured layer string",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 30093,
+          "va": "0x14246eea0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 30414,
+          "va": "0x1421afbf0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e18",
+      "source": "burst_event",
+      "target": "named_activation",
+      "label": "Owner entity animation component +220 and configured layer string",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 30596,
+          "va": "0x141c58a80",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 30414,
+          "va": "0x1421afbf0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e19",
+      "source": "semiauto",
+      "target": "named_activation",
+      "label": "Owner entity animation component +220 and configured layer string",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 31106,
+          "va": "0x1429aba20",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 30414,
+          "va": "0x1421afbf0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e20",
+      "source": "configured_layer",
+      "target": "named_activation",
+      "label": "The parsed string is the activation name",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 30414,
+          "va": "0x1421afbf0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e21",
+      "source": "named_activation",
+      "target": "scope_lookup",
+      "label": "1421afbf0 -> 14345c660 -> 14345c690",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 26008,
+          "va": "0x14345c660",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/311f2f58_named_layer_scope_code.json",
+          "line": 2129,
+          "va": "0x14345c690",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\named_layer_scope_code.json"
+        }
+      ]
+    },
+    {
+      "id": "e22",
+      "source": "player_binding",
+      "target": "player_graph",
+      "label": "AnimationLogicList f1 points at player graph",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/86141f55_0305d18a_cache.juice",
+          "line": 5,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\configs\\0305d18a_cache.juice"
+        }
+      ],
+      "limitation": "The actor/resource path selecting f1 for the currently controlled entity is not fully traced; male/female skeleton graphobject files do not themselves contain this binding."
+    },
+    {
+      "id": "e23",
+      "source": "player_graph",
+      "target": "scope_lookup",
+      "label": "This graph is the actual bound animation instance for the player",
+      "grade": "U",
+      "evidence": [
+        {
+          "file": "chain_sources/86141f55_0305d18a_cache.juice",
+          "line": 3,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\configs\\0305d18a_cache.juice"
+        }
+      ],
+      "limitation": "Resource registration is verified, but the player actor assignment and load path to this exact instance remain unjoined. Therefore the entire input-to-player-pose chain is not claimed closed."
+    },
+    {
+      "id": "e24",
+      "source": "scope_lookup",
+      "target": "root_burst",
+      "label": "Global fallback layerGroups Burst=[44]",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+          "line": 118,
+          "jsonPointer": "/globalLayerGroups/Burst",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json"
+        }
+      ]
+    },
+    {
+      "id": "e25",
+      "source": "scope_lookup",
+      "target": "root_fire",
+      "label": "Global fallback layerGroups Fire=[45]",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+          "line": 123,
+          "jsonPointer": "/globalLayerGroups/Fire",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json"
+        }
+      ]
+    },
+    {
+      "id": "e26",
+      "source": "mounted_state",
+      "target": "mounted_burst",
+      "label": "State-local layerGroups Burst=[232]",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+          "line": 9672,
+          "jsonPointer": "/records/states:237/layerGroups/Burst",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json"
+        }
+      ]
+    },
+    {
+      "id": "e27",
+      "source": "mounted_state",
+      "target": "mounted_firing",
+      "label": "State-local layerGroups MountedWeaponFiring=[234]",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+          "line": 537,
+          "jsonPointer": "/records/states:237/layerGroups/MountedWeaponFiring",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json"
+        }
+      ]
+    },
+    {
+      "id": "e28",
+      "source": "scope_lookup",
+      "target": "mounted_burst",
+      "label": "Active state scope resolves Burst before root fallback",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/311f2f58_named_layer_scope_code.json",
+          "line": 2129,
+          "va": "0x14345c690",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\named_layer_scope_code.json"
+        },
+        {
+          "file": "chain_sources/50d88b6f_state_layergroup_reader.json",
+          "line": 135,
+          "va": "0x143525a00",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\state_layergroup_reader.json"
+        },
+        {
+          "file": "chain_sources/2d679bb3_state_base_reader.json",
+          "line": 104,
+          "va": "0x143523081",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\state_base_reader.json"
+        },
+        {
+          "file": "chain_sources/2d679bb3_state_base_reader.json",
+          "line": 157,
+          "va": "0x14352309f",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\state_base_reader.json"
+        }
+      ],
+      "condition": "MountedWeapon state scope is present/current and selected named layer is Burst.",
+      "limitation": "Code proves state+40 is layerGroups, state-scoped lookup precedes global lookup, and config maps Burst to232. Which particular mounted weapon requests Burst and when state237 becomes current was not independently joined."
+    },
+    {
+      "id": "e29",
+      "source": "mounted_request",
+      "target": "mounted_firing",
+      "label": "External request named MountedWeaponFiring",
+      "grade": "U",
+      "evidence": [
+        {
+          "file": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+          "line": 537,
+          "jsonPointer": "/records/states:237/layerGroups/MountedWeaponFiring",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json"
+        }
+      ],
+      "limitation": "Layer234 exists in a state scope and is not autoStart. Its exact external activation caller is unproven; absence of an RIP LEA to its text in .text is not proof it is unused."
+    },
+    {
+      "id": "e30",
+      "source": "root_burst",
+      "target": "shot_resources",
+      "label": "Execution nodes -> common data -> resources",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/8908afb6_current_firing_graph.json",
+          "line": 4349,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\current_firing_graph.json"
+        }
+      ],
+      "limitation": "40 distinct main-layer resources =38 dynamic clips +2 pose samples; graph/resource evidence does not prove the exported FBX reproduces runtime blending."
+    },
+    {
+      "id": "e31",
+      "source": "root_fire",
+      "target": "shot_resources",
+      "label": "Execution nodes -> common data -> resources",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/8908afb6_current_firing_graph.json",
+          "line": 4349,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\current_firing_graph.json"
+        }
+      ],
+      "limitation": "40 distinct main-layer resources =38 dynamic clips +2 pose samples; graph/resource evidence does not prove the exported FBX reproduces runtime blending."
+    },
+    {
+      "id": "e32",
+      "source": "mounted_burst",
+      "target": "shot_resources",
+      "label": "Two mounted recoil resources",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/8908afb6_current_firing_graph.json",
+          "line": 21884,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\current_firing_graph.json"
+        }
+      ],
+      "limitation": "Two additional dynamic resources; totals across these branches:40 dynamic clips plus2 pose samples."
+    },
+    {
+      "id": "e33",
+      "source": "request_flag",
+      "target": "stop_gate",
+      "label": "Stop-side checks request+3af4",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/728587d4_firing_end_loop_code.json",
+          "line": 310,
+          "va": "0x14133ef30",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_end_loop_code.json"
+        }
+      ]
+    },
+    {
+      "id": "e34",
+      "source": "stop_gate",
+      "target": "event_stop",
+      "label": "Complementary gate calls stop helper",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/728587d4_firing_end_loop_code.json",
+          "line": 310,
+          "va": "0x14133ef30",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_end_loop_code.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 22268,
+          "va": "0x141337760",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ],
+      "condition": "Helper1412da3c0 false (dl=1 path), otherwise request+3af4 false OR +3b08==0 OR +3af0>=1 (dl=0 path)."
+    },
+    {
+      "id": "e35",
+      "source": "event_stop",
+      "target": "firing_byte",
+      "label": "Clear +3b88 when active wrapper exists",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 22335,
+          "va": "0x141337785",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ],
+      "limitation": "No-wrapper early return means this function does not unconditionally clear the byte."
+    },
+    {
+      "id": "e36",
+      "source": "event_stop",
+      "target": "named_stop",
+      "label": "FullAuto/Burst virtual+28 stops configured named layer",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/2a47e7b6_derived_event_stop_code.json",
+          "line": 385,
+          "va": "0x14246fc0f",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\derived_event_stop_code.json"
+        },
+        {
+          "file": "chain_sources/2a47e7b6_derived_event_stop_code.json",
+          "line": 1403,
+          "va": "0x141c59b18",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\derived_event_stop_code.json"
+        }
+      ],
+      "limitation": "SemiAuto virtual+28 calls base only in its inspected method. Main Fire layer is configured loop=false; Burst loop=true. Natural completion/frame cleanup was not exhaustively traced."
+    },
+    {
+      "id": "e37",
+      "source": "named_stop",
+      "target": "layer_remove",
+      "label": "Find matching active names; blend-out mark or removal",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/728587d4_firing_end_loop_code.json",
+          "line": 3,
+          "va": "0x142276750",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_end_loop_code.json"
+        },
+        {
+          "file": "chain_sources/fb69151e_chain_0x14350b060.json",
+          "line": 300,
+          "va": "0x14350b0f3",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\chain_0x14350b060.json"
+        },
+        {
+          "file": "chain_sources/50d88b6f_state_layergroup_reader.json",
+          "line": 7980,
+          "va": "0x14350afc4",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\state_layergroup_reader.json"
+        },
+        {
+          "file": "chain_sources/50d88b6f_state_layergroup_reader.json",
+          "line": 8176,
+          "va": "0x14350b045",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\state_layergroup_reader.json"
+        }
+      ],
+      "limitation": "14350af90 marks +231 and zeros +220 when nonforced with positive configured value at layer+2c; alternate branch removes the active-layer array entry. Exact frame-by-frame weight curve remains outside this chain report."
+    },
+    {
+      "id": "e38",
+      "source": "firing_byte",
+      "target": "firing_cache",
+      "label": "Copy weapon+3b88 into animation cache+4fc",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 19968,
+          "va": "0x142569a20",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 20114,
+          "va": "0x14256a110",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e39",
+      "source": "firing_cache",
+      "target": "typed_writer",
+      "label": "Binder names ID4f8 IsFiring; writer copies bool4fc",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 9423,
+          "va": "0x140ecb480",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        },
+        {
+          "file": "chain_sources/9ecb31c7_runtime_proof.json",
+          "line": 18653,
+          "va": "0x140f0620f",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\runtime_proof.json"
+        }
+      ]
+    },
+    {
+      "id": "e40",
+      "source": "reload_cache",
+      "target": "typed_writer",
+      "label": "Binder IsReloading ID528; writer bool52c",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/413b1765_reload_binding_code.json",
+          "line": 3538,
+          "va": "0x140ecbc87",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\reload_binding_code.json"
+        },
+        {
+          "file": "chain_sources/413b1765_reload_binding_code.json",
+          "line": 3609,
+          "va": "0x140ecbcaf",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\reload_binding_code.json"
+        },
+        {
+          "file": "chain_sources/413b1765_reload_binding_code.json",
+          "line": 9443,
+          "va": "0x140f06299",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\reload_binding_code.json"
+        },
+        {
+          "file": "chain_sources/413b1765_reload_binding_code.json",
+          "line": 9532,
+          "va": "0x140f062b6",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\reload_binding_code.json"
+        }
+      ]
+    },
+    {
+      "id": "e41",
+      "source": "reload_cache",
+      "target": "start_gate",
+      "label": "IsReloading true excludes this start path",
+      "grade": "A",
+      "evidence": [
+        {
+          "file": "chain_sources/413b1765_reload_binding_code.json",
+          "line": 10570,
+          "va": "0x142258eec",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\reload_binding_code.json"
+        },
+        {
+          "file": "chain_sources/413b1765_reload_binding_code.json",
+          "line": 10584,
+          "va": "0x142258ef7",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\reload_binding_code.json"
+        },
+        {
+          "file": "chain_sources/1008c240_fire_request_functions.json",
+          "line": 177,
+          "va": "0x14133ee20",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_request_functions.json"
+        }
+      ],
+      "condition": "On inspected update path IsReloading=(weapon+3b08==0); start_gate requires weapon+3b08!=0.",
+      "limitation": "This is a logical correspondence in inspected functions, not a live per-frame execution trace. No unsupported name is assigned to raw3b08 itself."
+    },
+    {
+      "id": "e42",
+      "source": "typed_writer",
+      "target": "root_burst",
+      "label": "IsFiring and other weapon parameters drive graph conditions",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/47b6b1c3_current_firing_controls.json",
+          "line": 237,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\division_sdk\\current_firing_controls.json"
+        }
+      ],
+      "limitation": "IsFiring does not alone start every named layer; configured-name activation is a separate proven path."
+    },
+    {
+      "id": "e43",
+      "source": "ready",
+      "target": "hipfire",
+      "label": "Ready includes NoAim configurations",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+          "line": 602,
+          "jsonPointer": "/records/states:1/modeSetup",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json"
+        },
+        {
+          "file": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+          "line": 209,
+          "jsonPointer": "/modes/2/types/0",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json"
+        }
+      ],
+      "limitation": "Ready is a broad posture state group; NoAim is an Aim mode. They do not by themselves mean a projectile is fired. A hipfire-named clip can provide base posture while shot/recoil layers are added."
+    },
+    {
+      "id": "e44",
+      "source": "player_graph",
+      "target": "flare",
+      "label": "Root FlareGun group is a separate layer",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/4dac51f6_firing_chain_config_scope.json",
+          "line": 128,
+          "jsonPointer": "/globalLayerGroups/FlareGun",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\firing_chain_config_scope.json"
+        }
+      ],
+      "limitation": "This edge records classification scope, not a control transfer from Fire to FlareGun."
+    },
+    {
+      "id": "e45",
+      "source": "flare",
+      "target": "flare_events",
+      "label": "Graph emits FireFlareGun at .45 and FlareGunEnd at .89",
+      "grade": "B",
+      "evidence": [
+        {
+          "file": "chain_sources/13fa27a6_layers_0046.json",
+          "line": 1,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\chunks\\layers_0046.json"
+        },
+        {
+          "file": "chain_sources/13fa27a6_layers_0046.json",
+          "line": 1,
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\chunks\\layers_0046.json"
+        }
+      ]
+    },
+    {
+      "id": "e46",
+      "source": "flare_events",
+      "target": "flare_projectile",
+      "label": "Animation event -> projectile callback",
+      "grade": "U",
+      "evidence": [
+        {
+          "file": "chain_sources/8a39b52c_fire_request_xrefs.json",
+          "line": 609,
+          "va": "0x146e8b6c8",
+          "original_file": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\work\\full_graph_audit\\fire_request_xrefs.json"
+        }
+      ],
+      "limitation": "The exact atom is identified, but a subscribing callback/actual projectile spawn edge was not found. Event existence is not equivalent to proven callback dispatch."
+    }
+  ],
+  "coverage": {
+    "closedLocalSubchains": [
+      "Validated active index -> selected event virtual18 -> parsed configured name -> state-aware layer dispatch",
+      "FireEvent start/stop flag -> IsFiring cache -> typed instance boolean",
+      "IsReloading binder/value/writer -> start-gate exclusion",
+      "State reader layerGroups+40 -> mounted state-local Burst232 resolution"
+    ],
+    "unresolvedWholeChainEdges": [
+      "Shoot action dispatcher -> weapon input virtual48",
+      "Request transition -> scheduled invocation of start_gate",
+      "Omitted Fruit property default materialization",
+      "Player actor f1 binding to exact current graph instance",
+      "Particular mounted weapon config/state-entry -> mounted Burst232",
+      "External MountedWeaponFiring234 activator",
+      "FireFlareGun event subscriber -> projectile spawn"
+    ],
+    "conclusion": "局部代码与当前图可闭合多个关键子链，但不能宣称输入到最终玩家姿态/弹丸的全链已全部证明。"
+  },
+  "corrections": [
+    "Mounted层232并非没有任何名称分组：它属于state237的局部Burst组；此前仅查root layerGroups的未知结论过宽。",
+    "weapon+3b08不得按邻近弹药读取猜作ammo；它与IsReloading关系由缓存链证明。",
+    "IsFiring是图变量输入，named layer是另一条激活路径；二者不能混成单一布尔触发。",
+    "Fruit声明默认值不等于已经证明省略字段的实际物化路径。",
+    "同名Burst存在root44与mounted232，查询作用域决定候选。",
+    "states[].transfers pair[0]是transitionId，pair[1]是transferId；不得据第一项范围误画为目标state。"
+  ]
+}

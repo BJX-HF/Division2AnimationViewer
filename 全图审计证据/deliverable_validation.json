@@ -1,0 +1,79 @@
+{
+  "all_requested_deliverables_present": true,
+  "all_local_html_links_valid": true,
+  "local_anchor_targets_checked": 109,
+  "standalone_svg_counts": {
+    "burstAggregateGroups": 11,
+    "firingChainNodes": 40,
+    "firingChainEdges": 46
+  },
+  "project_reports_synced": true,
+  "project_target": "E:\\UEproject\\Division2AnimationViewer",
+  "files": [
+    {
+      "file": "玩家动画图完整审计.html",
+      "bytes": 46836762,
+      "sha256": "0bab378b4c5f5249808fbad02574914bef54dc7dc87c37dfeed52bbfd6c61047"
+    },
+    {
+      "file": "开火调用链路.html",
+      "bytes": 1594432,
+      "sha256": "d0f65387dc1d6a3b9879ca7203c0cfc2af91979da336c3db16e6a1961b6c27e3"
+    },
+    {
+      "file": "普通Burst关系总览.svg",
+      "bytes": 20892,
+      "sha256": "04ae1805a679d0924eef565fc59009b551567feba71f10d2abfe9baf774ba528"
+    },
+    {
+      "file": "开火调用链路.svg",
+      "bytes": 22952,
+      "sha256": "055df43ff15d5659ca58a6d38f63dae1c681eed57a99d99e0f51090a9c80ef37"
+    },
+    {
+      "file": "全图审计数据.zip",
+      "bytes": 75468813,
+      "sha256": "672ae0c0fd7f60334229ddc325518a63714c6885dd9a5322a1eb68ccfc987592"
+    },
+    {
+      "file": "全图用途审计说明.md",
+      "bytes": 16303,
+      "sha256": "4c5929d4d4883bbebb13928b04460bb9bc2e16f3d639d81f34dc7203ca5b9a81"
+    },
+    {
+      "file": "动画用途审计.json",
+      "bytes": 28168394,
+      "sha256": "d5e7cd4a3a3810c3bf829f6dfa60150323265d4b4eeac8ad0b37958012564f97"
+    },
+    {
+      "file": "动画分类查找表.html",
+      "bytes": 11431272,
+      "sha256": "315e6a4aea80a3ea8084b91173ff541890a8185a5979206ca03f219e2d5f95be"
+    },
+    {
+      "file": "开火动画重新筛选.html",
+      "bytes": 441407,
+      "sha256": "44a979fc34e3746c73fcb1e4901dc601c080c0a0ce870ee4f9e6ab1790974773"
+    },
+    {
+      "file": "开火动画清单.md",
+      "bytes": 16136,
+      "sha256": "c7bf63a63bd8807e554fcebf9e5bb5923b8294fcad3d85177e5facbb6bb8ff30"
+    },
+    {
+      "file": "使用说明.md",
+      "bytes": 4613,
+      "sha256": "a96331412e32b579e8e2b78c218a97cfc0118f4ebfc7fa7a9f64caf45bb73cb1"
+    },
+    {
+      "file": "FBX完整性核查.md",
+      "bytes": 13926,
+      "sha256": "e4f033787eecd0dc6cc4508f46cd31938b03e1cd2dda8744dd7ffab8e3f42127"
+    },
+    {
+      "file": "FBX完整性核查.json",
+      "bytes": 142299,
+      "sha256": "1759a60facb3989c43b819074367e1e3c837afe4bcdd450f85ba358589e8b1da"
+    }
+  ]
+}

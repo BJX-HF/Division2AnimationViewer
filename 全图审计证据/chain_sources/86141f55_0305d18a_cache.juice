@@ -1,0 +1,10 @@
+include "hunter/game system data/fruit/animation/animsys.fruit"
+
+FileList AnimationLogicList
+{
+	file f1 hunter/animation/hun_animsys_player.manimsys
+	file f3 hunter/animation/hun_animsys_npc.manimsys
+	file hunter_deer hunter/animation/hun_animsys_deer.manimsys
+	file hunter_dog hunter/animation/hun_animsys_dog.manimsys
+}
+

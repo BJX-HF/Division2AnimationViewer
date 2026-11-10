@@ -1,0 +1,87 @@
+{
+  "completeContainerCoverage": true,
+  "allBV2BytesConsumed": true,
+  "counts": {
+    "chunks": 1399,
+    "layers": 447,
+    "executionNodes": 369841,
+    "edges": 961152,
+    "resourceUsages": 305215,
+    "nullAnimationRoots": 278,
+    "states": 452,
+    "transitions": 457,
+    "transfers": 43,
+    "explicitStateTransitions": 3216,
+    "transferPairs": 209,
+    "contextMemberships": 4638,
+    "defaultTransitions": 75,
+    "resources": 4453,
+    "stringOnlyResources": 44,
+    "commonAnimationDataResources": 4409,
+    "resourcesWithNodeUsages": 4409,
+    "metadataAccessorClipUsages": 82
+  },
+  "maxGraph": {
+    "key": "layers:53",
+    "section": "layers",
+    "recordId": 53,
+    "name": "Reload",
+    "chunk": "chunks/layers_0053.json",
+    "nodeCount": 4317,
+    "edgeCount": 13036,
+    "resourceCount": 1128,
+    "usageCount": 1272,
+    "rootExecutionIndex": 4316,
+    "rootSerializedId": 4317,
+    "modeSetup": [
+      [
+        1,
+        8
+      ],
+      [
+        7
+      ],
+      [
+        127
+      ],
+      [
+        14
+      ],
+      [
+        15
+      ],
+      [
+        15
+      ],
+      [
+        7
+      ],
+      [
+        3
+      ]
+    ],
+    "unknownPortCount": 9
+  },
+  "allKnownDependencyEdgesWithinExecutionRange": true,
+  "allKnownDependencyEdgeSourceFamiliesCompatible": true,
+  "allResourceUsagesHaveValidNodeAndCommonDataReferences": true,
+  "unknownIndexDomains": {
+    "source_type_compatible_links": 961152,
+    "null_minus1_links": 237021,
+    "unresolved_port_occurrences": 6498,
+    "unresolved_nonempty_port_occurrences": 279
+  },
+  "perTypeProofs": [
+    "setbone_source_flow_proof.json",
+    "accessor_domain_proof.json"
+  ],
+  "indexSha256": "55848fd648ce5d53e380040996758fbceae63e690e8c2312c38abd6d10c5d6d9",
+  "resourceUsagesSha256": "09661ad8092a99730da93c7e26a68e0d1727a1779f70bcf47c8d4f3be31c8b7d",
+  "sourceSha256": "c65555f56507417bf85933076051a2614ecbd0747c68e32521f29f052425c3d7",
+  "limitations": [
+    "Typed field contracts are checked against actual serialized value kinds, index ranges and source node families; not every node implementation has been independently disassembled.",
+    "Unresolved index domains (ScaleByValue cached node field and autoValueNodeIndices) are preserved, not silently converted to graph links. AnimationSpeed/Direction animData is proven to reference common animation data IDs, not execution nodes.",
+    "Local operation roles are per occurrence/path. No global exclusive semantic category is assigned to an animation resource.",
+    "Static graph root reachability does not prove runtime branch selection or frame-by-frame contribution."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "html": "C:\\Users\\yeyuxiang\\Documents\\Codex\\2026-11-09\\c-users-yeyuxiang-desktop-2\\outputs\\\u73a9\u5bb6\u52a8\u753b\u56fe\u5b8c\u6574\u5ba1\u8ba1.html",
+  "htmlBytes": 46836762,
+  "htmlSha256": "0bab378b4c5f5249808fbad02574914bef54dc7dc87c37dfeed52bbfd6c61047",
+  "scopes": 1399,
+  "nodes": 369841,
+  "edges": 961152,
+  "usages": 305215,
+  "resourceRows": 4497,
+  "rawChunkBytes": 2555677249,
+  "packedScopeBase64Bytes": 45082384,
+  "elapsedSeconds": 75.6,
+  "labelsClarifiedAfterPacking": true,
+  "allRawTypedPortsPreserved": true
+}

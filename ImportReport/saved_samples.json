@@ -1,0 +1,20 @@
+[
+  {
+    "gender": "Male",
+    "preview_type": "<class 'str'>",
+    "preview": "/Game/Division2/Characters/Male/SK_Male_Walker.SK_Male_Walker",
+    "frames": 155,
+    "keys": 156,
+    "tracks": 213,
+    "duration": 5.166666507720947
+  },
+  {
+    "gender": "Female",
+    "preview_type": "<class 'str'>",
+    "preview": "/Game/Division2/Characters/Female/SK_Female_Walker.SK_Female_Walker",
+    "frames": 32,
+    "keys": 33,
+    "tracks": 208,
+    "duration": 1.0666667222976685
+  }
+]
